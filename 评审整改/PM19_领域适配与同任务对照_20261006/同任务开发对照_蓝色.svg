@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="1200" height="620" fill="#ffffff"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#123957">
+<text x="45" y="52" font-size="26" font-weight="bold">同任务开发对照：语义参考一致数</text>
+<text x="45" y="86" font-size="17">47份自编语义资料 · 留案例族验证 · 参考标签未独立业务复核</text>
+<text x="45" y="152" font-size="18">输入规则（语义任务弃答）</text>
+<rect x="405" y="130" width="600" height="30" rx="4" fill="#edf3f9"/>
+<rect x="405" y="130" width="0.00" height="30" rx="4" fill="#bccddd"/>
+<text x="1025" y="153" font-size="19">0/47</text>
+<text x="45" y="215" font-size="18">AgentJev固定公开权重</text>
+<rect x="405" y="193" width="600" height="30" rx="4" fill="#edf3f9"/>
+<rect x="405" y="193" width="421.28" height="30" rx="4" fill="#164c8a"/>
+<text x="1025" y="216" font-size="19">33/47</text>
+<text x="45" y="278" font-size="18">AgentJev任务头适配</text>
+<rect x="405" y="256" width="600" height="30" rx="4" fill="#edf3f9"/>
+<rect x="405" y="256" width="421.28" height="30" rx="4" fill="#277dc5"/>
+<text x="1025" y="279" font-size="19">33/47</text>
+<text x="45" y="341" font-size="18">中文BERT＋分类头</text>
+<rect x="405" y="319" width="600" height="30" rx="4" fill="#edf3f9"/>
+<rect x="405" y="319" width="331.91" height="30" rx="4" fill="#4a9ad6"/>
+<text x="1025" y="342" font-size="19">26/47</text>
+<text x="45" y="404" font-size="18">字符TF-IDF＋分类器</text>
+<rect x="405" y="382" width="600" height="30" rx="4" fill="#edf3f9"/>
+<rect x="405" y="382" width="268.09" height="30" rx="4" fill="#79b3df"/>
+<text x="1025" y="405" font-size="19">21/47</text>
+<text x="45" y="467" font-size="18">Qwen2.5-0.5B JSON生成</text>
+<rect x="405" y="445" width="600" height="30" rx="4" fill="#edf3f9"/>
+<rect x="405" y="445" width="229.79" height="30" rx="4" fill="#a4c7e6"/>
+<text x="1025" y="468" font-size="19">18/47</text>
+<text x="45" y="540" font-size="17">当前头部适配不采用：一致数未增加，矛盾未识别由1例增至2例。</text>
+<text x="45" y="575" font-size="16">规则对语义任务弃答；生成失败纳入分母。结果不代表银行准确率或业务收益。</text>
+</g></svg>

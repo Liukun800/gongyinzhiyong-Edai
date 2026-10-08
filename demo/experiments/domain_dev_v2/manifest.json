@@ -1,0 +1,35 @@
+{
+  "version": "domain-dev-v2",
+  "status": "training_data_preparation_only",
+  "original_count": 24,
+  "new_count": 30,
+  "combined_count": 54,
+  "contrast_families": 10,
+  "lineage_groups": 12,
+  "label_counts_by_task": {
+    "USE_MATCH": {
+      "一致": 9,
+      "存在明确矛盾": 9,
+      "信息不足": 9
+    },
+    "BIZ_CONFLICT": {
+      "未发现明确矛盾": 9,
+      "发现明确矛盾": 9,
+      "无法比较": 9
+    }
+  },
+  "semantic_eligible": 47,
+  "no_final_test_set": true,
+  "expert_labels": false,
+  "model_training_performed": false,
+  "schema": "project-local request + separate target; not claimed compatible with upstream train loader",
+  "hashes": {
+    "contrast_cases.json": "8a27509a4400882ae89d8703f0e3897829ea50340dc483d25d4a12e79d15f15f",
+    "contrast_labels.json": "664d1d5f6228929001a69fd629d3a2c966b7362effd9ca38004f68cb49bedf0f",
+    "combined_cases.json": "c3a49ed53995a1844cc18cfedacb7b6fa98feb14d07ba01039650a8a2a691912",
+    "combined_labels.json": "712437f28647e09b2f0bdb9994a79f597dfbf60b4f7803430c2b9975d0187553",
+    "eligibility.json": "ae94ce5465b1a7ee3cdfd4c18f14d45b87a50581f1596e4c25813cb2e71c0e56",
+    "development_folds.json": "03abc56361bc06acbc09fc07208fcf692c4f65368fd136773c592b467f2b1d85",
+    "training_records.jsonl": "a7ca7bab242d88104e48e7f359aeb9b014b1b8324ea361e65f4219fa06c04688"
+  }
+}

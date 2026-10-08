@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="690" viewBox="0 0 1350 690">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3d7eac"/></marker></defs>
+<rect width="1350" height="690" fill="white"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#153e66">
+<text x="45" y="45" font-size="28" text-anchor="start" font-weight="bold">工小审前置核验组件：从离线评价到有限辅助使用</text>
+<rect x="35" y="110" width="275" height="195" rx="6" fill="#e5f1fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="172.5" y="146" font-size="25" text-anchor="middle" font-weight="bold">1 任务映射</text>
+<text x="172.5" y="186" font-size="21" text-anchor="middle" font-weight="normal">用途或经营核验</text>
+<text x="172.5" y="218" font-size="21" text-anchor="middle" font-weight="normal">确认已有能力重叠</text>
+<text x="172.5" y="250" font-size="21" text-anchor="middle" font-weight="normal">确定材料与承接人</text>
+<rect x="370" y="110" width="275" height="195" rx="6" fill="#e5f1fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="507.5" y="146" font-size="25" text-anchor="middle" font-weight="bold">2 离线盲评</text>
+<text x="507.5" y="186" font-size="21" text-anchor="middle" font-weight="normal">授权材料与独立标签</text>
+<text x="507.5" y="218" font-size="21" text-anchor="middle" font-weight="normal">冻结模型和错误上限</text>
+<text x="507.5" y="250" font-size="21" text-anchor="middle" font-weight="normal">同任务比较与错例核实</text>
+<rect x="705" y="110" width="275" height="195" rx="6" fill="#e5f1fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="842.5" y="146" font-size="25" text-anchor="middle" font-weight="bold">3 旁路记录</text>
+<text x="842.5" y="186" font-size="21" text-anchor="middle" font-weight="normal">沿用原有业务处理</text>
+<text x="842.5" y="218" font-size="21" text-anchor="middle" font-weight="normal">建议仅记录供对照</text>
+<text x="842.5" y="250" font-size="21" text-anchor="middle" font-weight="normal">测漏识别、误报与工时</text>
+<rect x="1040" y="110" width="275" height="195" rx="6" fill="#e5f1fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="1177.5" y="146" font-size="25" text-anchor="middle" font-weight="bold">4 有限辅助</text>
+<text x="1177.5" y="186" font-size="21" text-anchor="middle" font-weight="normal">限定任务与使用人员</text>
+<text x="1177.5" y="218" font-size="21" text-anchor="middle" font-weight="normal">人员确认每项建议</text>
+<text x="1177.5" y="250" font-size="21" text-anchor="middle" font-weight="normal">质量监控、随时回退</text>
+<path d="M310 205 L367 205" fill="none" stroke="#3d7eac" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M645 205 L702 205" fill="none" stroke="#3d7eac" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M980 205 L1037 205" fill="none" stroke="#3d7eac" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="35" y="355" width="610" height="155" rx="6" fill="#f4f8fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="340.0" y="391" font-size="25" text-anchor="middle" font-weight="bold">业务与技术共同验收</text>
+<text x="340.0" y="431" font-size="21" text-anchor="middle" font-weight="normal">业务：疑点识别、依据支持、人员负担</text>
+<text x="340.0" y="463" font-size="21" text-anchor="middle" font-weight="normal">技术：权限、版本、审计、容量与恢复</text>
+<rect x="705" y="355" width="610" height="155" rx="6" fill="#f4f8fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="1010.0" y="391" font-size="25" text-anchor="middle" font-weight="bold">统一收益测量</text>
+<text x="1010.0" y="431" font-size="21" text-anchor="middle" font-weight="normal">材料核验工时 · 失败与重试 · 完整费用</text>
+<text x="1010.0" y="463" font-size="21" text-anchor="middle" font-weight="normal">同等质量达标后计算处理范围内净收益</text>
+<path d="M675 305 L675 335" fill="none" stroke="#3d7eac" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M340 353 L340 335 L1010 335 L1010 353" fill="none" stroke="#3d7eac" stroke-width="2"/>
+<rect x="150" y="550" width="1050" height="100" rx="6" fill="#e5f1fc" stroke="#90b7d5" stroke-width="2"/>
+<text x="675.0" y="586" font-size="25" text-anchor="middle" font-weight="bold">数据与职责边界</text>
+<text x="675.0" y="626" font-size="21" text-anchor="middle" font-weight="normal">官方公开 API 实验仅用仿真文本；客户材料按银行批准的数据环境与服务方案处理。</text>
+</g></svg>

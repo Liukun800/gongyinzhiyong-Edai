@@ -1,0 +1,30 @@
+{
+  "version": "PM21-official-same-task-1",
+  "model": "jev-1.13.0",
+  "case_count": 54,
+  "semantic_cases": 47,
+  "shared_rule_cases": 7,
+  "max_http_calls": 47,
+  "retries": 0,
+  "scope": "same 54 project-authored synthetic development materials; no independent bank labels",
+  "comparison": "same state, task instructions, candidate labels and input guards as PM19; official criteria verbalize the registered candidates",
+  "limits": [
+    "Different pretraining, model sizes and adaptation resources; not an architecture-only causal comparison",
+    "External API end-to-end timing and local feature extraction timing have different scopes",
+    "No calibrated acceptance threshold, automatic lending, human time saving or bank connection claim"
+  ],
+  "source_sha256": {
+    "demo\\experiments\\domain_dev_v2\\combined_cases.json": "c3a49ed53995a1844cc18cfedacb7b6fa98feb14d07ba01039650a8a2a691912",
+    "demo\\experiments\\domain_dev_v2\\combined_labels.json": "712437f28647e09b2f0bdb9994a79f597dfbf60b4f7803430c2b9975d0187553",
+    "评审整改\\PM19_领域适配与同任务对照_20261006\\summary.json": "d1130e7a77364601ef4ea696ea6fffb82174ae65c6a58e9d8fa42b5a96b05241",
+    "评审整改\\PM21_官方Jev业务接入与同任务对照\\run_comparison.py": "fd0fca46ccf405a959df160ea49d77c9de206c2b22187d5ccc69144f7c958c4b",
+    "demo\\typesafe_client.py": "9c2931c9092ddcbc582a912739f5717ccf2368e6041d11f66d03fe9e26837158",
+    "demo\\official_model.py": "ca97cd1f284ab1a207ddda51ea9b491b8a9e0b9e915cdc362b43c86425c719ae",
+    "demo\\judgement.py": "ad55956990736a2e2ca5bb075f460fa288bcf57d0a825118de2365759f5a0bdf",
+    "demo\\shadow_engine.py": "c015e07e481cccbf40761992dfa7168c30d92266bc349627917f61b6ddd23a5c",
+    "demo\\engine.py": "bea74f9daf9e8df7026222a2ca65db57308f65231a2d6d4a4c7868711621889d"
+  },
+  "inputs_sha256": "c6c5453845b0dce278386c1e86c225245713e68462f6be98fe5fa86849b3f2d0",
+  "references_sha256": "8a92aaf63bf4f59861c04ecf8aecb563d9e044ba78b016bb711bf9b12a067153",
+  "created_at": "2026-10-07T06:19:23.879910+00:00"
+}

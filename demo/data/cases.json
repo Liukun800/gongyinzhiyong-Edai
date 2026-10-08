@@ -1,0 +1,387 @@
+[
+  {
+    "id": "D01",
+    "title": "材料一致",
+    "description": "用途相互支持，经营描述一致。",
+    "documents": [
+      {
+        "id": "application",
+        "title": "申请用途说明",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次申请编号SIM-001，资金拟用于采购生产所需钢材。"
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "采购订单",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "订单关联申请SIM-001，采购标的为生产用钢材。"
+          }
+        ]
+      },
+      {
+        "id": "statement",
+        "title": "经营情况说明",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月正常营业，期间未停业。"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "title": "经营情况记录",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月持续营业。"
+          }
+        ]
+      }
+    ],
+    "supplement": null
+  },
+  {
+    "id": "D02",
+    "title": "经营信息矛盾",
+    "description": "同主体、同月份的营业状态互相冲突。",
+    "documents": [
+      {
+        "id": "application",
+        "title": "申请用途说明",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次申请编号SIM-001，资金拟用于采购生产所需钢材。"
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "采购订单",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "订单关联申请SIM-001，采购标的为生产用钢材。"
+          }
+        ]
+      },
+      {
+        "id": "statement",
+        "title": "经营情况说明",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月正常营业，期间未停业。"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "title": "经营情况记录",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月整月停业，期间未开展经营。"
+          }
+        ]
+      }
+    ],
+    "supplement": null
+  },
+  {
+    "id": "D03",
+    "title": "证明材料缺失",
+    "description": "用途说明缺少相应采购订单，可补件后重跑。",
+    "documents": [
+      {
+        "id": "application",
+        "title": "申请用途说明",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次申请编号SIM-001，资金拟用于采购生产所需钢材。"
+          }
+        ]
+      },
+      {
+        "id": "statement",
+        "title": "经营情况说明",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月正常营业，期间未停业。"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "title": "经营情况记录",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月持续营业。"
+          }
+        ]
+      }
+    ],
+    "supplement": {
+      "id": "order",
+      "title": "采购订单",
+      "kind": "purpose",
+      "subject": "仿真主体A",
+      "period": "2026-08",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "订单关联申请SIM-001，采购标的为生产用钢材。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "D04",
+    "title": "期间不可比",
+    "description": "经营说明属于8月，另一份记录属于7月。",
+    "documents": [
+      {
+        "id": "application",
+        "title": "申请用途说明",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次申请编号SIM-001，资金拟用于采购生产所需钢材。"
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "采购订单",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "订单关联申请SIM-001，采购标的为生产用钢材。"
+          }
+        ]
+      },
+      {
+        "id": "statement",
+        "title": "经营情况说明",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月正常营业，期间未停业。"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "title": "经营情况记录",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-07",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年7月整月停业，期间未开展经营。"
+          }
+        ]
+      }
+    ],
+    "supplement": null
+  },
+  {
+    "id": "D05",
+    "title": "多材料复杂分析",
+    "description": "订单存在有效变更，展示模拟升级与证据检查。",
+    "documents": [
+      {
+        "id": "application",
+        "title": "申请用途说明",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次申请编号SIM-001，资金拟用于采购生产所需钢材。"
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "原采购订单",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "订单关联申请SIM-001，原采购标的为生产设备；标的可按双方有效补充协议变更。"
+          }
+        ]
+      },
+      {
+        "id": "amendment",
+        "title": "采购补充协议",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "双方就关联申请SIM-001的订单签订有效补充协议：采购标的由生产设备变更为生产用钢材，其他条款不变。"
+          }
+        ]
+      },
+      {
+        "id": "statement",
+        "title": "经营情况说明",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月正常营业，期间未停业。"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "title": "经营情况记录",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月持续营业。"
+          }
+        ]
+      }
+    ],
+    "supplement": null
+  },
+  {
+    "id": "D06",
+    "title": "分析服务故障",
+    "description": "与D05相同的材料，注入模拟超时，转人工。",
+    "documents": [
+      {
+        "id": "application",
+        "title": "申请用途说明",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次申请编号SIM-001，资金拟用于采购生产所需钢材。"
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "原采购订单",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "订单关联申请SIM-001，原采购标的为生产设备；标的可按双方有效补充协议变更。"
+          }
+        ]
+      },
+      {
+        "id": "amendment",
+        "title": "采购补充协议",
+        "kind": "purpose",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "双方就关联申请SIM-001的订单签订有效补充协议：采购标的由生产设备变更为生产用钢材，其他条款不变。"
+          }
+        ]
+      },
+      {
+        "id": "statement",
+        "title": "经营情况说明",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月正常营业，期间未停业。"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "title": "经营情况记录",
+        "kind": "business",
+        "subject": "仿真主体A",
+        "period": "2026-08",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仿真主体A在2026年8月全月持续营业。"
+          }
+        ]
+      }
+    ],
+    "supplement": null
+  }
+]

@@ -1,0 +1,16 @@
+const {chromium}=require('C:/Users/liuko/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+try{const page=await browser.newPage({viewport:{width:1440,height:1050}});await page.goto('http://127.0.0.1:8767');
+await page.waitForFunction(()=>!document.querySelector('#run').disabled);await page.selectOption('#case-select','D02');
+await page.waitForFunction(()=>document.querySelector('#case-title').textContent.startsWith('D02')&&!document.querySelector('#run').disabled);
+await page.click('[data-evidence="BIZ_CONFLICT"]');await page.evaluate(()=>scrollTo(0,0));
+assert.equal(await page.locator('#message').evaluate(e=>getComputedStyle(e).position),'static');
+assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+await page.screenshot({path:path.join(__dirname,'qa/shadow-workstation-desktop.png'),fullPage:true});
+await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));
+assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+await page.screenshot({path:path.join(__dirname,'qa/shadow-workstation-mobile.png'),fullPage:true});
+console.log('Captured actual D02 error example; no clipping or sticky overlay.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

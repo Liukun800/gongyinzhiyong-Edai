@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1670" height="700" viewBox="65 230 1670 700" role="img" aria-labelledby="title desc"><title id="title">技术继承 团队贡献与创新验证</title><desc id="desc">将通用判断能力适配为可检查、可接管的信贷材料核验任务</desc>
+<defs>
+  <linearGradient id="header" x1="0" x2="1"><stop stop-color="#103E70"/><stop offset="1" stop-color="#176AB1"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F2F8FE"/><stop offset="1" stop-color="white"/></linearGradient>
+  <linearGradient id="ribbon" x1="0" x2="1"><stop stop-color="#176AB1"/><stop offset="1" stop-color="#419ED0"/></linearGradient>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#176AB1"/></marker>
+  <marker id="bigarrow" markerWidth="22" markerHeight="22" refX="17" refY="11" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L22 11 L0 22 Z" fill="#419ED0"/></marker>
+  </defs>
+<rect width="1670" height="700" fill="white" x="65" y="230"/>
+<rect x="78" y="246" width="448" height="667" rx="2" fill="url(#panel)" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="78" y="246" width="448" height="60" rx="2" fill="#103E70" stroke="#103E70" stroke-width="2"/>
+<text id="t3" x="302.0" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" fill="white" font-weight="700" text-anchor="middle" data-fit-width="428">已有技术基础</text>
+<rect x="106" y="339" width="392" height="141" rx="8" fill="white" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="106" y="339" width="7" height="141" rx="0" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t4" x="302.0" y="387.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" fill="#176AB1" font-weight="700" text-anchor="middle" data-fit-width="360">开源判断能力</text>
+<text id="t5" x="302.0" y="438" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#183B60" font-weight="400" text-anchor="middle" data-fit-width="362">候选编码与评分</text>
+<rect x="106" y="509" width="392" height="141" rx="8" fill="white" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="106" y="509" width="7" height="141" rx="0" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t6" x="302.0" y="557.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" fill="#176AB1" font-weight="700" text-anchor="middle" data-fit-width="360">通用模型能力</text>
+<text id="t7" x="302.0" y="608" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#183B60" font-weight="400" text-anchor="middle" data-fit-width="362">语义理解与文本生成</text>
+<rect x="106" y="679" width="392" height="141" rx="8" fill="white" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="106" y="679" width="7" height="141" rx="0" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t8" x="302.0" y="727.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" fill="#176AB1" font-weight="700" text-anchor="middle" data-fit-width="360">通用工程方法</text>
+<text id="t9" x="302.0" y="778" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#183B60" font-weight="400" text-anchor="middle" data-fit-width="362">版本管理与结果校验</text>
+<rect x="1274" y="246" width="448" height="667" rx="2" fill="url(#panel)" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="1274" y="246" width="448" height="60" rx="2" fill="#103E70" stroke="#103E70" stroke-width="2"/>
+<text id="t10" x="1498.0" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" fill="white" font-weight="700" text-anchor="middle" data-fit-width="428">需要验证的增量价值</text>
+<rect x="1302" y="339" width="392" height="141" rx="8" fill="white" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="1302" y="339" width="7" height="141" rx="0" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t11" x="1498.0" y="387.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" fill="#176AB1" font-weight="700" text-anchor="middle" data-fit-width="360">核验质量</text>
+<text id="t12" x="1498.0" y="438" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#183B60" font-weight="400" text-anchor="middle" data-fit-width="362">漏识别 · 误报 · 错误动作</text>
+<rect x="1302" y="509" width="392" height="141" rx="8" fill="white" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="1302" y="509" width="7" height="141" rx="0" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t13" x="1498.0" y="557.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" fill="#176AB1" font-weight="700" text-anchor="middle" data-fit-width="360">人员可用性</text>
+<text id="t14" x="1498.0" y="608" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#183B60" font-weight="400" text-anchor="middle" data-fit-width="362">证据定位 · 处理衔接</text>
+<rect x="1302" y="679" width="392" height="141" rx="8" fill="white" stroke="#B9D5EB" stroke-width="2"/>
+<rect x="1302" y="679" width="7" height="141" rx="0" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t15" x="1498.0" y="727.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" fill="#176AB1" font-weight="700" text-anchor="middle" data-fit-width="360">资源与维护</text>
+<text id="t16" x="1498.0" y="778" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#183B60" font-weight="400" text-anchor="middle" data-fit-width="362">推理开销 · 失败与复核</text>
+<rect x="602" y="246" width="596" height="60" rx="2" fill="#176AB1" stroke="#176AB1" stroke-width="2"/>
+<text id="t17" x="900.0" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" fill="white" font-weight="700" text-anchor="middle" data-fit-width="576">团队的场景适配设计</text>
+<circle cx="900" cy="570" r="243" fill="#F6FAFE" stroke="#B9D5EB" stroke-width="2"/>
+<path d="M750.64,409.83 A219,219 0 0 1 1049.36,409.83 L975.02,489.55 A110,110 0 0 0 824.98,489.55 Z" fill="#103E70" stroke="white" stroke-width="2"/>
+<text id="t18" x="900.0" y="396.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="white" font-weight="600" text-anchor="middle" data-fit-width="145">任务</text>
+<text id="t19" x="900.0" y="438.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="white" font-weight="600" text-anchor="middle" data-fit-width="145">口径</text>
+<path d="M1060.17,420.64 A219,219 0 0 1 1060.17,719.36 L980.45,645.02 A110,110 0 0 0 980.45,494.98 Z" fill="#176AB1" stroke="white" stroke-width="2"/>
+<text id="t20" x="1064.5" y="561.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="white" font-weight="600" text-anchor="middle" data-fit-width="145">动作</text>
+<text id="t21" x="1064.5" y="603.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="white" font-weight="600" text-anchor="middle" data-fit-width="145">约束</text>
+<path d="M1049.36,730.17 A219,219 0 0 1 750.64,730.17 L824.98,650.45 A110,110 0 0 0 975.02,650.45 Z" fill="#419ED0" stroke="white" stroke-width="2"/>
+<text id="t22" x="900.0" y="725.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#103E70" font-weight="600" text-anchor="middle" data-fit-width="145">证据</text>
+<text id="t23" x="900.0" y="767.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#103E70" font-weight="600" text-anchor="middle" data-fit-width="145">版本</text>
+<path d="M739.83,719.36 A219,219 0 0 1 739.83,420.64 L819.55,494.98 A110,110 0 0 0 819.55,645.02 Z" fill="#7CB9DF" stroke="white" stroke-width="2"/>
+<text id="t24" x="735.5" y="561.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#103E70" font-weight="600" text-anchor="middle" data-fit-width="145">异常</text>
+<text id="t25" x="735.5" y="603.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#103E70" font-weight="600" text-anchor="middle" data-fit-width="145">接管</text>
+<circle cx="900" cy="570" r="105" fill="white" stroke="white" stroke-width="2"/>
+<text id="t26" x="900" y="555.9399999999999" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" fill="#103E70" font-weight="700" text-anchor="middle" data-fit-width="200">业务</text>
+<text id="t27" x="900" y="608.3799999999999" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" fill="#103E70" font-weight="700" text-anchor="middle" data-fit-width="200">适配</text>
+<path d="M540,565 L637,565" fill="none" stroke="#176AB1" stroke-width="5" marker-end="url(#arrow)"/>
+<path d="M1163,565 L1260,565" fill="none" stroke="#176AB1" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="605" y="842" width="590" height="71" rx="4" fill="white" stroke="#176AB1" stroke-width="2"/>
+<text id="t28" x="900" y="890.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" fill="#176AB1" font-weight="600" text-anchor="middle" data-fit-width="560">任务定义 · 协同设计 · 对照验证</text>
+</svg>

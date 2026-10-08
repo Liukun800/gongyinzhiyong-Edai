@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "mode": "offline_preview",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "model_calls": 0,
+      "preview_disabled": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "model_calls": 0,
+      "preview_disabled": true
+    }
+  ]
+}

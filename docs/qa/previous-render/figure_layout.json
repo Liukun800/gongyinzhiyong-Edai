@@ -1,0 +1,122 @@
+[
+  {
+    "key": "overview",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 24
+  },
+  {
+    "key": "policy",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "ecology",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "paired",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "pain",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "value",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "scope",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "use",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "runtime",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "route",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "version",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "adoption",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "time",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "cost",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "deliver",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "access",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "recovery",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "gantt",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 23
+  },
+  {
+    "key": "mapping",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  },
+  {
+    "key": "expansion",
+    "text_bounds_passed": true,
+    "overlaps": 0,
+    "min_font": 27
+  }
+]

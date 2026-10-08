@@ -1,0 +1,578 @@
+{
+  "scope": "历史仿真记录离线重算；标签未独立复核，不新增模型调用",
+  "paired_dual": {
+    "n": 28,
+    "fast_correct": 17,
+    "final_correct": 15,
+    "upgraded": 7,
+    "buckets": {
+      "纠错": [],
+      "新增错误": [
+        "H03",
+        "H09"
+      ],
+      "正确保持": [
+        "H01",
+        "H04",
+        "H07",
+        "H10"
+      ],
+      "错误保持": [
+        "H05"
+      ]
+    },
+    "net_correct_change": -2,
+    "fast_path_retained_wrong": [
+      "H06",
+      "H12",
+      "H13",
+      "H15",
+      "H16",
+      "H18",
+      "H19",
+      "H21",
+      "H22",
+      "H24"
+    ]
+  },
+  "task_metrics": {
+    "USE_MATCH": {
+      "rule": {
+        "n": 27,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 25,
+        "semantic_correct": 0,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_abstained": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U07",
+          "U08",
+          "U09",
+          "U10",
+          "U11",
+          "U12",
+          "CU1-1",
+          "CU1-2",
+          "CU1-3",
+          "CU2-1",
+          "CU2-2",
+          "CU2-3",
+          "CU3-1",
+          "CU3-2",
+          "CU3-3",
+          "CU4-1",
+          "CU4-2",
+          "CU4-3",
+          "CU5-1",
+          "CU5-2",
+          "CU5-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 24,
+        "semantic_n": 25,
+        "semantic_correct": 22,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U09",
+          "CU3-1"
+        ],
+        "wrong_ids": [
+          "U09",
+          "CU3-1",
+          "CU4-2"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 27,
+        "answered": 27,
+        "correct": 21,
+        "semantic_n": 25,
+        "semantic_correct": 19,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "CU3-2",
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [
+          "CU3-2"
+        ],
+        "false_conflicts": [
+          "U07",
+          "U09",
+          "CU2-3",
+          "CU3-1"
+        ],
+        "wrong_ids": [
+          "U07",
+          "U09",
+          "CU2-3",
+          "CU3-1",
+          "CU3-2",
+          "CU4-2"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 27,
+        "answered": 27,
+        "correct": 17,
+        "semantic_n": 25,
+        "semantic_correct": 15,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04"
+        ],
+        "conflict_insufficient_answer": [
+          "CU1-2"
+        ],
+        "false_conflicts": [
+          "U07",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3",
+          "CU4-3"
+        ],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "U07",
+          "U12",
+          "CU1-2",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3",
+          "CU4-3",
+          "CU5-1"
+        ]
+      },
+      "tfidf": {
+        "n": 27,
+        "answered": 27,
+        "correct": 15,
+        "semantic_n": 25,
+        "semantic_correct": 13,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U01",
+          "U02",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3"
+        ],
+        "wrong_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U09",
+          "U12",
+          "CU1-3",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3",
+          "CU4-3",
+          "CU5-3"
+        ]
+      },
+      "qwen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 11,
+        "semantic_n": 25,
+        "semantic_correct": 9,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "U08",
+          "U09",
+          "U11",
+          "U12",
+          "CU1-2",
+          "CU1-3",
+          "CU2-2",
+          "CU2-3",
+          "CU3-2",
+          "CU3-3",
+          "CU4-2",
+          "CU4-3",
+          "CU5-2",
+          "CU5-3"
+        ]
+      }
+    },
+    "BIZ_CONFLICT": {
+      "rule": {
+        "n": 27,
+        "answered": 5,
+        "correct": 5,
+        "semantic_n": 22,
+        "semantic_correct": 0,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "B03",
+          "B04",
+          "B10",
+          "B12",
+          "CB1-2",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_abstained": [
+          "B03",
+          "B04",
+          "B10",
+          "B12",
+          "CB1-2",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B09",
+          "B10",
+          "B11",
+          "B12",
+          "CB1-1",
+          "CB1-2",
+          "CB1-3",
+          "CB2-1",
+          "CB2-2",
+          "CB2-3",
+          "CB3-1",
+          "CB3-2",
+          "CB3-3",
+          "CB4-1",
+          "CB4-2",
+          "CB4-3",
+          "CB5-1",
+          "CB5-2"
+        ]
+      },
+      "jev_frozen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 16,
+        "semantic_n": 22,
+        "semantic_correct": 11,
+        "conflict_n": 9,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 27,
+        "answered": 27,
+        "correct": 19,
+        "semantic_n": 22,
+        "semantic_correct": 14,
+        "conflict_n": 9,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3"
+        ],
+        "wrong_ids": [
+          "B02",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 27,
+        "answered": 27,
+        "correct": 16,
+        "semantic_n": 22,
+        "semantic_correct": 11,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB5-2"
+        ],
+        "conflict_insufficient_answer": [
+          "CB4-2"
+        ],
+        "false_conflicts": [
+          "B02",
+          "CB1-1",
+          "CB3-1",
+          "CB3-3"
+        ],
+        "wrong_ids": [
+          "B02",
+          "B03",
+          "B11",
+          "B12",
+          "CB1-1",
+          "CB2-2",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-2",
+          "CB5-2"
+        ]
+      },
+      "tfidf": {
+        "n": 27,
+        "answered": 27,
+        "correct": 13,
+        "semantic_n": 22,
+        "semantic_correct": 8,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-3",
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B12",
+          "CB1-1",
+          "CB1-3",
+          "CB2-2",
+          "CB2-3",
+          "CB3-2",
+          "CB3-3",
+          "CB4-2",
+          "CB4-3",
+          "CB5-1",
+          "CB5-2"
+        ]
+      },
+      "qwen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 14,
+        "semantic_n": 22,
+        "semantic_correct": 9,
+        "conflict_n": 9,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B01",
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-1",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-1",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ]
+      }
+    }
+  },
+  "resource_records": {
+    "dual_workflow_sum_seconds": 82.85,
+    "slow_workflow_sum_seconds": 74.46,
+    "dual_load_seconds": 4765.87,
+    "process_total_seconds": 4851.95,
+    "measurement_scope": "逐例流程耗时合计不含此前模型加载；单次历史运行不作稳定性能基准"
+  },
+  "official_domain_batch_available": false,
+  "unmeasured": [
+    "工小审现有细粒度任务表现",
+    "独立业务标签",
+    "人员查证工时",
+    "完整处理成本",
+    "银行信用风险改善"
+  ],
+  "source_hashes": {
+    "评审整改\\实验结果\\holdout_dual.json": "9fb007a436ea14a0b66a27c8e5bd8d6e084ec74aa20dec1c50fc7f2bafc56eb8",
+    "评审整改\\实验结果\\holdout_slow.json": "9e920a55b5da182e545956461bca7de2aa0ec8d9aaa8a6c01bd7b34db5a54e7b",
+    "demo\\experiments\\review_holdout_v1\\labels.sealed.json": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3",
+    "评审整改\\PM19_领域适配与同任务对照_20261006\\summary.json": "d1130e7a77364601ef4ea696ea6fffb82174ae65c6a58e9d8fa42b5a96b05241",
+    "评审整改\\PM19_领域适配与同任务对照_20261006\\逐例同任务对照.csv": "097ea48b151550677675a1f1d9f4c0603b63e7fa87b544985409da85aef85424",
+    "评审整改\\PM12_Demo业务展示升级_20261002\\sources\\工行公开来源.json": "62a768232a4963adc30dd859141c2fdd4ff50a89d6e2c8cc362f51909ee90bf5"
+  },
+  "new_official_calls": 0
+}

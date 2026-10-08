@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="560" viewBox="0 0 1300 560" role="img" aria-labelledby="title desc">
+<title id="title">官方Jev贷前材料核验与结果交接</title>
+<desc id="desc">材料归集后先进行规则检查，满足条件时由官方Jev返回限定判断，再与原文证据形成核验事项包，交人员复核。复杂分析是后续协同设计，不代表已接入工银智涌。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#2773bd"/></marker></defs>
+<rect width="1300" height="560" fill="white"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#123b66" text-anchor="middle">
+<rect x="34" y="24" width="1232" height="62" rx="6" fill="#edf5fe"/>
+<text x="650" y="49" font-size="22" font-weight="bold">材料归集之后 · 综合审查之前</text>
+<text x="650" y="74" font-size="17">限定任务判断与材料依据共同交接，人员保留核实与审查责任</text>
+<g stroke="#2773bd" stroke-width="2" fill="#edf5fe">
+<rect x="34" y="148" width="206" height="140" rx="6"/>
+<rect x="282" y="148" width="206" height="140" rx="6"/>
+<rect x="530" y="148" width="240" height="140" rx="6" fill="#dcecff"/>
+<rect x="812" y="148" width="206" height="140" rx="6"/>
+<rect x="1060" y="148" width="206" height="140" rx="6" fill="#1762a9"/>
+</g>
+<g stroke="#2773bd" stroke-width="3" marker-end="url(#arrow)">
+<path d="M240 218H278"/><path d="M488 218H526"/><path d="M770 218H808"/><path d="M1018 218H1056"/>
+</g>
+<g font-size="22" font-weight="bold"><text x="137" y="183">材料与任务</text><text x="385" y="183">输入规则检查</text><text x="650" y="183">官方 Jev · System 1</text><text x="915" y="183">核验事项包</text><text x="1163" y="183" fill="white">人员复核与交接</text></g>
+<g font-size="18">
+<text x="137" y="221">申请用途 / 经营陈述</text><text x="137" y="250">订单 / 记录 / 有效版本</text>
+<text x="385" y="221">完整性与口径可比性</text><text x="385" y="250">缺件先补，条件先验</text>
+<text x="650" y="216">用途一致性 · 经营陈述矛盾</text><text x="650" y="245">限定候选 · 分布与置信度</text><text x="650" y="274" font-size="16">jev-1.13.0 · 按任务记录官方返回</text>
+<text x="915" y="221">判断 / 原文 / 疑点 / 版本</text><text x="915" y="250">依据取自材料索引</text>
+<text x="1163" y="221" fill="white">确认 / 纠正 / 核实</text><text x="1163" y="250" fill="white">拟议工小审事项承接</text>
+</g>
+<rect x="282" y="343" width="206" height="73" rx="6" fill="#f0f3f6" stroke="#9bb4cc"/>
+<text x="385" y="371" font-size="19">客观缺项 → 补件待办</text><text x="385" y="397" font-size="16">规则处理不请求模型</text>
+<path d="M385 288V339" stroke="#2773bd" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="530" y="343" width="488" height="73" rx="6" fill="#f5f9ff" stroke="#2773bd" stroke-dasharray="7 5"/>
+<text x="774" y="371" font-size="19">信息不足 / 明确矛盾 / 服务异常 → 人员接管</text><text x="774" y="397" font-size="16">复杂分析按需协同工银智涌（后续适配设计）</text>
+<path d="M650 288V339" stroke="#2773bd" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1018 380H1163V292" fill="none" stroke="#2773bd" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M385 416V445H1163V292" fill="none" stroke="#9bb4cc" stroke-width="1.5"/>
+<rect x="34" y="476" width="1232" height="60" rx="6" fill="#edf5fe"/>
+<text x="650" y="501" font-size="18">通用服务能力：限定判断　　项目业务设计：任务规范、规则门控、证据索引、版本留痕、人员责任</text>
+<text x="650" y="525" font-size="16">当前为自编仿真材料的官方服务接入；效果与收益由同任务对照评价，核验结果不构成授信决定</text>
+</g></svg>

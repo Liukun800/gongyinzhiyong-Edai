@@ -1,0 +1,1180 @@
+{
+  "system": "slow",
+  "suite": "holdout",
+  "input_sha256": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb",
+  "scope": "project-authored synthetic evaluation; no independent expert review",
+  "python": "3.13.2",
+  "protocol": "评审整改/G3_对照协议_v1.md",
+  "status": "completed",
+  "rows": [
+    {
+      "case_id": "H01",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C的借款六成买纸箱，四成买印刷标签，覆盖全部借款。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "对应申请C的采购清单列明：纸箱占借款60%，印刷标签占40%，无其他支出。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 399,
+          "completion_tokens": 30,
+          "wall_ms": 2688.79,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2701.46
+    },
+    {
+      "case_id": "H02",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C的全部借款仅用于纸箱和标签采购。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "对应申请C的实际支出说明：全部借款支付仓库租金，未采购任何纸箱或标签。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 30,
+          "wall_ms": 2693.12,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2694.84
+    },
+    {
+      "case_id": "H03",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C的借款六成买纸箱，四成买标签。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "仅附申请C中纸箱采购合同，说明剩余四成资金用途暂无资料。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 388,
+          "completion_tokens": 30,
+          "wall_ms": 2733.68,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2734.94
+    },
+    {
+      "case_id": "H04",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C借款仅采购木板；设备另以股东自有资金购买。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "资金明细：借款全部付木板供应商；设备价款完全由股东自有资金承担，两项不混用。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 394,
+          "completion_tokens": 30,
+          "wall_ms": 2620.66,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2621.92
+    },
+    {
+      "case_id": "H05",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C借款全部仅采购木板；不用于设备。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "资金明细明确：申请C全部借款付设备尾款，木板由股东自有资金购买。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 30,
+          "wall_ms": 2711.24,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2712.51
+    },
+    {
+      "case_id": "H06",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C借款仅采购木板。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "企业本期同时购入木板和设备，明细未注明哪项使用本次借款。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 380,
+          "completion_tokens": 30,
+          "wall_ms": 2773.15,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2774.4
+    },
+    {
+      "case_id": "H07",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C仅支付冷柜采购首付款，后续尾款另行筹资。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "同一冷柜合同约定本次借款支付首付款，尾款不占用此次借款。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 30,
+          "wall_ms": 2706.03,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2707.19
+    },
+    {
+      "case_id": "H08",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C全部借款只付冷柜采购首付款。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "本次借款付款凭证注明全部付广告服务费；冷柜首付款尚未支付。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 382,
+          "completion_tokens": 30,
+          "wall_ms": 2820.05,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2821.26
+    },
+    {
+      "case_id": "H09",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C仅支付冷柜采购首付款。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "附件仅说明冷柜总价，不说明首付款、付款安排及本次借款的对应关系。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 384,
+          "completion_tokens": 30,
+          "wall_ms": 2832.55,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2833.69
+    },
+    {
+      "case_id": "H10",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C只用于采购咖啡豆，委托代理商代采。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "代采协议明确代理商将申请C全部资金用于咖啡豆采购，不另作他用。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 30,
+          "wall_ms": 2708.28,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2709.5
+    },
+    {
+      "case_id": "H11",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C的资金全部只采购咖啡豆。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "代理商报告明确申请C的全部资金实际购买门店家具，未购咖啡豆。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 380,
+          "completion_tokens": 30,
+          "wall_ms": 2683.92,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2685.39
+    },
+    {
+      "case_id": "H12",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "申请C资金只采购咖啡豆。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "仅有向代理商转账回单，没有代采品类或用途的记载。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 377,
+          "completion_tokens": 30,
+          "wall_ms": 2764.27,
+          "actual_complex_model_requests": 1
+        },
+        "action": "review",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2765.66
+    },
+    {
+      "case_id": "H13",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月企业线下门店整月关门，但线上订单正常处理。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月线下门店没有营业，线上渠道持续接单。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 369,
+          "completion_tokens": 32,
+          "wall_ms": 2794.34,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2796.11
+    },
+    {
+      "case_id": "H14",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月企业所有线上和线下渠道均停止营业，没有任何接单。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月该企业线上渠道每天接单营业，线下门店关闭。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 372,
+          "completion_tokens": 33,
+          "wall_ms": 2822.26,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2823.49
+    },
+    {
+      "case_id": "H15",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月线下门店停业。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月报表写“业务仍在运行”，未注明是线下还是线上或其他业务。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 366,
+          "completion_tokens": 33,
+          "wall_ms": 2868.31,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2869.53
+    },
+    {
+      "case_id": "H16",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月一日至十日停业，十一日起恢复营业。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月前十天未营业，其余二十天持续营业。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 368,
+          "completion_tokens": 33,
+          "wall_ms": 2745.65,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2746.8
+    },
+    {
+      "case_id": "H17",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月一日至十日每天正常营业，没有停业。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月一日至十日完全停业，没有开展经营。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 369,
+          "completion_tokens": 32,
+          "wall_ms": 2785.29,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2786.39
+    },
+    {
+      "case_id": "H18",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月曾停业三天，未记具体日期。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月上旬中有七天正常营业，未记具体日期，其余日期状态不详。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 33,
+          "wall_ms": 2782.13,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2783.33
+    },
+    {
+      "case_id": "H19",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月新签合同金额为零，但收到五月旧合同回款。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月没有新签合同；当月回款全部来自五月合同。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 33,
+          "wall_ms": 2738.07,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2739.24
+    },
+    {
+      "case_id": "H20",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月新签合同数量为零。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "统计说明明确有三份合同在六月新签，不含续签或历史合同。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 370,
+          "completion_tokens": 33,
+          "wall_ms": 2728.49,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 2729.64
+    },
+    {
+      "case_id": "H21",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月新签合同数量为零。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月业务数量为三，但未定义“业务数量”是否指新签合同。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 370,
+          "completion_tokens": 33,
+          "wall_ms": 3957.78,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 3959.05
+    },
+    {
+      "case_id": "H22",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月东店暂停营业，西店持续营业。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月东店未营业；西店每天营业。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 365,
+          "completion_tokens": 33,
+          "wall_ms": 5164.38,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 5165.67
+    },
+    {
+      "case_id": "H23",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月东店全月停业。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "另一份记录明确同一东店在六月每天营业，并非西店。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 33,
+          "wall_ms": 5127.15,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 5128.76
+    },
+    {
+      "case_id": "H24",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "发现明确矛盾",
+        "reason": "一句中文",
+        "evidence": [
+          {
+            "document_id": "m1",
+            "paragraph_id": "p1",
+            "quote": "六月东店停业。",
+            "title": "材料1",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          },
+          {
+            "document_id": "m2",
+            "paragraph_id": "p1",
+            "quote": "六月某门店持续营业，但门店名称和归属无法确定。",
+            "title": "材料2",
+            "subject": "仿真企业丙",
+            "period": "2026-06"
+          }
+        ],
+        "evidence_validation": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+        "raw_output": "{\"answer\": \"发现明确矛盾\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+        "model": {
+          "name": "Qwen/Qwen2.5-0.5B-Instruct",
+          "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "device": "cpu",
+          "dtype": "float32",
+          "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+          "bank_connected": false
+        },
+        "usage": {
+          "prompt_tokens": 363,
+          "completion_tokens": 33,
+          "wall_ms": 5171.27,
+          "actual_complex_model_requests": 1
+        },
+        "action": "human",
+        "source": "real_slow_analysis",
+        "actual_complex_model_requests": 1
+      },
+      "wall_ms": 5172.38
+    },
+    {
+      "case_id": "H25",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "supplement",
+        "source": "input_rule",
+        "reason": "当前任务少于两份材料，先补充可供交叉比较的原文；未调用模型。",
+        "actual_complex_model_requests": 0,
+        "usage": {},
+        "evidence": []
+      },
+      "wall_ms": 0.01
+    },
+    {
+      "case_id": "H26",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "supplement",
+        "source": "input_rule",
+        "reason": "材料登记的主体不一致，需确认归属及关系；未调用模型。",
+        "actual_complex_model_requests": 0,
+        "usage": {},
+        "evidence": []
+      },
+      "wall_ms": 0.01
+    },
+    {
+      "case_id": "H27",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "supplement",
+        "source": "input_rule",
+        "reason": "材料登记的期间不一致，需补充同期间记录；未调用模型。",
+        "actual_complex_model_requests": 0,
+        "usage": {},
+        "evidence": []
+      },
+      "wall_ms": 0.02
+    },
+    {
+      "case_id": "H28",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "supplement",
+        "source": "input_rule",
+        "reason": "材料主体字段缺失，先补充归属信息；未调用模型。",
+        "actual_complex_model_requests": 0,
+        "usage": {},
+        "evidence": []
+      },
+      "wall_ms": 0.01
+    }
+  ],
+  "model": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "device": "cpu",
+    "dtype": "float32",
+    "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+    "bank_connected": false
+  },
+  "process_wall_seconds": 102.23
+}

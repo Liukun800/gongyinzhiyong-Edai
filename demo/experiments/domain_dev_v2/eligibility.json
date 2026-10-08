@@ -1,0 +1,380 @@
+[
+  {
+    "id": "U01",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_direct",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U02",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_direct",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U03",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_exclusive",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U04",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_exclusive",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U05",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_absent",
+    "input_rule_answer": "信息不足",
+    "semantic_training_eligible": false
+  },
+  {
+    "id": "U06",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_absent",
+    "input_rule_answer": "信息不足",
+    "semantic_training_eligible": false
+  },
+  {
+    "id": "U07",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_revision",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U08",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_revision",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U09",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U10",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U11",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_link",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "U12",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_link",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B01",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_consistent",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B02",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_consistent",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B03",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_opposed",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B04",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_opposed",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B05",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_period",
+    "input_rule_answer": "无法比较",
+    "semantic_training_eligible": false
+  },
+  {
+    "id": "B06",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_period",
+    "input_rule_answer": "无法比较",
+    "semantic_training_eligible": false
+  },
+  {
+    "id": "B07",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_subject",
+    "input_rule_answer": "无法比较",
+    "semantic_training_eligible": false
+  },
+  {
+    "id": "B08",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_subject",
+    "input_rule_answer": "无法比较",
+    "semantic_training_eligible": false
+  },
+  {
+    "id": "B09",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B10",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B11",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_correction",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "B12",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_correction",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU1-1",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_exclusive",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU1-2",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_exclusive",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU1-3",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_exclusive",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU2-1",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_direct",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU2-2",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_direct",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU2-3",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_direct",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU3-1",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_revision",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU3-2",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_revision",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU3-3",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_revision",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU4-1",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_link",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU4-2",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_link",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU4-3",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_link",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU5-1",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU5-2",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CU5-3",
+    "task_id": "USE_MATCH",
+    "lineage_group": "U_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB1-1",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_consistent",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB1-2",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_consistent",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB1-3",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_consistent",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB2-1",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_opposed",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB2-2",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_opposed",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB2-3",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_opposed",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB3-1",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB3-2",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB3-3",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_scope",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB4-1",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_correction",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB4-2",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_correction",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB4-3",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_correction",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB5-1",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_period",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB5-2",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_period",
+    "input_rule_answer": null,
+    "semantic_training_eligible": true
+  },
+  {
+    "id": "CB5-3",
+    "task_id": "BIZ_CONFLICT",
+    "lineage_group": "B_period",
+    "input_rule_answer": "无法比较",
+    "semantic_training_eligible": false
+  }
+]

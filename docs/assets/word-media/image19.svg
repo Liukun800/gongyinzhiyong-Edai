@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="700" viewBox="0 0 1350 700">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#3d7eac"/></marker></defs>
+<rect width="1350" height="700" fill="white"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#153e66">
+<text x="45" y="45" font-size="30" text-anchor="start" font-weight="bold">同任务领域开发对照</text>
+<text x="45" y="82" font-size="22" text-anchor="start" font-weight="normal">54份仿真材料：47份语义任务 + 7份共享规则任务；12个案例族隔离</text>
+<text x="45" y="117" font-size="22" text-anchor="start" font-weight="normal">对齐任务与候选答案；标签由项目编制，尚待独立业务复核</text>
+<text x="1000" y="164" font-size="20" text-anchor="middle" font-weight="bold">语义一致 / 47</text>
+<text x="1215" y="164" font-size="20" text-anchor="middle" font-weight="bold">全体一致 / 54</text>
+<text x="45" y="217" font-size="23" text-anchor="start" font-weight="normal">输入规则（语义弃答）</text>
+<rect x="450" y="191" width="470" height="34" rx="4" fill="#edf3fa"/>
+<rect x="450" y="191" width="0.00" height="34" rx="4" fill="#b9c9d8"/>
+<text x="1000" y="217" font-size="24" text-anchor="middle" font-weight="normal">0/47</text>
+<text x="1215" y="217" font-size="24" text-anchor="middle" font-weight="normal">7/54</text>
+<text x="45" y="281" font-size="23" text-anchor="start" font-weight="normal">固定 AgentJev-0.6B</text>
+<rect x="450" y="255" width="470" height="34" rx="4" fill="#edf3fa"/>
+<rect x="450" y="255" width="330.00" height="34" rx="4" fill="#1e5898"/>
+<text x="1000" y="281" font-size="24" text-anchor="middle" font-weight="normal">33/47</text>
+<text x="1215" y="281" font-size="24" text-anchor="middle" font-weight="normal">40/54</text>
+<text x="45" y="345" font-size="23" text-anchor="start" font-weight="normal">AgentJev 任务头适配</text>
+<rect x="450" y="319" width="470" height="34" rx="4" fill="#edf3fa"/>
+<rect x="450" y="319" width="330.00" height="34" rx="4" fill="#347eba"/>
+<text x="1000" y="345" font-size="24" text-anchor="middle" font-weight="normal">33/47</text>
+<text x="1215" y="345" font-size="24" text-anchor="middle" font-weight="normal">40/54</text>
+<text x="45" y="409" font-size="23" text-anchor="start" font-weight="normal">中文 BERT + 分类头</text>
+<rect x="450" y="383" width="470" height="34" rx="4" fill="#edf3fa"/>
+<rect x="450" y="383" width="260.00" height="34" rx="4" fill="#629ac8"/>
+<text x="1000" y="409" font-size="24" text-anchor="middle" font-weight="normal">26/47</text>
+<text x="1215" y="409" font-size="24" text-anchor="middle" font-weight="normal">33/54</text>
+<text x="45" y="473" font-size="23" text-anchor="start" font-weight="normal">字符 TF-IDF + 分类器</text>
+<rect x="450" y="447" width="470" height="34" rx="4" fill="#edf3fa"/>
+<rect x="450" y="447" width="210.00" height="34" rx="4" fill="#88b5d9"/>
+<text x="1000" y="473" font-size="24" text-anchor="middle" font-weight="normal">21/47</text>
+<text x="1215" y="473" font-size="24" text-anchor="middle" font-weight="normal">28/54</text>
+<text x="45" y="537" font-size="23" text-anchor="start" font-weight="normal">Qwen2.5-0.5B JSON 生成</text>
+<rect x="450" y="511" width="470" height="34" rx="4" fill="#edf3fa"/>
+<rect x="450" y="511" width="180.00" height="34" rx="4" fill="#a6c9e6"/>
+<text x="1000" y="537" font-size="24" text-anchor="middle" font-weight="normal">18/47</text>
+<text x="1215" y="537" font-size="24" text-anchor="middle" font-weight="normal">25/54</text>
+<text x="45" y="614" font-size="22" text-anchor="start" font-weight="normal">任务头适配：改善3例、退化3例；矛盾未识别从1例增至2例，默认模型保持。</text>
+<text x="45" y="650" font-size="21" text-anchor="start" font-weight="normal">本图评价具体本地配置；不代表官方 Jev、强大模型或银行业务准确率。</text>
+</g></svg>

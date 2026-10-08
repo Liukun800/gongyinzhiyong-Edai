@@ -1,0 +1,913 @@
+[
+  {
+    "id": "H01",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C的借款六成买纸箱，四成买印刷标签，覆盖全部借款。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "对应申请C的采购清单列明：纸箱占借款60%，印刷标签占40%，无其他支出。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H02",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C的全部借款仅用于纸箱和标签采购。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "对应申请C的实际支出说明：全部借款支付仓库租金，未采购任何纸箱或标签。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H03",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C的借款六成买纸箱，四成买标签。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仅附申请C中纸箱采购合同，说明剩余四成资金用途暂无资料。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H04",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C借款仅采购木板；设备另以股东自有资金购买。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "资金明细：借款全部付木板供应商；设备价款完全由股东自有资金承担，两项不混用。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H05",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C借款全部仅采购木板；不用于设备。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "资金明细明确：申请C全部借款付设备尾款，木板由股东自有资金购买。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H06",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C借款仅采购木板。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "企业本期同时购入木板和设备，明细未注明哪项使用本次借款。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H07",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C仅支付冷柜采购首付款，后续尾款另行筹资。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "同一冷柜合同约定本次借款支付首付款，尾款不占用此次借款。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H08",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C全部借款只付冷柜采购首付款。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本次借款付款凭证注明全部付广告服务费；冷柜首付款尚未支付。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H09",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C仅支付冷柜采购首付款。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "附件仅说明冷柜总价，不说明首付款、付款安排及本次借款的对应关系。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H10",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C只用于采购咖啡豆，委托代理商代采。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "代采协议明确代理商将申请C全部资金用于咖啡豆采购，不另作他用。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H11",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C的资金全部只采购咖啡豆。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "代理商报告明确申请C的全部资金实际购买门店家具，未购咖啡豆。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H12",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C资金只采购咖啡豆。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "仅有向代理商转账回单，没有代采品类或用途的记载。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H13",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月企业线下门店整月关门，但线上订单正常处理。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月线下门店没有营业，线上渠道持续接单。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H14",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月企业所有线上和线下渠道均停止营业，没有任何接单。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月该企业线上渠道每天接单营业，线下门店关闭。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H15",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月线下门店停业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月报表写“业务仍在运行”，未注明是线下还是线上或其他业务。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H16",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月一日至十日停业，十一日起恢复营业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月前十天未营业，其余二十天持续营业。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H17",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月一日至十日每天正常营业，没有停业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月一日至十日完全停业，没有开展经营。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H18",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月曾停业三天，未记具体日期。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月上旬中有七天正常营业，未记具体日期，其余日期状态不详。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H19",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月新签合同金额为零，但收到五月旧合同回款。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月没有新签合同；当月回款全部来自五月合同。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H20",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月新签合同数量为零。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "统计说明明确有三份合同在六月新签，不含续签或历史合同。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H21",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月新签合同数量为零。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月业务数量为三，但未定义“业务数量”是否指新签合同。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H22",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月东店暂停营业，西店持续营业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月东店未营业；西店每天营业。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H23",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月东店全月停业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "另一份记录明确同一东店在六月每天营业，并非西店。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H24",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月东店停业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "六月某门店持续营业，但门店名称和归属无法确定。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H25",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C借款仅采购耗材。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H26",
+    "revision": 1,
+    "task_id": "USE_MATCH",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "purpose",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "申请C采购耗材。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "purpose",
+        "subject": "仿真企业丁",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "文件记载申请C资金支付房租。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H27",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-05",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本月正常营业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "本月整月停业。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "H28",
+    "revision": 1,
+    "task_id": "BIZ_CONFLICT",
+    "documents": [
+      {
+        "id": "m1",
+        "title": "材料1",
+        "kind": "business",
+        "subject": "仿真企业丙",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "企业六月正常营业。"
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "材料2",
+        "kind": "business",
+        "subject": "",
+        "period": "2026-06",
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "企业六月整月停业。"
+          }
+        ]
+      }
+    ]
+  }
+]

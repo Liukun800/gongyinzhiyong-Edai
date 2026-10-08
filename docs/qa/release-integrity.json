@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_files": 338,
+  "source_copies_checked": 230,
+  "source_hash_checks": true,
+  "credential_patterns_checked": [
+    "typesafe_key",
+    "github_token",
+    "private_key",
+    "provider_key"
+  ],
+  "errors": [],
+  "network_calls": 0
+}

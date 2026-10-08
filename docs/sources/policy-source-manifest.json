@@ -1,0 +1,30 @@
+[
+  {
+    "name": "普惠金融实施意见",
+    "url": "https://www.gov.cn/zhengce/content/202310/content_6908495.htm",
+    "status": "fetched",
+    "sha256": "f51b26e1c5cfa2dc6fc4e84713fd7bfb47713538041b223f3e47e6f086ca70c8",
+    "length": 10894
+  },
+  {
+    "name": "数据安全管理办法",
+    "url": "https://www.gov.cn/zhengce/zhengceku/202412/content_6995081.htm",
+    "status": "fetched",
+    "sha256": "41bfe5b42c5c47f8aa20b1b4c217a4a14c0c6f2d9b72289e052e981295a89ad3",
+    "length": 25704
+  },
+  {
+    "name": "普惠金融行业报道",
+    "url": "https://jrj.sh.gov.cn/SCDT197/20240524/262eb293814d4f75a318bc2f7e276551.html",
+    "status": "fetched",
+    "sha256": "96f058de98f51ad3ab34ff9b9b9b7249c0ee02e0d6808a79c61d6e69c6d97a78",
+    "length": 4170
+  },
+  {
+    "name": "算力价值报道",
+    "url": "https://www.financialnews.com.cn/2026-09/16/content_457184.html",
+    "status": "fetched",
+    "sha256": "1822abb67864c5080abd9c8d331e64551549f50aafc0a8e60ac2264d0c9a3904",
+    "length": 5392
+  }
+]

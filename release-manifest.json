@@ -1,0 +1,1174 @@
+{
+  "date": "2026-10-08",
+  "repository": "https://github.com/Liukun800/gongyinzhiyong-Edai",
+  "source_word": "评审整改交付版/图文增强与痛点完善_20261008/工银智涌 e贷——基于Jev式判断与快慢协同的贷前材料核验引擎.docx",
+  "source_word_sha256": "756c125eac8113d4a40626f37bf0c8066c824a248d066332c37fbe3e34b07093",
+  "source_word_unchanged": true,
+  "latest_word_matches_previous_render": false,
+  "previous_render_sha256": "ac1607629d0fe2bfdb44a4741e22a8eb0ea117447e69bc9c0c5b9aeefd6dfcc6",
+  "new_official_calls": 0,
+  "official_protocol_measured_cases": 2,
+  "official_domain_batch_measured": false,
+  "bank_connected": false,
+  "copied_sources": [
+    {
+      "path": "docs/plan/工银智涌 e贷——基于Jev式判断与快慢协同的贷前材料核验引擎.docx",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/工银智涌 e贷——基于Jev式判断与快慢协同的贷前材料核验引擎.docx",
+      "sha256": "756c125eac8113d4a40626f37bf0c8066c824a248d066332c37fbe3e34b07093"
+    },
+    {
+      "path": "demo/app.py",
+      "source": "demo/app.py",
+      "sha256": "0d349892447f6c980f4b18c6ec2c8dd8754f37966a527334b7c3820c492933cd"
+    },
+    {
+      "path": "demo/download_model.py",
+      "source": "demo/download_model.py",
+      "sha256": "e0fe6f6205a0200c4a949022673b3d6f41c2656eddb5cec0a451d3ad697c5bfd"
+    },
+    {
+      "path": "demo/download_slow_model.py",
+      "source": "demo/download_slow_model.py",
+      "sha256": "ee3047fb0b2ae997b9e6d31ef0a6b7374006bc958c43199f557e4b7b6e0e34f8"
+    },
+    {
+      "path": "demo/dual_engine.py",
+      "source": "demo/dual_engine.py",
+      "sha256": "fce4bdcc1fcf85c60c2cf48e25e5f3e2cccd9cc2665dda5f82c55daa8f8596c1"
+    },
+    {
+      "path": "demo/engine.py",
+      "source": "demo/engine.py",
+      "sha256": "bea74f9daf9e8df7026222a2ca65db57308f65231a2d6d4a4c7868711621889d"
+    },
+    {
+      "path": "demo/judgement.py",
+      "source": "demo/judgement.py",
+      "sha256": "ad55956990736a2e2ca5bb075f460fa288bcf57d0a825118de2365759f5a0bdf"
+    },
+    {
+      "path": "demo/judgement_http.py",
+      "source": "demo/judgement_http.py",
+      "sha256": "6e08bbbdd6b4dc62b1ebccf22899fcc24591f05a5b9f7a3c599595a5459c88ea"
+    },
+    {
+      "path": "demo/JUDGEMENT_SERVICE.md",
+      "source": "demo/JUDGEMENT_SERVICE.md",
+      "sha256": "1cbc858a8a069d100c47d2a69b5b6993a2f0829b2d3a101f30d4e50e7370dab8"
+    },
+    {
+      "path": "demo/judgement_service.py",
+      "source": "demo/judgement_service.py",
+      "sha256": "a7360bbb22ae02433dcb756c2f80e72d793fa103a88c58c2381149f8f22ef452"
+    },
+    {
+      "path": "demo/official_model.py",
+      "source": "demo/official_model.py",
+      "sha256": "ca97cd1f284ab1a207ddda51ea9b491b8a9e0b9e915cdc362b43c86425c719ae"
+    },
+    {
+      "path": "demo/official_workbench.py",
+      "source": "demo/official_workbench.py",
+      "sha256": "5584bb79587c1e8b62490f7aa183c29bb01d7994712c098147f1485eb9eacd23"
+    },
+    {
+      "path": "demo/prepare_fixtures.py",
+      "source": "demo/prepare_fixtures.py",
+      "sha256": "aea9f5318d79bd9875f3d805001b97b4e8b44277c9020c2e5d5499e570329734"
+    },
+    {
+      "path": "demo/product_contract.py",
+      "source": "demo/product_contract.py",
+      "sha256": "0804f67b4258f4e0fee8bbfa658f04ec957b736e20f2f0a6381b3c17dfd94462"
+    },
+    {
+      "path": "demo/qa_browser.cjs",
+      "source": "demo/qa_browser.cjs",
+      "sha256": "bdaef6550ecaa9092c169d0e450a54183079b5a98514dc22ec273931a7918569"
+    },
+    {
+      "path": "demo/qa_business_entry.cjs",
+      "source": "demo/qa_business_entry.cjs",
+      "sha256": "feffa0f896be249047f008aaf0d4b193eed7d722c87295c816659b1c6a1a3d89"
+    },
+    {
+      "path": "demo/qa_capture_upgrade.cjs",
+      "source": "demo/qa_capture_upgrade.cjs",
+      "sha256": "59fc31ce613f5c6e2f2029b3c959f83c89a2fab7e7674e2c6e4a17ff6f089392"
+    },
+    {
+      "path": "demo/qa_final_product.cjs",
+      "source": "demo/qa_final_product.cjs",
+      "sha256": "f0b7960f09d46baf8e14c7cb5b2c4e718542a542221b76604240bd1232fe7466"
+    },
+    {
+      "path": "demo/qa_review_readonly.cjs",
+      "source": "demo/qa_review_readonly.cjs",
+      "sha256": "0f82331d0c579c3ff8cefc9c2b2cf9e627429048dc3f3cd4a9af586c55c04606"
+    },
+    {
+      "path": "demo/qa_shadow_browser.cjs",
+      "source": "demo/qa_shadow_browser.cjs",
+      "sha256": "a2e00c26fca1469ff81a3cf56b6c45844b4afcd50eacfbd3ac09cc9e743c89b5"
+    },
+    {
+      "path": "demo/qa_shadow_capture.cjs",
+      "source": "demo/qa_shadow_capture.cjs",
+      "sha256": "a68f6f1adc8dcb738f8bc7894eb8f626e29f91eba2a614916bdf870bd6f4715a"
+    },
+    {
+      "path": "demo/qa_shadow_live.py",
+      "source": "demo/qa_shadow_live.py",
+      "sha256": "5ec3d768c7d92aef9f2ba243fff1c9146749173bb7ba9288825a805c29339abd"
+    },
+    {
+      "path": "demo/qa_showcase.cjs",
+      "source": "demo/qa_showcase.cjs",
+      "sha256": "cb9be0877ceacb97d4b6ff370ea44f1c8f27c959df8af6eb8824d9b5475af5ab"
+    },
+    {
+      "path": "demo/qa_showcase_live.cjs",
+      "source": "demo/qa_showcase_live.cjs",
+      "sha256": "e9d4bc980b0e1c01fcfe271983c83dcb0b120866e10b02ea4b1848ca5a4dc956"
+    },
+    {
+      "path": "demo/qa_upgrade.cjs",
+      "source": "demo/qa_upgrade.cjs",
+      "sha256": "fc6d0bfe92bfde0280122b13eec5cfd839bb365dbcb3831f3cdbdc3cd8e7b841"
+    },
+    {
+      "path": "demo/README.md",
+      "source": "demo/README.md",
+      "sha256": "0666351f18d3544677dc660f723095a2067a82f27ed41472446cb236e6e3f4e4"
+    },
+    {
+      "path": "demo/real_model.py",
+      "source": "demo/real_model.py",
+      "sha256": "8dcbd1564a8772098ef2a016f5936342c9b1da7f41e927289b08cb3995d91fcd"
+    },
+    {
+      "path": "demo/shadow_engine.py",
+      "source": "demo/shadow_engine.py",
+      "sha256": "c015e07e481cccbf40761992dfa7168c30d92266bc349627917f61b6ddd23a5c"
+    },
+    {
+      "path": "demo/slow_model.py",
+      "source": "demo/slow_model.py",
+      "sha256": "49172d80e579d92ec2bd3b5339c40e30ed6894d7068863798640362d1204e188"
+    },
+    {
+      "path": "demo/start.ps1",
+      "source": "demo/start.ps1",
+      "sha256": "de402185367b0c0dab675a58a009ff4a16890d0d89ab2cd4bdbf56c3e63fcaf6"
+    },
+    {
+      "path": "demo/start_dual.ps1",
+      "source": "demo/start_dual.ps1",
+      "sha256": "713f5abf821492e26006a9b6cd152a3026266fc3b13644ef6984e638ab3f3d75"
+    },
+    {
+      "path": "demo/start_judgement_service.ps1",
+      "source": "demo/start_judgement_service.ps1",
+      "sha256": "83e4ff8c9cb6982bf4433e098f9434c1a0d1ec9f150c6b035b05608bebfe39d9"
+    },
+    {
+      "path": "demo/start_official.ps1",
+      "source": "demo/start_official.ps1",
+      "sha256": "673d57e3b372fe42e7f747be6f18d773a6b1edf0d0a058dcc8f9ada26ae17060"
+    },
+    {
+      "path": "demo/start_presentation.ps1",
+      "source": "demo/start_presentation.ps1",
+      "sha256": "aa8bfca784fdcc4eea2ff9be7f80125a1c5fe80cc984cc52bd90e2606b93bcc3"
+    },
+    {
+      "path": "demo/start_service_workbench.ps1",
+      "source": "demo/start_service_workbench.ps1",
+      "sha256": "021584d212c1566b8b4fb3a431f08fb16ae54a9f66ba49be30f65d0c8af98629"
+    },
+    {
+      "path": "demo/start_shadow.ps1",
+      "source": "demo/start_shadow.ps1",
+      "sha256": "f6fba69768f5516aa1badf38ebbcc0cbda1d0adadbff8146faa4fbb2f1b8f19f"
+    },
+    {
+      "path": "demo/test_demo.py",
+      "source": "demo/test_demo.py",
+      "sha256": "e8b6746532ce43ba84d11f66f234a7aff97eba17634a7a864fc0348a5666976f"
+    },
+    {
+      "path": "demo/test_domain_data.py",
+      "source": "demo/test_domain_data.py",
+      "sha256": "7e390a8a3fa5893fb7e9619dad21293574c528cc1333a7c1871a7402415a64fd"
+    },
+    {
+      "path": "demo/test_dual_engine.py",
+      "source": "demo/test_dual_engine.py",
+      "sha256": "d313977a8e6de58e9923fd33a1ef3d9fca5ed30b0d8bb3411355d4fb91a50e97"
+    },
+    {
+      "path": "demo/test_experiments.py",
+      "source": "demo/test_experiments.py",
+      "sha256": "d86f1cfd1d2966da33a4e5bd56775ca8c1b1cdaa206f557859c0dfec74136cef"
+    },
+    {
+      "path": "demo/test_intake.py",
+      "source": "demo/test_intake.py",
+      "sha256": "edf7016ccca0898f84b1185fbe6ddd23c6ad1f6f8388064a403fa87839d5f84d"
+    },
+    {
+      "path": "demo/test_judgement.py",
+      "source": "demo/test_judgement.py",
+      "sha256": "b2ddbda2fe12e56b243736e083e04296fcfe1304f1111681c8cbf75782fac4bd"
+    },
+    {
+      "path": "demo/test_official_model.py",
+      "source": "demo/test_official_model.py",
+      "sha256": "3423d73883185193e331511f644d435b357960066d9dc3650e688b3c32eb10ef"
+    },
+    {
+      "path": "demo/test_product_contract.py",
+      "source": "demo/test_product_contract.py",
+      "sha256": "bb38db6c6231141e9d529eaab949924d310d3e943a9449924531132d96955311"
+    },
+    {
+      "path": "demo/test_review_holdout.py",
+      "source": "demo/test_review_holdout.py",
+      "sha256": "558ee1418089958cfa9e9485c2272f233a28169928b4c37eb8b8363c4ed973b1"
+    },
+    {
+      "path": "demo/test_review_remediation.py",
+      "source": "demo/test_review_remediation.py",
+      "sha256": "7076de9bbf39f669f95c1bf1a65fb7b42c1fc6c3f3379b3bc2543fd1722a0b90"
+    },
+    {
+      "path": "demo/test_shadow.py",
+      "source": "demo/test_shadow.py",
+      "sha256": "ac0857f1d969728fbe091f0b9c53695db2e62cd68cd7b3beaf48c3d15f61684d"
+    },
+    {
+      "path": "demo/test_upstream.py",
+      "source": "demo/test_upstream.py",
+      "sha256": "39507c9af49582469050ae8c7b4d355a0291dac1064c120e041c1bcbd041b6f5"
+    },
+    {
+      "path": "demo/typesafe_client.py",
+      "source": "demo/typesafe_client.py",
+      "sha256": "9c2931c9092ddcbc582a912739f5717ccf2368e6041d11f66d03fe9e26837158"
+    },
+    {
+      "path": "demo/upstream_model.py",
+      "source": "demo/upstream_model.py",
+      "sha256": "4d5b1087a23a07e3b791521e2aa7c0ec2f19a2b5eb86c1e6dd8f3a7ff6227376"
+    },
+    {
+      "path": "demo/V1影子版接入记录.md",
+      "source": "demo/V1影子版接入记录.md",
+      "sha256": "1e5a9993c3f93b7144e5661acb5bc681562c8d5ada5e6e669eb1db3c1757d2d1"
+    },
+    {
+      "path": "demo/启动包_任务标注与接口.md",
+      "source": "demo/启动包_任务标注与接口.md",
+      "sha256": "7dc2d699fe82d31ba17f8d0cd95f70d2f8a6f60ba9a87de0256fa5a836fe752c"
+    },
+    {
+      "path": "demo/data/annotations.json",
+      "source": "demo/data/annotations.json",
+      "sha256": "9acd0739f4cc6eaf9016654c844ed4783c107fcb9a321e2cb2964d7a1e052cca"
+    },
+    {
+      "path": "demo/data/cases.json",
+      "source": "demo/data/cases.json",
+      "sha256": "6390e0a7a7b96ed7446f9916ae62b3d1184e1f54f2314cc184a6973767cc1e4b"
+    },
+    {
+      "path": "demo/static/app.js",
+      "source": "demo/static/app.js",
+      "sha256": "230280d7a93b47c06ce13df0dd024e13fe6cec5b102617b194b2049828bcb4d0"
+    },
+    {
+      "path": "demo/static/blue.css",
+      "source": "demo/static/blue.css",
+      "sha256": "50c40128f5fac4634bd9e8507c41c580ef0c006e329904760f67b21fbd7ee3fd"
+    },
+    {
+      "path": "demo/static/ecosystem.svg",
+      "source": "demo/static/ecosystem.svg",
+      "sha256": "80b50da8905ad3ae320081bbdeaef2eb5eaaf77c46537e5e5a49cf1f226ab70c"
+    },
+    {
+      "path": "demo/static/index.html",
+      "source": "demo/static/index.html",
+      "sha256": "4e3a8bb9d67fd15059cdac992468fb4171b36690c9dc46ea04a17aa48cf0f486"
+    },
+    {
+      "path": "demo/static/intake.js",
+      "source": "demo/static/intake.js",
+      "sha256": "9adf5016dae3428e16b3faee10ce6d7f10e8c5aeb9ecb94a3797058c2de3f608"
+    },
+    {
+      "path": "demo/static/official-ui.js",
+      "source": "demo/static/official-ui.js",
+      "sha256": "b1d3cb731ce87de1b8e4524d88b4df11def7513f5ae59ce0eb69db6201d59a1d"
+    },
+    {
+      "path": "demo/static/pm15-handoff.svg",
+      "source": "demo/static/pm15-handoff.svg",
+      "sha256": "ffef0e363619614e41eda751176a926fb93de053e4ba456d4b54057a70a397b3"
+    },
+    {
+      "path": "demo/static/pm15-relations.svg",
+      "source": "demo/static/pm15-relations.svg",
+      "sha256": "e722ac7e2045e44062639f8774df021d063d26d22918c294bafa1556173cef8f"
+    },
+    {
+      "path": "demo/static/product.css",
+      "source": "demo/static/product.css",
+      "sha256": "5decd87be38556de4818ececd4712ba78c03024804d851d3dfa3224da22432dc"
+    },
+    {
+      "path": "demo/static/product.js",
+      "source": "demo/static/product.js",
+      "sha256": "4b447a5ae44c655dd3217a700d5dc81c5ba794f46208211c53a743dc95121979"
+    },
+    {
+      "path": "demo/static/showcase.css",
+      "source": "demo/static/showcase.css",
+      "sha256": "59bb374f0933a24061de50258ca87970f7518979c86fe87ecd76acc195fbd325"
+    },
+    {
+      "path": "demo/static/showcase.js",
+      "source": "demo/static/showcase.js",
+      "sha256": "00e871594c0d8a210ed26929b8e26b00f8b95747c19e88fda2c2e7fd7792a785"
+    },
+    {
+      "path": "demo/static/style.css",
+      "source": "demo/static/style.css",
+      "sha256": "fc3eee0995b1188d0e6ad79492823fe432386f99732b14ca4e8ec79671462368"
+    },
+    {
+      "path": "demo/vendor/agentjev/contract.py",
+      "source": "demo/vendor/agentjev/contract.py",
+      "sha256": "8823fbe3aa99ff666603c3178f013198233b9280d43422b91d590f2e2ea3b30e"
+    },
+    {
+      "path": "demo/vendor/agentjev/LICENSE",
+      "source": "demo/vendor/agentjev/LICENSE",
+      "sha256": "88d8bf71a88989d44858f589705666bb5c6ff1eca355e058aa307c4fe0bf5d25"
+    },
+    {
+      "path": "demo/vendor/agentjev/model.py",
+      "source": "demo/vendor/agentjev/model.py",
+      "sha256": "03b72ec19774bda15075dcb3a586af81b2d76fe9907737f96a08657c06488ecf"
+    },
+    {
+      "path": "demo/vendor/agentjev/NOTICE.md",
+      "source": "demo/vendor/agentjev/NOTICE.md",
+      "sha256": "ddbdfee482d332a121d2db94b4b71c8ae188b9efbc89ac9bdd0043cc50ac7ed1"
+    },
+    {
+      "path": "demo/experiments/build_development_set.py",
+      "source": "demo/experiments/build_development_set.py",
+      "sha256": "2b2d6c55af443b2fadd68a6e313b7e82b81ed117948e0c2e3f52c1f2002fddbe"
+    },
+    {
+      "path": "demo/experiments/build_review_holdout.py",
+      "source": "demo/experiments/build_review_holdout.py",
+      "sha256": "5678e3ce27cfea9c48c57d24fca23f8c2ff03e89b9bf8a33a43b0da7563fa62a"
+    },
+    {
+      "path": "demo/experiments/dataset_manifest.json",
+      "source": "demo/experiments/dataset_manifest.json",
+      "sha256": "94e22cbabb1cba88d10191594446162960f6bfe19bf63491c7a4b2b77cb13cc0"
+    },
+    {
+      "path": "demo/experiments/development_cases.json",
+      "source": "demo/experiments/development_cases.json",
+      "sha256": "8814ab39756fa2812d3e2ed05bf7752f3adba3aa80e37c636cead61c4737d497"
+    },
+    {
+      "path": "demo/experiments/development_labels.json",
+      "source": "demo/experiments/development_labels.json",
+      "sha256": "6c0894fc3fbe5776a9d97e93e2f02ca137860b089cc9e424c4af7ef0f56345f2"
+    },
+    {
+      "path": "demo/experiments/prepare_domain_adaptation.py",
+      "source": "demo/experiments/prepare_domain_adaptation.py",
+      "sha256": "e8373f322b532e6ba9f8ad69089eed93157513c7d88b9e8dece293b8cfe948e2"
+    },
+    {
+      "path": "demo/experiments/run_development.py",
+      "source": "demo/experiments/run_development.py",
+      "sha256": "b09ffc9d01267ef37f1a3779944938933ba0e0ba05bc60f6bf9dce8656d48b9e"
+    },
+    {
+      "path": "demo/experiments/run_pm19_adaptation.py",
+      "source": "demo/experiments/run_pm19_adaptation.py",
+      "sha256": "ff9c44500e4d744a8f01dbcca0e00e072a750b7ce312df5f9cf3f93c5436e4ac"
+    },
+    {
+      "path": "demo/experiments/run_review_benchmark.py",
+      "source": "demo/experiments/run_review_benchmark.py",
+      "sha256": "d1a2f4160dc4f7ca02d38270d46b9fbc25aa5f6f91af6fd0a9231936a509dc41"
+    },
+    {
+      "path": "demo/experiments/run_semantic_constraints.py",
+      "source": "demo/experiments/run_semantic_constraints.py",
+      "sha256": "fd16dc86880a84a4fb4353a06cc9fc1fc0fc437221eb7d8df80b04b18ca49c80"
+    },
+    {
+      "path": "demo/experiments/semantic_constraints_v1.py",
+      "source": "demo/experiments/semantic_constraints_v1.py",
+      "sha256": "eb797e98a295e9be739abf14b41cd12ff6a4b8e5abbe81c593671f9e5f2126b8"
+    },
+    {
+      "path": "demo/experiments/summarize_review_benchmark.py",
+      "source": "demo/experiments/summarize_review_benchmark.py",
+      "sha256": "c80f9a3df066ed29a252b9ead309f08cb9e3ab2ca4c8ef9fa3f9e3b90cf9c6c5"
+    },
+    {
+      "path": "demo/experiments/标注规范与运行说明.md",
+      "source": "demo/experiments/标注规范与运行说明.md",
+      "sha256": "8308b73ca63a131e526d3e36b0ca5c66ea841216c8a4460077ee43c68a9a230e"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/30份成组对比材料审阅册.md",
+      "source": "demo/experiments/domain_dev_v2/30份成组对比材料审阅册.md",
+      "sha256": "2e637b4c3ddbf9b8eae2e205c1d90fbcbd7386a7b62071031370f26245ca0381"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/combined_cases.json",
+      "source": "demo/experiments/domain_dev_v2/combined_cases.json",
+      "sha256": "c3a49ed53995a1844cc18cfedacb7b6fa98feb14d07ba01039650a8a2a691912"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/combined_labels.json",
+      "source": "demo/experiments/domain_dev_v2/combined_labels.json",
+      "sha256": "712437f28647e09b2f0bdb9994a79f597dfbf60b4f7803430c2b9975d0187553"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/contrast_cases.json",
+      "source": "demo/experiments/domain_dev_v2/contrast_cases.json",
+      "sha256": "8a27509a4400882ae89d8703f0e3897829ea50340dc483d25d4a12e79d15f15f"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/contrast_labels.json",
+      "source": "demo/experiments/domain_dev_v2/contrast_labels.json",
+      "sha256": "664d1d5f6228929001a69fd629d3a2c966b7362effd9ca38004f68cb49bedf0f"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/development_folds.json",
+      "source": "demo/experiments/domain_dev_v2/development_folds.json",
+      "sha256": "03abc56361bc06acbc09fc07208fcf692c4f65368fd136773c592b467f2b1d85"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/eligibility.json",
+      "source": "demo/experiments/domain_dev_v2/eligibility.json",
+      "sha256": "ae94ce5465b1a7ee3cdfd4c18f14d45b87a50581f1596e4c25813cb2e71c0e56"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/manifest.json",
+      "source": "demo/experiments/domain_dev_v2/manifest.json",
+      "sha256": "fd7e8be6756d4fb41ce136ae63e32cb4dec902b99d82f38ed582e6bd7718e245"
+    },
+    {
+      "path": "demo/experiments/domain_dev_v2/training_records.jsonl",
+      "source": "demo/experiments/domain_dev_v2/training_records.jsonl",
+      "sha256": "a7ca7bab242d88104e48e7f359aeb9b014b1b8324ea361e65f4219fa06c04688"
+    },
+    {
+      "path": "demo/experiments/results/agentjev_progress.json",
+      "source": "demo/experiments/results/agentjev_progress.json",
+      "sha256": "8505ce07d1a43b48ebe4d06d9252e132ecffc3694f5ace992f50a0f843af155a"
+    },
+    {
+      "path": "demo/experiments/results/development_comparison.json",
+      "source": "demo/experiments/results/development_comparison.json",
+      "sha256": "1ce0d87fe50ab9f431a31fab8f1efd5315abbf24ca0f8531bd878439a10b258d"
+    },
+    {
+      "path": "demo/experiments/review_holdout_v1/cases.json",
+      "source": "demo/experiments/review_holdout_v1/cases.json",
+      "sha256": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb"
+    },
+    {
+      "path": "demo/experiments/review_holdout_v1/evaluation_record.json",
+      "source": "demo/experiments/review_holdout_v1/evaluation_record.json",
+      "sha256": "ab93bb66a56874ccd0e4150b229b7710e938eb42c2137ad4d47b5d34863875ca"
+    },
+    {
+      "path": "demo/experiments/review_holdout_v1/independent_review.csv",
+      "source": "demo/experiments/review_holdout_v1/independent_review.csv",
+      "sha256": "1e6d2af896c09ec053e90c75ae5ec25d0399a1cb6a05c01198c3d205cbefebad"
+    },
+    {
+      "path": "demo/experiments/review_holdout_v1/labels.sealed.json",
+      "source": "demo/experiments/review_holdout_v1/labels.sealed.json",
+      "sha256": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3"
+    },
+    {
+      "path": "demo/experiments/review_holdout_v1/manifest.json",
+      "source": "demo/experiments/review_holdout_v1/manifest.json",
+      "sha256": "f6f10ee1147805c23544ce547892c8480b279a762d866d6fe054c3a3538e88bc"
+    },
+    {
+      "path": "评审整改/实验结果/development_dual.json",
+      "source": "评审整改/实验结果/development_dual.json",
+      "sha256": "af951aeb789b995bf1f55597b04ee7fb57cc0abd6ed0143bf0c4634abec619f9"
+    },
+    {
+      "path": "评审整改/实验结果/holdout_dual.json",
+      "source": "评审整改/实验结果/holdout_dual.json",
+      "sha256": "9fb007a436ea14a0b66a27c8e5bd8d6e084ec74aa20dec1c50fc7f2bafc56eb8"
+    },
+    {
+      "path": "评审整改/实验结果/holdout_encoder.json",
+      "source": "评审整改/实验结果/holdout_encoder.json",
+      "sha256": "6a5b4ac8e0498a9176bf60b99ccac28ec9703e28765b395b3d5aad40d68d1aac"
+    },
+    {
+      "path": "评审整改/实验结果/holdout_slow.json",
+      "source": "评审整改/实验结果/holdout_slow.json",
+      "sha256": "9e920a55b5da182e545956461bca7de2aa0ec8d9aaa8a6c01bd7b34db5a54e7b"
+    },
+    {
+      "path": "评审整改/实验结果/冻结挑战汇总.json",
+      "source": "评审整改/实验结果/冻结挑战汇总.json",
+      "sha256": "037411bda4338d11879ebd715920965e22200f0ea3cd65cc9dd934f4d2689d0b"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/README.md",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/README.md",
+      "sha256": "3276792059693ff89f70c66c7b14cef29b417d505fa234e75b4f751c3c78042d"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/frozen_protocol.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/frozen_protocol.json",
+      "sha256": "56c9cea4280bbbe2caf2532d4e407d2359b5f0d22fa7c646d4978907d2347151"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/agentjev_checkpoint.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/agentjev_checkpoint.json",
+      "sha256": "1f36145bf2d08e1b769466595b8e0a7b5cccffeaa04a86f40fa05a703aa915e0"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/summary.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/summary.json",
+      "sha256": "d1130e7a77364601ef4ea696ea6fffb82174ae65c6a58e9d8fa42b5a96b05241"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/grouped_oof_comparison.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/grouped_oof_comparison.json",
+      "sha256": "a25d6913c158e1467fd193ebec72af4744fc03c720bca43c12f8f0d3473f106b"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/qwen_raw_outputs.jsonl",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/qwen_raw_outputs.jsonl",
+      "sha256": "d7004035daf293cddad7bbb29c7c9ec499ae27088d43fe0b4f473ee60ab9b95e"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/qwen_same_task_comparison.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/qwen_same_task_comparison.json",
+      "sha256": "e8a1d45e66263239c79fdac50e715c4e00d88ea25e84e0085d0147e2c57ca9f4"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/raw_capture_protocol.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/raw_capture_protocol.json",
+      "sha256": "c7a0670dfe543b0a00cf081d1487ec85dcd707e48504c95e7d20f204d4dfbc13"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/build_report.py",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/build_report.py",
+      "sha256": "fdaee8265f8e131db6cf70921ba76e5dd1d734e82cc2c43589153edd4a620611"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/run_qwen_observed.py",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/run_qwen_observed.py",
+      "sha256": "bc9118654581ed7e9aa542b01e4627b11f0a8254e92a6ce170875892bfdcec61"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/逐例同任务对照.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/逐例同任务对照.csv",
+      "sha256": "097ea48b151550677675a1f1d9f4c0603b63e7fa87b544985409da85aef85424"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/领域适配与对照结论.md",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/领域适配与对照结论.md",
+      "sha256": "56ddc7c6923fec44767ed3b41579cb49699c7336ba29b9ab1f8dbabdf7cc515d"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/同任务开发对照_蓝色.svg",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/同任务开发对照_蓝色.svg",
+      "sha256": "96ffd5cec7a0a4f4064c5e1debfea25584e3da222583f7a52a2c03802522ae3f"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/领域适配开发报告.html",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/领域适配开发报告.html",
+      "sha256": "977f56e63f608e2f82a750645994c1fbc2197eb6000c4f7bcda0f9c361073270"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接说明.md",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接说明.md",
+      "sha256": "25c4d397d9dcb43cbf870bcbdd463cc2cf57d784a6c161b5b99b36b80693a897"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/01_业务接入确认.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/01_业务接入确认.csv",
+      "sha256": "0707d3f851668d16f392074b3fcfb811183376774fc3cf1d18eea2ac0194e2b1"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/02_独立业务复核.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/02_独立业务复核.csv",
+      "sha256": "66a139d81b4aa79c44e2af38dd4609a63706645079e1ff96773e578364658c67"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/03_验收条件预登记.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/03_验收条件预登记.csv",
+      "sha256": "c3ddaa3d908d222a8be1726705fb57f550d630efd237140eb342c6449a8b29cf"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/04_人工工时测量.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/04_人工工时测量.csv",
+      "sha256": "36986d5f7370f4e94faf1d36a8887526b3e52ef435740c4a1d9a1ef94981e212"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/05_资源费用测量.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/05_资源费用测量.csv",
+      "sha256": "75e85c71ee74a86a607bbfb6687c5727b7a8d5d7edf5a8c02e9b426e15b1081f"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/06_环境故障验证.csv",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/06_环境故障验证.csv",
+      "sha256": "933e061b520c5df4bef53e9475c956d01554ef85d093de45afe84b340be3e893"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/仿真资料_盲复核输入.json",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/仿真资料_盲复核输入.json",
+      "sha256": "8b41fee42f86161db942d2149314a096ee78a79581c264c454e66edb22e22668"
+    },
+    {
+      "path": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/使用说明.md",
+      "source": "评审整改/PM19_领域适配与同任务对照_20261006/银行离线验证交接包/使用说明.md",
+      "sha256": "893a4e29c463fbfa669dddb37e9389cc17e8c1f07f8990e1ab21faa08681b586"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/README.md",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/README.md",
+      "sha256": "5385701214dec6bdc6504c414daaff7445b6c74fc7ccd07105453657adc26e20"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/cases.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/cases.json",
+      "sha256": "b613302e5d73a14ef10d1ed8032d67ae604fa453ef2ffbf72cbf0277e744a410"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/references.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/references.json",
+      "sha256": "229d64fec8ce09df742d781be24aa6c0b1f2e58a32559acd82f9b26a43fdd4da"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/protocol.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/protocol.json",
+      "sha256": "a41095da1b221cbee5361608710cf97d64c574ac33d006d8c02a8fe35c63ee8f"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/official_client.py",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/official_client.py",
+      "sha256": "b5545d84210fa4d3948c37ea6ad9ebba4cf2256b5a731e76f4db384d231d32b8"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_minimum.py",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_minimum.py",
+      "sha256": "ea50308af3f85705a14a3e0c2a905b6a32ae880adc506247c43f6281f38afda3"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/summarize_minimum.py",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/summarize_minimum.py",
+      "sha256": "e77d23079679c25c0898caa396b8f4b84c8c06246ba08edbbf96fe27a30af82d"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/test_minimum_report.py",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/test_minimum_report.py",
+      "sha256": "f67fffcc6c903e41a4ee665f4e506b0ead5701510069c2acd2aa2ac3bd9ed51d"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/test_official_client.py",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/test_official_client.py",
+      "sha256": "e91cac0a00543461fcb96a4d236c529c74a29805dc8fc6aaf2ecb2d5cbe3dd04"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/official_api.md",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/official_api.md",
+      "sha256": "6b760275f89341fe15cff80c28aacae94d7d0c0c99afcd987ec0bca680b5713a"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/official_models.md",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/official_models.md",
+      "sha256": "15351adaab85874b5f1a942fc2fdf3c7b3ecadcc936d580793d734855a0038f3"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/official_sources.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/official_sources.json",
+      "sha256": "7a88003ebc4b55648c57ef914988a99bb9a53d9d20bd46ad4ca76d7287172711"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/配置官方Jev.ps1",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/配置官方Jev.ps1",
+      "sha256": "5b40770e19549ad3db17169d51774b76509b8409e3bf4b852f2a448ec3b36fda"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/开始官方最小验证.ps1",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/开始官方最小验证.ps1",
+      "sha256": "a27683f7af4efeba5856bcc10a2faf6211345442566061c5e659806ff0e7c8ef"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/mu架构复用与银行适配.md",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/mu架构复用与银行适配.md",
+      "sha256": "f2d459cc4d820f7749944aabd484bedd7a086c8c9b7ab25a1a112748e529c97b"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/manifest.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/manifest.json",
+      "sha256": "95eaab7dc0219ab17954a456870105033e673662ed5ff9d0b7d706d3b0bca5d9"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_BIZ_001.request.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_BIZ_001.request.json",
+      "sha256": "6b720ebff41e7b4a65dbe48a6d1d417087e62891667f64a112b46bd919684aa7"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_BIZ_001.response.redacted.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_BIZ_001.response.redacted.json",
+      "sha256": "adc846565f2ccf40e8a8f8dc8333c5db48f44c2453d058a33e51ae8d1e5e0447"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_USE_001.request.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_USE_001.request.json",
+      "sha256": "11e9860751f1cc87dcd7fbaf53d75708138291fb8c1c5d7699bd6fe84422add0"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_USE_001.response.redacted.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/OFFICIAL_USE_001.response.redacted.json",
+      "sha256": "0e76884afba24f9f4a71fc912a14974b92a18d7d8db9c13332fa6378d3d1b081"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/usage_summary.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/usage_summary.json",
+      "sha256": "60f705a6bae7a097c5c549b97358f2bc567442b883f0ccebb578c1eaaa1237bb"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/validated_report.json",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/validated_report.json",
+      "sha256": "da5c68f29675f046afcef24faa05f9747246349f96041e780c9144e0f25a475d"
+    },
+    {
+      "path": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/官方最小验证简报.md",
+      "source": "评审整改/PM20_官方Jev判断头最小验证/run_20261007T060327173836Z/官方最小验证简报.md",
+      "sha256": "9e47d750cd6a3de2e404a1ebb31ed2c633b37fe3b8c0558a99e559e8bc75436c"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/README.md",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/README.md",
+      "sha256": "b728d6febc705e263fa5106e39955e49454ff2f39396ee5b935e2094acf5c499"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/run_comparison.py",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/run_comparison.py",
+      "sha256": "fd0fca46ccf405a959df160ea49d77c9de206c2b22187d5ccc69144f7c958c4b"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/test_comparison.py",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/test_comparison.py",
+      "sha256": "b14f95273520df4e1e55db06436aa831923d26f7404ebd1163b6f146567884d5"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/build_comparison_report.py",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/build_comparison_report.py",
+      "sha256": "ee74ee819040d6cf8d86a81d1df8b547719a0c48e5a7361e1b8a1a396a0ff20c"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/inputs.json",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/inputs.json",
+      "sha256": "c6c5453845b0dce278386c1e86c225245713e68462f6be98fe5fa86849b3f2d0"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/references.json",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/references.json",
+      "sha256": "8a92aaf63bf4f59861c04ecf8aecb563d9e044ba78b016bb711bf9b12a067153"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/protocol.json",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/protocol.json",
+      "sha256": "2f8c88f9edfd9eac6e5604b1bed94bf66ab7389ccd674eba0acd107127635bdd"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/开始官方同任务对照.ps1",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/开始官方同任务对照.ps1",
+      "sha256": "4f7360f59e8beed448762431b51cf281f4d99003c9805fc7166a7187a7467cf0"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/browser_checks.json",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/browser_checks.json",
+      "sha256": "90b746b8fb56ac5a9289d954d4f6bdc40f4f003ede773f29d934f777f965b149"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/官方Jev业务接入.svg",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/官方Jev业务接入.svg",
+      "sha256": "7104af11f2386c55d6d3ada092cf19eeb88c0928497a099d553f13b4f54562c9"
+    },
+    {
+      "path": "评审整改/PM21_官方Jev业务接入与同任务对照/word_diagram.svg",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/word_diagram.svg",
+      "sha256": "323b89e7b7e2ecb5e7623828fa7af582c819f83cb150bf2cf7ca5d57db676f62"
+    },
+    {
+      "path": "docs/screenshots/official-deployment-1440.png",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/official-deployment-1440.png",
+      "sha256": "7d75228b988cf483f6edc4710cfa30e5be3fe233316d0bd3fe24b5207570a158"
+    },
+    {
+      "path": "docs/screenshots/official-deployment-390.png",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/official-deployment-390.png",
+      "sha256": "af227050b1e4c36f1bf0d99e8ba41e401fa4cc007220a98accbdb71492ce6c06"
+    },
+    {
+      "path": "docs/screenshots/official-preview-1440.png",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/official-preview-1440.png",
+      "sha256": "9a6674686117f88ff2e0aa31f2283fdd7bb9a0672a7878c97dde78da6d424800"
+    },
+    {
+      "path": "docs/screenshots/official-preview-390.png",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/official-preview-390.png",
+      "sha256": "55f0261524d0496fd8c5367c100a25e7b0f9f734e2f7dfbc89f57368596f126e"
+    },
+    {
+      "path": "docs/screenshots/official-workbench-1440.png",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/official-workbench-1440.png",
+      "sha256": "18ff37140efa983d507fe09e26b9f276eadb54ad2569639bf2a94dfabbe4ce21"
+    },
+    {
+      "path": "docs/screenshots/official-workbench-390.png",
+      "source": "评审整改/PM21_官方Jev业务接入与同任务对照/official-workbench-390.png",
+      "sha256": "877c13c7e1a099c0487c360c0452ae7fb05700730108d9561fdaee6c55b4da69"
+    },
+    {
+      "path": "评审整改/PM18_判断服务适配_20261006/实现与验收说明.md",
+      "source": "评审整改/PM18_判断服务适配_20261006/实现与验收说明.md",
+      "sha256": "be2b71274926cdc16b473ac69e21031ceafbbfbb9f15d12218f3e8d7cee2e9ae"
+    },
+    {
+      "path": "评审整改/PM18_判断服务适配_20261006/final_acceptance.json",
+      "source": "评审整改/PM18_判断服务适配_20261006/final_acceptance.json",
+      "sha256": "6dccd02e3778087cbaa870273dc2c73108288299ddd922b803ea58bcf559bbb2"
+    },
+    {
+      "path": "评审整改/PM18_判断服务适配_20261006/browser_acceptance.json",
+      "source": "评审整改/PM18_判断服务适配_20261006/browser_acceptance.json",
+      "sha256": "c9ae517febd3e1570d3d890176090a6479f10e972d613d3238a53d9f92620763"
+    },
+    {
+      "path": "docs/screenshots/01_判断服务与业务嵌入_正文区域.png",
+      "source": "评审整改/PM18_判断服务适配_20261006/01_判断服务与业务嵌入_正文区域.png",
+      "sha256": "627c4a9c927e4c5e13b03054313efc7988e274be6f43a0122815c59caa2ba9c3"
+    },
+    {
+      "path": "docs/screenshots/02_真实任务与材料证据_正文区域.png",
+      "source": "评审整改/PM18_判断服务适配_20261006/02_真实任务与材料证据_正文区域.png",
+      "sha256": "bb8eb66ebf8ba7118a25686c29ca1744dfb2e0b67dbd0fbd78734e759d4ea799"
+    },
+    {
+      "path": "docs/screenshots/03_结果交接与责任_正文区域.png",
+      "source": "评审整改/PM18_判断服务适配_20261006/03_结果交接与责任_正文区域.png",
+      "sha256": "b2ed06bf5256c433cd5a910679992e8efefa4ed4af1376a1f336abacbee16767"
+    },
+    {
+      "path": "评审整改/PM23_图文增强与痛点完善_20261008/build_figures.py",
+      "source": "评审整改/PM23_图文增强与痛点完善_20261008/build_figures.py",
+      "sha256": "36afc4e897c28d307bebc89e730600c11f3de1d6767121547f7f1fe191a880f3"
+    },
+    {
+      "path": "评审整改/PM23_图文增强与痛点完善_20261008/build_evidence.py",
+      "source": "评审整改/PM23_图文增强与痛点完善_20261008/build_evidence.py",
+      "sha256": "966f46806b24299012a642b52f0fe1aceb657c507420560bebf91e30760a9e32"
+    },
+    {
+      "path": "评审整改/G1_标签证据与动作规范.md",
+      "source": "评审整改/G1_标签证据与动作规范.md",
+      "sha256": "f3f255d573339ed232656bf1d3ed0568c8036b762eded015a441c16efa67660d"
+    },
+    {
+      "path": "评审整改/R03_完整软件回归.txt",
+      "source": "评审整改/R03_完整软件回归.txt",
+      "sha256": "649d35773a5f61608fb7760dc0e8dccff146912bfa1b90b6e32a5b94ac654688"
+    },
+    {
+      "path": "docs/assets/blue/access.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/access.png",
+      "sha256": "d0eecb37e0bdacfa3ffc1bfc879eb07f66792e75e63c414140a287b61efbc60f"
+    },
+    {
+      "path": "docs/assets/blue/access.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/access.svg",
+      "sha256": "94d7af858d82b166be6dbb0fb7e6131005f3d4492256c43d21f12a76898dca87"
+    },
+    {
+      "path": "docs/assets/blue/adoption.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/adoption.png",
+      "sha256": "2135050e4cbcda698cca7992fd0637ef122e85aaa37e9866d58b428fd02815ac"
+    },
+    {
+      "path": "docs/assets/blue/adoption.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/adoption.svg",
+      "sha256": "3784a09867881e506661e61a77b76c3aaa8781b526cda13d7b9f5f145b04791a"
+    },
+    {
+      "path": "docs/assets/blue/cost.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/cost.png",
+      "sha256": "f5e7c95657ac1cc46040e0b34144824f4ff95e3eaf0a81d3ca8282e347fc5746"
+    },
+    {
+      "path": "docs/assets/blue/cost.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/cost.svg",
+      "sha256": "998de2960285a2b620f810404c4f2d9c82b62254fb2be663c782e501d8321d71"
+    },
+    {
+      "path": "docs/assets/blue/deliver.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/deliver.png",
+      "sha256": "c4c6832747c6847fc8d661a4e0fbfac1e44db002e77e04bb116eecfdc56f5559"
+    },
+    {
+      "path": "docs/assets/blue/deliver.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/deliver.svg",
+      "sha256": "8f01e35db678b48274c7d7ea6e669a9e0a34a5129c1f30128990ec3e38d603ac"
+    },
+    {
+      "path": "docs/assets/blue/ecology.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/ecology.png",
+      "sha256": "9cd2e640ccd84d7ae3404ee9beea23e1b34d4dbc96ecf83bb9986e9249758dae"
+    },
+    {
+      "path": "docs/assets/blue/ecology.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/ecology.svg",
+      "sha256": "892f14018e55166a0e4100b6a20eea49c9ea38dce6a7f9e86d337d3c6fdd822b"
+    },
+    {
+      "path": "docs/assets/blue/expansion.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/expansion.png",
+      "sha256": "9f72ed3440ccbeaf78c41c141daa4342cd3e03fc527c77c824014bad812ee4fd"
+    },
+    {
+      "path": "docs/assets/blue/expansion.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/expansion.svg",
+      "sha256": "be5319a1c07f18e7e87a34afff807c8c42b520991ef4164e113d85d1345c5728"
+    },
+    {
+      "path": "docs/assets/blue/gantt.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/gantt.png",
+      "sha256": "77e35a3dda9e7b1bff3641202bb1481a01cf0e5ac0136038d89ff85005b6b1ff"
+    },
+    {
+      "path": "docs/assets/blue/gantt.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/gantt.svg",
+      "sha256": "2b76882351a4eeffa828657e2ea52b81691a16ab3996217c36db85a37846ed7e"
+    },
+    {
+      "path": "docs/assets/blue/mapping.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/mapping.png",
+      "sha256": "58ebbf3c7dc040159c92fd2c494316d42164226cfdb9df3950287d26cc48b533"
+    },
+    {
+      "path": "docs/assets/blue/mapping.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/mapping.svg",
+      "sha256": "81f121ba8ccae3357505adae622e238786cac75f78afd505898ce55555e2e836"
+    },
+    {
+      "path": "docs/assets/blue/overview.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/overview.png",
+      "sha256": "471329df80b0faf0d3eee3c4c415e04ff4cc144842863305adc98a5e38388da7"
+    },
+    {
+      "path": "docs/assets/blue/overview.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/overview.svg",
+      "sha256": "ad230219141b4651a40cbed2537a5de99fbef14f6074a7c43311ffe3aabdeaae"
+    },
+    {
+      "path": "docs/assets/blue/pain.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/pain.png",
+      "sha256": "06df08e72126f3bd7488ce2765254e07a628db5bfc3219e880486289cd653a0e"
+    },
+    {
+      "path": "docs/assets/blue/pain.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/pain.svg",
+      "sha256": "4712e70e66ec8bf0dc5936e5ba73307ad18f3c67b17eeaceb7994cf18b95e21e"
+    },
+    {
+      "path": "docs/assets/blue/paired.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/paired.png",
+      "sha256": "755b34477431f87103531869d02b819a55fdfe2caa26ba006b09ab4f1eebd0f7"
+    },
+    {
+      "path": "docs/assets/blue/paired.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/paired.svg",
+      "sha256": "ee9c7f0f9c1bc8f1f2af15b19d8b13f859759a57a498434f7c650e8a3335ef8b"
+    },
+    {
+      "path": "docs/assets/blue/policy.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/policy.png",
+      "sha256": "7f8c3acf1cc8ba9f8af39fca43e7072541e5361eee93c4a5a5d066e3bcacba13"
+    },
+    {
+      "path": "docs/assets/blue/policy.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/policy.svg",
+      "sha256": "7fad338000d396f745d78541a2134b3f1af35323a110492f02bad27d3df3b5be"
+    },
+    {
+      "path": "docs/assets/blue/recovery.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/recovery.png",
+      "sha256": "b400c9610b8acd72a29226c85e0e48dff315a9620dc7b903ab6b01fc0e3970cf"
+    },
+    {
+      "path": "docs/assets/blue/recovery.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/recovery.svg",
+      "sha256": "7f536ae4f7ab009c7a631ddd99722fb7a670d5f6344e292cffec826f5f00371e"
+    },
+    {
+      "path": "docs/assets/blue/route.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/route.png",
+      "sha256": "53559e5930061da249a8305efae3b3743b6eac4c3d9d67b35cadf808d18bc12b"
+    },
+    {
+      "path": "docs/assets/blue/route.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/route.svg",
+      "sha256": "cc0d86d1a913b3a42b0669b37dc2fb7f1dda93ba73c9854a64f90354ed97d4a1"
+    },
+    {
+      "path": "docs/assets/blue/runtime.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/runtime.png",
+      "sha256": "17662d3b8cf6ccc3fc1bd0c5209d61d368cf36758d07b12e50fb84b9b68bc088"
+    },
+    {
+      "path": "docs/assets/blue/runtime.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/runtime.svg",
+      "sha256": "61ae5e0b620b42cf916719c18d807c7315010f7ead606a7614036cce770306b7"
+    },
+    {
+      "path": "docs/assets/blue/scope.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/scope.png",
+      "sha256": "0d60f69f3fa89a0b5fd41e7824af7dd2ab9df00c61951ba2fea6cd6fda256125"
+    },
+    {
+      "path": "docs/assets/blue/scope.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/scope.svg",
+      "sha256": "f9c8592c077f7b92facbab8490cda951f8fb6bbe81c91fcc749c0933f8e76b37"
+    },
+    {
+      "path": "docs/assets/blue/time.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/time.png",
+      "sha256": "af24d550d188813e6435e437ca450b6e05606dee5621842d1f4022c4eb525305"
+    },
+    {
+      "path": "docs/assets/blue/time.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/time.svg",
+      "sha256": "47ab3b81312e5df4ee62a8f94f569a6ea35b891dad68ac98088a62cedf2e272a"
+    },
+    {
+      "path": "docs/assets/blue/use.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/use.png",
+      "sha256": "887a6571c3a8999a53f73db989020d46e54058f5f3c79ef0436df47a10f33398"
+    },
+    {
+      "path": "docs/assets/blue/use.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/use.svg",
+      "sha256": "895c7188c0908f468025fed2ad256e380c23aea1b9faea1b127bb97da532bbce"
+    },
+    {
+      "path": "docs/assets/blue/value.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/value.png",
+      "sha256": "029b82765242e6a0ca5f03822eb784a3115c5087028f5c21fd8ef52fbce63a75"
+    },
+    {
+      "path": "docs/assets/blue/value.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/value.svg",
+      "sha256": "819ce4e91f4b53639c4bb1b386f464645e18723cb3cb9762f735e5134c7a7454"
+    },
+    {
+      "path": "docs/assets/blue/version.png",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/version.png",
+      "sha256": "dac4ca163ba989fa51e894c06ff32298168ba279dfac622824b2be9879f21b0d"
+    },
+    {
+      "path": "docs/assets/blue/version.svg",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/蓝色矢量图/version.svg",
+      "sha256": "b20913737c3e83496148aa59714b9e9f0902f47650b8c7babed2fdeec84dc9db"
+    },
+    {
+      "path": "docs/evidence-templates/双系统逐例承接与纠错.csv",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/评审补证材料/双系统逐例承接与纠错.csv",
+      "sha256": "cc17b079071b2796228a3e6aa98aa591db43ac73143a26df1524e61461e9f0b6"
+    },
+    {
+      "path": "docs/evidence-templates/完整收益同任务测量.csv",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/评审补证材料/完整收益同任务测量.csv",
+      "sha256": "bdea9895add32bfca66bc1cef720c3b69b59caba2f4e635dffecf56e63163479"
+    },
+    {
+      "path": "docs/evidence-templates/工小审同任务增量确认表.csv",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/评审补证材料/工小审同任务增量确认表.csv",
+      "sha256": "5cf00b9535a0f8632931d2d3cfd67080876738298ecab0bf9b1e56f73d02bb18"
+    },
+    {
+      "path": "docs/evidence-templates/快慢协同验收登记.csv",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/评审补证材料/快慢协同验收登记.csv",
+      "sha256": "20b14e56cf7409946b45b7ceb3898d306cb9cae324d7763e050c9a9d585e02ca"
+    },
+    {
+      "path": "docs/evidence-templates/补证核查.json",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/评审补证材料/补证核查.json",
+      "sha256": "70fde743732f8ea417c34cce193b45c9f308b005cfd40bd99c9c243ea19b475d"
+    },
+    {
+      "path": "docs/evidence-templates/评审补证核查与采用依据.md",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/评审补证材料/评审补证核查与采用依据.md",
+      "sha256": "dbaea88598dee8bf0f2d1be2b5ec6c7c538b7fec61fa9983bd993fd1a9077f16"
+    },
+    {
+      "path": "docs/qa/previous-render/final_acceptance.json",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/qa/final_acceptance.json",
+      "sha256": "310439722d54f7c42b8695888285ccc7cac7b55ad78f2f82d315b6eaef640844"
+    },
+    {
+      "path": "docs/qa/previous-render/visual_review.json",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/qa/visual_review.json",
+      "sha256": "c31d2b7a1df071b7c968ec60eaed31722c2dbc774385a937e25ee582856e03db"
+    },
+    {
+      "path": "docs/qa/previous-render/native_page_pairs.json",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/qa/native_page_pairs.json",
+      "sha256": "7eadac482160e5b0e38580c6ecd4f8a5ed65c9cb242deb2180eaba1b1c7abca3"
+    },
+    {
+      "path": "docs/qa/previous-render/figure_layout.json",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/qa/figure_layout.json",
+      "sha256": "38b2dce69f8aa6621be159dbde222a2f75da1b051a9ada0e1c038b48e0065202"
+    },
+    {
+      "path": "docs/sources/工行公开来源.json",
+      "source": "评审整改/PM12_Demo业务展示升级_20261002/sources/工行公开来源.json",
+      "sha256": "62a768232a4963adc30dd859141c2fdd4ff50a89d6e2c8cc362f51909ee90bf5"
+    },
+    {
+      "path": "docs/sources/policy-source-manifest.json",
+      "source": "评审整改交付版/图文增强与痛点完善_20261008/qa/sources/manifest.json",
+      "sha256": "56975d0ac50f93e4e759f683f6fe92fd4802a4fe37b70ce0005bfea7a0a26b5b"
+    }
+  ],
+  "excluded": [
+    "API credentials",
+    "runtime databases",
+    "model weights",
+    "third-party full repositories",
+    "chat and continuation memory",
+    "old plan versions",
+    "raw third-party articles"
+  ]
+}

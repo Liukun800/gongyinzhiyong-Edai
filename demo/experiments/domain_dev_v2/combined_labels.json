@@ -1,0 +1,1469 @@
+[
+  {
+    "id": "U01",
+    "task_id": "USE_MATCH",
+    "family": "U_direct",
+    "split": "development_only",
+    "answer": "一致",
+    "expected_action": "review",
+    "rationale": "同申请、完整覆盖、用途同义；只判断文字一致性。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A的全部借款拟用于购买生产用铝材。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A对应采购订单：购买用于生产的铝型材；本订单覆盖申请的全部采购需求。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_direct",
+    "parent_ids": []
+  },
+  {
+    "id": "U02",
+    "task_id": "USE_MATCH",
+    "family": "U_direct",
+    "split": "development_only",
+    "answer": "一致",
+    "expected_action": "review",
+    "rationale": "搬运叉车与仓储叉车在给定范围内指同一设备。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次申请资金只用于购置仓库搬运叉车。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "对应本次申请的设备合同约定购入一台仓储叉车，无其他采购项目。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_direct",
+    "parent_ids": []
+  },
+  {
+    "id": "U03",
+    "task_id": "USE_MATCH",
+    "family": "U_exclusive",
+    "split": "development_only",
+    "answer": "存在明确矛盾",
+    "expected_action": "human",
+    "rationale": "排他用途与唯一合同标的直接冲突。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次申请的资金全部且仅用于购进面粉原料。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本次申请对应的唯一采购合同标的是办公电脑，不包含面粉，且没有补充协议。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_exclusive",
+    "parent_ids": []
+  },
+  {
+    "id": "U04",
+    "task_id": "USE_MATCH",
+    "family": "U_exclusive",
+    "split": "development_only",
+    "answer": "存在明确矛盾",
+    "expected_action": "human",
+    "rationale": "同一申请资金的全部去向相互排斥。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请资金只用于购买配送车辆，不用于其他支出。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "对应本申请的支出证明记载：全部资金用于门店装修，未购置车辆。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_exclusive",
+    "parent_ids": []
+  },
+  {
+    "id": "U05",
+    "task_id": "USE_MATCH",
+    "family": "U_absent",
+    "split": "development_only",
+    "answer": "信息不足",
+    "expected_action": "supplement",
+    "rationale": "只有用途说明，没有交叉核验材料。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次申请拟购买冷藏设备，尚未提交合同或订单。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_absent",
+    "parent_ids": []
+  },
+  {
+    "id": "U06",
+    "task_id": "USE_MATCH",
+    "family": "U_absent",
+    "split": "development_only",
+    "answer": "信息不足",
+    "expected_action": "supplement",
+    "rationale": "缺少对应证明，不能编造支持关系。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次借款拟支付生产原料采购款，证明文件后补。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_absent",
+    "parent_ids": []
+  },
+  {
+    "id": "U07",
+    "task_id": "USE_MATCH",
+    "family": "U_revision",
+    "split": "development_only",
+    "answer": "一致",
+    "expected_action": "review",
+    "rationale": "按题设有效更正覆盖旧条款；不据此证明协议真实。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A当前资金用途为购买生产用铜材。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A原订单标的为切割设备；双方允许以生效协议更改标的。"
+      },
+      {
+        "document_id": "m3",
+        "paragraph_id": "p1",
+        "quote": "双方已签署并生效的更正协议：原订单全部标的改为生产用铜材，原设备条款废止。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_revision",
+    "parent_ids": []
+  },
+  {
+    "id": "U08",
+    "task_id": "USE_MATCH",
+    "family": "U_revision",
+    "split": "development_only",
+    "answer": "存在明确矛盾",
+    "expected_action": "human",
+    "rationale": "未生效草案不能覆盖有效订单，现有用途仍冲突。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A的资金只用于生产用铜材采购。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A唯一有效订单：购买切割设备，不含铜材。"
+      },
+      {
+        "document_id": "m3",
+        "paragraph_id": "p1",
+        "quote": "改购铜材的补充协议只是未签署草案，当前不生效；原订单继续有效。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_revision",
+    "parent_ids": []
+  },
+  {
+    "id": "U09",
+    "task_id": "USE_MATCH",
+    "family": "U_scope",
+    "split": "development_only",
+    "answer": "信息不足",
+    "expected_action": "supplement",
+    "rationale": "部分支持并非完整支持，也未排除另一类用途。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本申请购买两类货物：面粉和食用油，需核验完整用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "对应订单仅记载面粉采购，明确不覆盖食用油，其他证明尚未提交。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_scope",
+    "parent_ids": []
+  },
+  {
+    "id": "U10",
+    "task_id": "USE_MATCH",
+    "family": "U_scope",
+    "split": "development_only",
+    "answer": "一致",
+    "expected_action": "review",
+    "rationale": "材料明确说明多订单合计完整覆盖申请用途。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本申请资金仅用于购买面粉和食用油。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本申请的第一份订单覆盖全部面粉采购，第二份订单覆盖全部食用油采购；两份订单合计覆盖本申请全部用途。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_scope",
+    "parent_ids": []
+  },
+  {
+    "id": "U11",
+    "task_id": "USE_MATCH",
+    "family": "U_link",
+    "split": "development_only",
+    "answer": "存在明确矛盾",
+    "expected_action": "human",
+    "rationale": "对应关系明确为A，不能用B的装修用途解释A冲突。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A仅用于服装面料采购。另有独立申请B用于装修。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本文件明确对应申请A：资金全部支付店面装修，未购买服装面料；申请B未使用本文件。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_link",
+    "parent_ids": []
+  },
+  {
+    "id": "U12",
+    "task_id": "USE_MATCH",
+    "family": "U_link",
+    "split": "development_only",
+    "answer": "信息不足",
+    "expected_action": "supplement",
+    "rationale": "货物同名但申请不同，不足以核验A。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A拟购买服装面料。另有独立申请B购买服装面料。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本订单仅对应申请B，不对应申请A；申请A尚无对应采购证明。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "U_link",
+    "parent_ids": []
+  },
+  {
+    "id": "B01",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_consistent",
+    "split": "development_only",
+    "answer": "未发现明确矛盾",
+    "expected_action": "review",
+    "rationale": "同期间经营状态同义一致。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月正常营业，没有停业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月持续经营，全月未暂停营业。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_consistent",
+    "parent_ids": []
+  },
+  {
+    "id": "B02",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_consistent",
+    "split": "development_only",
+    "answer": "未发现明确矛盾",
+    "expected_action": "review",
+    "rationale": "两份材料都描述同一停业状态。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月因检修整月停业，没有开展经营活动。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "2026年8月仿真主体甲整月未营业，未开展任何经营活动。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_consistent",
+    "parent_ids": []
+  },
+  {
+    "id": "B03",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_opposed",
+    "split": "development_only",
+    "answer": "发现明确矛盾",
+    "expected_action": "human",
+    "rationale": "来自已暴露D02错误结构的开发回归案例，绝不作未见测试。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲在2026年8月全月正常营业，期间未停业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲在2026年8月整月停业，期间未开展经营。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_opposed",
+    "parent_ids": []
+  },
+  {
+    "id": "B04",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_opposed",
+    "split": "development_only",
+    "answer": "发现明确矛盾",
+    "expected_action": "human",
+    "rationale": "同一完整期间的全称陈述互相排斥。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲在2026年8月每一天均对外营业，没有闭店日。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲在2026年8月一天也未营业，整个自然月闭店。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_opposed",
+    "parent_ids": []
+  },
+  {
+    "id": "B05",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_period",
+    "split": "development_only",
+    "answer": "无法比较",
+    "expected_action": "supplement",
+    "rationale": "不同月份允许状态变化。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年7月整月停业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月正常营业。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_period",
+    "parent_ids": []
+  },
+  {
+    "id": "B06",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_period",
+    "split": "development_only",
+    "answer": "无法比较",
+    "expected_action": "supplement",
+    "rationale": "不同年度不能直接判定矛盾。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2025年度未开展经营。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年度持续经营。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_period",
+    "parent_ids": []
+  },
+  {
+    "id": "B07",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_subject",
+    "split": "development_only",
+    "answer": "无法比较",
+    "expected_action": "supplement",
+    "rationale": "两家主体不同，营业状态无直接可比性。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月营业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体乙2026年8月整月停业。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_subject",
+    "parent_ids": []
+  },
+  {
+    "id": "B08",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_subject",
+    "split": "development_only",
+    "answer": "无法比较",
+    "expected_action": "supplement",
+    "rationale": "不同主体的相反陈述不构成同主体矛盾。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体丙2026年8月没有任何经营活动。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体丁2026年8月每天均开展经营。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_subject",
+    "parent_ids": []
+  },
+  {
+    "id": "B09",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_scope",
+    "split": "development_only",
+    "answer": "未发现明确矛盾",
+    "expected_action": "review",
+    "rationale": "经营范围不同，生产线停工不否定门店营业。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月生产线整月停工，但零售门店全月营业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月零售门店没有停业；本记录不描述生产线。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_scope",
+    "parent_ids": []
+  },
+  {
+    "id": "B10",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_scope",
+    "split": "development_only",
+    "answer": "发现明确矛盾",
+    "expected_action": "human",
+    "rationale": "明确限定同一门店和整月，属于可比范围内冲突。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月唯一零售门店整月关闭，没有一天营业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月同一零售门店每天营业，没有任何闭店日。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_scope",
+    "parent_ids": []
+  },
+  {
+    "id": "B11",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_correction",
+    "split": "development_only",
+    "answer": "未发现明确矛盾",
+    "expected_action": "review",
+    "rationale": "按题设生效更正后的陈述比较。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月原说明写整月停业；现经有效更正为全月营业，原停业陈述作废。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月持续经营，无停业日。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_correction",
+    "parent_ids": []
+  },
+  {
+    "id": "B12",
+    "task_id": "BIZ_CONFLICT",
+    "family": "B_correction",
+    "split": "development_only",
+    "answer": "发现明确矛盾",
+    "expected_action": "human",
+    "rationale": "不存在能解除相反陈述的生效更正。",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月持续经营。更正申请未经确认，当前说明仍有效。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月整月停业，未开展经营；无生效更正文件。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "项目开发合成材料，不来自银行客户或生产系统",
+    "lineage_group": "B_correction",
+    "parent_ids": []
+  },
+  {
+    "id": "CU1-1",
+    "task_id": "USE_MATCH",
+    "answer": "一致",
+    "family": "CU1",
+    "lineage_group": "U_exclusive",
+    "parent_ids": [
+      "U03",
+      "U04"
+    ],
+    "contrast_focus": "同一拟采购阶段的标的一致、互斥与未知",
+    "split": "development_only",
+    "rationale": "合同完整支持唯一用途。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本申请A拟融资购买面粉原料，申请用途仅限面粉。本次核验对应拟采购合同，不比较历史交易。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本文件为申请A的唯一且有效拟采购合同：标的全部为面粉原料，覆盖本申请完整用途。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU1-2",
+    "task_id": "USE_MATCH",
+    "answer": "存在明确矛盾",
+    "family": "CU1",
+    "lineage_group": "U_exclusive",
+    "parent_ids": [
+      "U03",
+      "U04"
+    ],
+    "contrast_focus": "同一拟采购阶段的标的一致、互斥与未知",
+    "split": "development_only",
+    "rationale": "同一申请的当前拟采购合同与排他用途冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本申请A拟融资购买面粉原料，申请用途仅限面粉。本次核验对应拟采购合同，不比较历史交易。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本文件为申请A的唯一且有效拟采购合同：标的全部为办公电脑，不含面粉，无更正文件。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU1-3",
+    "task_id": "USE_MATCH",
+    "answer": "信息不足",
+    "family": "CU1",
+    "lineage_group": "U_exclusive",
+    "parent_ids": [
+      "U03",
+      "U04"
+    ],
+    "contrast_focus": "同一拟采购阶段的标的一致、互斥与未知",
+    "split": "development_only",
+    "rationale": "申请对应明确但缺少标的，不应判为矛盾。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本申请A拟融资购买面粉原料，申请用途仅限面粉。本次核验对应拟采购合同，不比较历史交易。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本文件为申请A的拟采购合同封面：标的明细页缺失，无法从封面判断采购何物。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU2-1",
+    "task_id": "USE_MATCH",
+    "answer": "一致",
+    "family": "CU2",
+    "lineage_group": "U_direct",
+    "parent_ids": [
+      "U02"
+    ],
+    "contrast_focus": "同义设备名、排他异类与过宽名称",
+    "split": "development_only",
+    "rationale": "同义表达指向同一叉车用途。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A的全部融资用途是购置仓库用叉车，没有其他用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A对应设备合同：购置仓储搬运叉车，合同覆盖全部申请用途。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU2-2",
+    "task_id": "USE_MATCH",
+    "answer": "存在明确矛盾",
+    "family": "CU2",
+    "lineage_group": "U_direct",
+    "parent_ids": [
+      "U02"
+    ],
+    "contrast_focus": "同义设备名、排他异类与过宽名称",
+    "split": "development_only",
+    "rationale": "当前唯一合同与排他用途相反。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A的全部融资用途是购置仓库用叉车，没有其他用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A对应唯一设备合同：只购置冷藏柜，明确不购置叉车；无更正。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU2-3",
+    "task_id": "USE_MATCH",
+    "answer": "信息不足",
+    "family": "CU2",
+    "lineage_group": "U_direct",
+    "parent_ids": [
+      "U02"
+    ],
+    "contrast_focus": "同义设备名、排他异类与过宽名称",
+    "split": "development_only",
+    "rationale": "上位概念不足以确认具体设备。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A的全部融资用途是购置仓库用叉车，没有其他用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A对应设备合同：只写仓库设备，附件未提供，无法确定具体设备是否为叉车。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU3-1",
+    "task_id": "USE_MATCH",
+    "answer": "一致",
+    "family": "CU3",
+    "lineage_group": "U_revision",
+    "parent_ids": [
+      "U07",
+      "U08"
+    ],
+    "contrast_focus": "更正已生效、明确未生效与有效性未知",
+    "split": "development_only",
+    "rationale": "按明确题设，生效更正解除原用途冲突。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A当前仅拟采购铜材。唯一原订单标的是切割设备；如有有效更正，则以更正后的订单为准。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A的更正协议已签署并生效：原订单切割设备全部改为铜材，原标的条款失效。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU3-2",
+    "task_id": "USE_MATCH",
+    "answer": "存在明确矛盾",
+    "family": "CU3",
+    "lineage_group": "U_revision",
+    "parent_ids": [
+      "U07",
+      "U08"
+    ],
+    "contrast_focus": "更正已生效、明确未生效与有效性未知",
+    "split": "development_only",
+    "rationale": "未生效建议不能解除当前有效订单冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A当前仅拟采购铜材。唯一原订单标的是切割设备；如有有效更正，则以更正后的订单为准。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A的更正协议尚未签署且未生效：拟把切割设备改为铜材，当前原订单仍有效。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU3-3",
+    "task_id": "USE_MATCH",
+    "answer": "信息不足",
+    "family": "CU3",
+    "lineage_group": "U_revision",
+    "parent_ids": [
+      "U07",
+      "U08"
+    ],
+    "contrast_focus": "更正已生效、明确未生效与有效性未知",
+    "split": "development_only",
+    "rationale": "有效版本不确定，不能自行认定草案生效或无效。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A当前仅拟采购铜材。唯一原订单标的是切割设备；如有有效更正，则以更正后的订单为准。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A有一份拟把设备改为铜材的更正协议，但签署页及生效条款缺失，现有材料无法判断哪个版本有效。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU4-1",
+    "task_id": "USE_MATCH",
+    "answer": "一致",
+    "family": "CU4",
+    "lineage_group": "U_link",
+    "parent_ids": [
+      "U11",
+      "U12"
+    ],
+    "contrast_focus": "申请对应与标的两个条件必须同时检查",
+    "split": "development_only",
+    "rationale": "同一申请且完整支持用途。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次只核验申请A，其全部用途为购买服装面料。另有独立申请B，不纳入本次核验。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本有效订单仅对应申请A，完整标的为服装面料，覆盖申请A全部用途。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU4-2",
+    "task_id": "USE_MATCH",
+    "answer": "存在明确矛盾",
+    "family": "CU4",
+    "lineage_group": "U_link",
+    "parent_ids": [
+      "U11",
+      "U12"
+    ],
+    "contrast_focus": "申请对应与标的两个条件必须同时检查",
+    "split": "development_only",
+    "rationale": "申请对应正确，唯一有效标的与用途冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次只核验申请A，其全部用途为购买服装面料。另有独立申请B，不纳入本次核验。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本唯一有效订单仅对应申请A，完整标的为装修材料，不含服装面料；无更正。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU4-3",
+    "task_id": "USE_MATCH",
+    "answer": "信息不足",
+    "family": "CU4",
+    "lineage_group": "U_link",
+    "parent_ids": [
+      "U11",
+      "U12"
+    ],
+    "contrast_focus": "申请对应与标的两个条件必须同时检查",
+    "split": "development_only",
+    "rationale": "相同商品不能替代申请对应关系。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "本次只核验申请A，其全部用途为购买服装面料。另有独立申请B，不纳入本次核验。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "本有效订单仅对应申请B，完整标的为服装面料；明确不对应申请A，未提供A的订单。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU5-1",
+    "task_id": "USE_MATCH",
+    "answer": "一致",
+    "family": "CU5",
+    "lineage_group": "U_scope",
+    "parent_ids": [
+      "U09",
+      "U10"
+    ],
+    "contrast_focus": "完整覆盖、完整冲突与部分覆盖",
+    "split": "development_only",
+    "rationale": "两类用途完整覆盖。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A仅拟采购面粉和食用油，需核验两类货物的完整用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A有效采购明细完整列出面粉和食用油，明确覆盖申请A所有采购项目。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU5-2",
+    "task_id": "USE_MATCH",
+    "answer": "存在明确矛盾",
+    "family": "CU5",
+    "lineage_group": "U_scope",
+    "parent_ids": [
+      "U09",
+      "U10"
+    ],
+    "contrast_focus": "完整覆盖、完整冲突与部分覆盖",
+    "split": "development_only",
+    "rationale": "完整且排他明细与两类申请用途均冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A仅拟采购面粉和食用油，需核验两类货物的完整用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A唯一且完整有效采购明细只包含办公家具，明确没有面粉和食用油，无其他订单或更正。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CU5-3",
+    "task_id": "USE_MATCH",
+    "answer": "信息不足",
+    "family": "CU5",
+    "lineage_group": "U_scope",
+    "parent_ids": [
+      "U09",
+      "U10"
+    ],
+    "contrast_focus": "完整覆盖、完整冲突与部分覆盖",
+    "split": "development_only",
+    "rationale": "部分覆盖不等于排他矛盾。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "申请A仅拟采购面粉和食用油，需核验两类货物的完整用途。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "申请A仅提交面粉订单，食用油订单待补；现有订单只说明部分采购，没有否定食用油用途。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB1-1",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "未发现明确矛盾",
+    "family": "CB1",
+    "lineage_group": "B_consistent",
+    "parent_ids": [
+      "B02"
+    ],
+    "contrast_focus": "停业词不是矛盾标签；正文期间须校验",
+    "split": "development_only",
+    "rationale": "两个否定经营状态相容，不因停业词判矛盾。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月整个自然月均未营业，没有任何经营活动。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月整月闭店，期间没有开展经营。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB1-2",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "发现明确矛盾",
+    "family": "CB1",
+    "lineage_group": "B_consistent",
+    "parent_ids": [
+      "B02"
+    ],
+    "contrast_focus": "停业词不是矛盾标签；正文期间须校验",
+    "split": "development_only",
+    "rationale": "相同整月的营业与不营业互斥。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月整个自然月均未营业，没有任何经营活动。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月每天均正常营业，整个自然月没有闭店日。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB1-3",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "无法比较",
+    "family": "CB1",
+    "lineage_group": "B_consistent",
+    "parent_ids": [
+      "B02"
+    ],
+    "contrast_focus": "停业词不是矛盾标签；正文期间须校验",
+    "split": "development_only",
+    "rationale": "第二份正文描述其他期间，登记字段不能替代正文。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月整个自然月均未营业，没有任何经营活动。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲只报告2026年7月整月营业，未提供2026年8月的对应经营记录。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB2-1",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "未发现明确矛盾",
+    "family": "CB2",
+    "lineage_group": "B_opposed",
+    "parent_ids": [
+      "B03",
+      "B04",
+      "D02"
+    ],
+    "contrast_focus": "否定范围与存在文件但缺少内容",
+    "split": "development_only",
+    "rationale": "否定停业与正常营业相容。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月正常营业，期间没有停业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月持续营业，未发生暂停经营。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB2-2",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "发现明确矛盾",
+    "family": "CB2",
+    "lineage_group": "B_opposed",
+    "parent_ids": [
+      "B03",
+      "B04",
+      "D02"
+    ],
+    "contrast_focus": "否定范围与存在文件但缺少内容",
+    "split": "development_only",
+    "rationale": "同一期间全月营业与全月未营业冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月正常营业，期间没有停业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月未营业，期间未开展经营。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB2-3",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "无法比较",
+    "family": "CB2",
+    "lineage_group": "B_opposed",
+    "parent_ids": [
+      "B03",
+      "B04",
+      "D02"
+    ],
+    "contrast_focus": "否定范围与存在文件但缺少内容",
+    "split": "development_only",
+    "rationale": "有文件但没有可比陈述，不能仅按文件数量视为充分。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月正常营业，期间没有停业。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月只提交经营记录封面，营业状态及日期明细全部缺失。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB3-1",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "未发现明确矛盾",
+    "family": "CB3",
+    "lineage_group": "B_scope",
+    "parent_ids": [
+      "B09",
+      "B10"
+    ],
+    "contrast_focus": "范围不同与范围未知不得混同",
+    "split": "development_only",
+    "rationale": "不同范围的状态分别相容。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月生产线停工，但零售门店全月正常营业；两者是不同经营范围。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月零售门店全月未停业，生产线整月没有生产。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB3-2",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "发现明确矛盾",
+    "family": "CB3",
+    "lineage_group": "B_scope",
+    "parent_ids": [
+      "B09",
+      "B10"
+    ],
+    "contrast_focus": "范围不同与范围未知不得混同",
+    "split": "development_only",
+    "rationale": "第二份明确限定相同门店，存在冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月生产线停工，但零售门店全月正常营业；两者是不同经营范围。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月同一零售门店整月闭店，没有任何营业日；本条仅描述该门店。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB3-3",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "无法比较",
+    "family": "CB3",
+    "lineage_group": "B_scope",
+    "parent_ids": [
+      "B09",
+      "B10"
+    ],
+    "contrast_focus": "范围不同与范围未知不得混同",
+    "split": "development_only",
+    "rationale": "经营范围无法对应，不强判矛盾或一致。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月生产线停工，但零售门店全月正常营业；两者是不同经营范围。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月某经营单元停工，但记录未标明是生产线还是零售门店。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB4-1",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "未发现明确矛盾",
+    "family": "CB4",
+    "lineage_group": "B_correction",
+    "parent_ids": [
+      "B11",
+      "B12"
+    ],
+    "contrast_focus": "更正有效性决定哪些陈述可以比较",
+    "split": "development_only",
+    "rationale": "有效更正解除冲突。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月原说明记为全月营业，另一份当前记录为整月停业。现需结合更正状态判断。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "原说明已有效更正为2026年8月整月停业，原全月营业陈述明确作废；另一记录保持整月停业。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB4-2",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "发现明确矛盾",
+    "family": "CB4",
+    "lineage_group": "B_correction",
+    "parent_ids": [
+      "B11",
+      "B12"
+    ],
+    "contrast_focus": "更正有效性决定哪些陈述可以比较",
+    "split": "development_only",
+    "rationale": "没有有效更正，相反陈述仍冲突。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月原说明记为全月营业，另一份当前记录为整月停业。现需结合更正状态判断。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "将原全月营业说明改为停业的申请已被撤回，没有生效更正；原说明和整月停业记录均仍有效。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB4-3",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "无法比较",
+    "family": "CB4",
+    "lineage_group": "B_correction",
+    "parent_ids": [
+      "B11",
+      "B12"
+    ],
+    "contrast_focus": "更正有效性决定哪些陈述可以比较",
+    "split": "development_only",
+    "rationale": "不能自行为不明版本设定效力。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月原说明记为全月营业，另一份当前记录为整月停业。现需结合更正状态判断。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "更正资料缺少确认页，无法确定原营业说明是否已作废；当前有效版本无法确定。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB5-1",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "未发现明确矛盾",
+    "family": "CB5",
+    "lineage_group": "B_period",
+    "parent_ids": [
+      "B05",
+      "B06"
+    ],
+    "contrast_focus": "期间相同后才判断内容冲突",
+    "split": "development_only",
+    "rationale": "同期间相同状态。",
+    "expected_action": "review",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月停业，本说明不描述7月或其他主体。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月整月未经营，整个自然月闭店。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB5-2",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "发现明确矛盾",
+    "family": "CB5",
+    "lineage_group": "B_period",
+    "parent_ids": [
+      "B05",
+      "B06"
+    ],
+    "contrast_focus": "期间相同后才判断内容冲突",
+    "split": "development_only",
+    "rationale": "同期间相反状态。",
+    "expected_action": "human",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月停业，本说明不描述7月或其他主体。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月正常经营，没有停业日。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  },
+  {
+    "id": "CB5-3",
+    "task_id": "BIZ_CONFLICT",
+    "answer": "无法比较",
+    "family": "CB5",
+    "lineage_group": "B_period",
+    "parent_ids": [
+      "B05",
+      "B06"
+    ],
+    "contrast_focus": "期间相同后才判断内容冲突",
+    "split": "development_only",
+    "rationale": "日期变化不直接构成矛盾。",
+    "expected_action": "supplement",
+    "evidence": [
+      {
+        "document_id": "m1",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年8月全月停业，本说明不描述7月或其他主体。"
+      },
+      {
+        "document_id": "m2",
+        "paragraph_id": "p1",
+        "quote": "仿真主体甲2026年7月全月正常经营，没有停业日。"
+      }
+    ],
+    "label_status": "项目编制的仿真参考标签，未经银行专家独立标注",
+    "provenance": "基于已知开发错误与任务定义编制；不属于独立测试"
+  }
+]

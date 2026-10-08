@@ -1,0 +1,39 @@
+{
+  "status": "protocol_passed",
+  "rows": [
+    {
+      "case_id": "OFFICIAL_USE_001",
+      "status": "measured",
+      "model": "jev-1.13.0",
+      "choice": "一致",
+      "reference_agreement": true,
+      "latency_ms": 1223.1,
+      "usage": {
+        "input_tokens": 564,
+        "output_tokens": 48
+      }
+    },
+    {
+      "case_id": "OFFICIAL_BIZ_001",
+      "status": "measured",
+      "model": "jev-1.13.0",
+      "choice": "发现明确矛盾",
+      "reference_agreement": true,
+      "latency_ms": 1091.32,
+      "usage": {
+        "input_tokens": 594,
+        "output_tokens": 64
+      }
+    }
+  ],
+  "attempted_requests": 2,
+  "successful_requests": 2,
+  "reference_agreements": 2,
+  "reported_input_tokens": 1158,
+  "reported_output_tokens": 112,
+  "failed_request_usage": "unknown",
+  "independent_business_reviews": 0,
+  "bank_connected": false,
+  "domain_quality_accepted": false,
+  "source_run": "run_20261007T060327173836Z"
+}

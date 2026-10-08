@@ -1,0 +1,162 @@
+[
+  {
+    "key": "overview",
+    "title": "项目全局总览与前置核验位置",
+    "width": 1500,
+    "height": 525,
+    "svg": "assets/blue/overview.svg",
+    "png": "assets/blue/overview.png"
+  },
+  {
+    "key": "policy",
+    "title": "政策脉络与贷前核验设计响应",
+    "width": 1500,
+    "height": 540,
+    "svg": "assets/blue/policy.svg",
+    "png": "assets/blue/policy.png"
+  },
+  {
+    "key": "ecology",
+    "title": "工行信贷生态与前置核验协同",
+    "width": 1500,
+    "height": 485,
+    "svg": "assets/blue/ecology.svg",
+    "png": "assets/blue/ecology.png"
+  },
+  {
+    "key": "paired",
+    "title": "历史双系统升级任务的配对结果",
+    "width": 1500,
+    "height": 535,
+    "svg": "assets/blue/paired.svg",
+    "png": "assets/blue/paired.png"
+  },
+  {
+    "key": "pain",
+    "title": "行业要求向材料核验痛点的转化",
+    "width": 1500,
+    "height": 715,
+    "svg": "assets/blue/pain.svg",
+    "png": "assets/blue/pain.png"
+  },
+  {
+    "key": "value",
+    "title": "首期切入与价值验证链条",
+    "width": 1500,
+    "height": 420,
+    "svg": "assets/blue/value.svg",
+    "png": "assets/blue/value.png"
+  },
+  {
+    "key": "scope",
+    "title": "目标业务与首期服务范围",
+    "width": 1500,
+    "height": 445,
+    "svg": "assets/blue/scope.svg",
+    "png": "assets/blue/scope.png"
+  },
+  {
+    "key": "use",
+    "title": "人员操作与价值观察点",
+    "width": 1500,
+    "height": 425,
+    "svg": "assets/blue/use.svg",
+    "png": "assets/blue/use.png"
+  },
+  {
+    "key": "runtime",
+    "title": "原型运行模式与共同业务闭环",
+    "width": 1500,
+    "height": 470,
+    "svg": "assets/blue/runtime.svg",
+    "png": "assets/blue/runtime.png"
+  },
+  {
+    "key": "route",
+    "title": "不确定事项的原因与承接方式",
+    "width": 1500,
+    "height": 530,
+    "svg": "assets/blue/route.svg",
+    "png": "assets/blue/route.png"
+  },
+  {
+    "key": "version",
+    "title": "领域迭代与版本验证闭环",
+    "width": 1500,
+    "height": 455,
+    "svg": "assets/blue/version.svg",
+    "png": "assets/blue/version.png"
+  },
+  {
+    "key": "adoption",
+    "title": "模型采用的分层判断依据",
+    "width": 1500,
+    "height": 500,
+    "svg": "assets/blue/adoption.svg",
+    "png": "assets/blue/adoption.png"
+  },
+  {
+    "key": "time",
+    "title": "完整核验路径的工时与时延测量",
+    "width": 1500,
+    "height": 500,
+    "svg": "assets/blue/time.svg",
+    "png": "assets/blue/time.png"
+  },
+  {
+    "key": "cost",
+    "title": "分层处理的完整成本构成",
+    "width": 1500,
+    "height": 480,
+    "svg": "assets/blue/cost.svg",
+    "png": "assets/blue/cost.png"
+  },
+  {
+    "key": "deliver",
+    "title": "银行适配交付内容与承接关系",
+    "width": 1500,
+    "height": 610,
+    "svg": "assets/blue/deliver.svg",
+    "png": "assets/blue/deliver.png"
+  },
+  {
+    "key": "access",
+    "title": "数据处理授权与责任边界",
+    "width": 1500,
+    "height": 490,
+    "svg": "assets/blue/access.svg",
+    "png": "assets/blue/access.png"
+  },
+  {
+    "key": "recovery",
+    "title": "异常停止与业务恢复闭环",
+    "width": 1500,
+    "height": 430,
+    "svg": "assets/blue/recovery.svg",
+    "png": "assets/blue/recovery.png"
+  },
+  {
+    "key": "gantt",
+    "title": "分阶段实施标准甘特图",
+    "width": 1500,
+    "height": 700,
+    "svg": "assets/blue/gantt.svg",
+    "png": "assets/blue/gantt.png"
+  },
+  {
+    "key": "mapping",
+    "title": "工小审任务与核验事项包适配",
+    "width": 1500,
+    "height": 520,
+    "svg": "assets/blue/mapping.svg",
+    "png": "assets/blue/mapping.png"
+  },
+  {
+    "key": "expansion",
+    "title": "同类任务扩展与交付验收",
+    "width": 1500,
+    "height": 365,
+    "svg": "assets/blue/expansion.svg",
+    "png": "assets/blue/expansion.png"
+  }
+]

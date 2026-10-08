@@ -1,0 +1,15 @@
+{
+  "version": "dev-v1",
+  "cases": 24,
+  "task_counts": {
+    "USE_MATCH": 12,
+    "BIZ_CONFLICT": 12
+  },
+  "groups": 12,
+  "labels_per_task_class": 4,
+  "scope": "synthetic development only; no final test set",
+  "hashes": {
+    "development_cases.json": "8814ab39756fa2812d3e2ed05bf7752f3adba3aa80e37c636cead61c4737d497",
+    "development_labels.json": "6c0894fc3fbe5776a9d97e93e2f02ca137860b089cc9e424c4af7ef0f56345f2"
+  }
+}

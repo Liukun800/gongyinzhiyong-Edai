@@ -1,0 +1,3917 @@
+{
+  "created_at": "2026-09-27T15:26:58.385143+00:00",
+  "scope": "development diagnostics, not final test or bank performance",
+  "dataset": {
+    "version": "dev-v1",
+    "cases": 24,
+    "task_counts": {
+      "USE_MATCH": 12,
+      "BIZ_CONFLICT": 12
+    },
+    "groups": 12,
+    "labels_per_task_class": 4,
+    "scope": "synthetic development only; no final test set",
+    "hashes": {
+      "development_cases.json": "8814ab39756fa2812d3e2ed05bf7752f3adba3aa80e37c636cead61c4737d497",
+      "development_labels.json": "6c0894fc3fbe5776a9d97e93e2f02ca137860b089cc9e424c4af7ef0f56345f2"
+    }
+  },
+  "model": {
+    "name": "AgentJev-0.6B / public coding-completion checkpoint",
+    "repo": "aimeigaoshou/agent-jev",
+    "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+    "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "encoder": "independent_candidate_paths",
+    "shared_prefix_compute": false,
+    "max_path_tokens": 2048,
+    "load_seconds": 63.72,
+    "bank_domain_trained": false,
+    "bank_domain_calibrated": false,
+    "temperature": 1.0,
+    "auto_completion_enabled": false,
+    "checkpoint_card_scope": "coding-completion; not a credit model"
+  },
+  "environment": {
+    "python": "3.13.2",
+    "sklearn": "1.8.0"
+  },
+  "baseline": {
+    "algorithm": "char 2-4 gram TF-IDF + balanced logistic regression; C=1 fixed",
+    "split": "leave one case family out within each task; 6 folds per task; 10 train / 2 validation",
+    "calibration": "none; raw probabilities never authorize automatic completion",
+    "folds": [
+      {
+        "task_id": "USE_MATCH",
+        "validation_family": "U_absent",
+        "train_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U07",
+          "U08",
+          "U09",
+          "U10",
+          "U11",
+          "U12"
+        ],
+        "validation_ids": [
+          "U05",
+          "U06"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "USE_MATCH",
+        "validation_family": "U_direct",
+        "train_ids": [
+          "U03",
+          "U04",
+          "U05",
+          "U06",
+          "U07",
+          "U08",
+          "U09",
+          "U10",
+          "U11",
+          "U12"
+        ],
+        "validation_ids": [
+          "U01",
+          "U02"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "USE_MATCH",
+        "validation_family": "U_exclusive",
+        "train_ids": [
+          "U01",
+          "U02",
+          "U05",
+          "U06",
+          "U07",
+          "U08",
+          "U09",
+          "U10",
+          "U11",
+          "U12"
+        ],
+        "validation_ids": [
+          "U03",
+          "U04"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "USE_MATCH",
+        "validation_family": "U_link",
+        "train_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U05",
+          "U06",
+          "U07",
+          "U08",
+          "U09",
+          "U10"
+        ],
+        "validation_ids": [
+          "U11",
+          "U12"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "USE_MATCH",
+        "validation_family": "U_revision",
+        "train_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U05",
+          "U06",
+          "U09",
+          "U10",
+          "U11",
+          "U12"
+        ],
+        "validation_ids": [
+          "U07",
+          "U08"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "USE_MATCH",
+        "validation_family": "U_scope",
+        "train_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U05",
+          "U06",
+          "U07",
+          "U08",
+          "U11",
+          "U12"
+        ],
+        "validation_ids": [
+          "U09",
+          "U10"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "BIZ_CONFLICT",
+        "validation_family": "B_consistent",
+        "train_ids": [
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ],
+        "validation_ids": [
+          "B01",
+          "B02"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "BIZ_CONFLICT",
+        "validation_family": "B_correction",
+        "train_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10"
+        ],
+        "validation_ids": [
+          "B11",
+          "B12"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "BIZ_CONFLICT",
+        "validation_family": "B_opposed",
+        "train_ids": [
+          "B01",
+          "B02",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ],
+        "validation_ids": [
+          "B03",
+          "B04"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "BIZ_CONFLICT",
+        "validation_family": "B_period",
+        "train_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ],
+        "validation_ids": [
+          "B05",
+          "B06"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "BIZ_CONFLICT",
+        "validation_family": "B_scope",
+        "train_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B11",
+          "B12"
+        ],
+        "validation_ids": [
+          "B09",
+          "B10"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      },
+      {
+        "task_id": "BIZ_CONFLICT",
+        "validation_family": "B_subject",
+        "train_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ],
+        "validation_ids": [
+          "B07",
+          "B08"
+        ],
+        "vectorizer_fit_scope": "training fold only"
+      }
+    ]
+  },
+  "systems": {
+    "rules": {
+      "summary": {
+        "USE_MATCH": {
+          "n": 12,
+          "correct": 2,
+          "answered": 2,
+          "correct_among_answered": 2,
+          "rule_n": 2,
+          "semantic_n": 0,
+          "semantic_correct": 0,
+          "conflict_n": 4,
+          "conflict_not_identified_ids": [
+            "U03",
+            "U04",
+            "U08",
+            "U11"
+          ],
+          "route_matches": 6,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U07",
+            "U08",
+            "U09",
+            "U10",
+            "U11",
+            "U12"
+          ],
+          "confusion": {
+            "一致 -> 未作语义判断": 4,
+            "存在明确矛盾 -> 未作语义判断": 4,
+            "信息不足 -> 信息不足": 2,
+            "信息不足 -> 未作语义判断": 2
+          }
+        },
+        "BIZ_CONFLICT": {
+          "n": 12,
+          "correct": 4,
+          "answered": 4,
+          "correct_among_answered": 4,
+          "rule_n": 4,
+          "semantic_n": 0,
+          "semantic_correct": 0,
+          "conflict_n": 4,
+          "conflict_not_identified_ids": [
+            "B03",
+            "B04",
+            "B10",
+            "B12"
+          ],
+          "route_matches": 8,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B09",
+            "B10",
+            "B11",
+            "B12"
+          ],
+          "confusion": {
+            "未发现明确矛盾 -> 未作语义判断": 4,
+            "发现明确矛盾 -> 未作语义判断": 4,
+            "无法比较 -> 无法比较": 4
+          }
+        },
+        "all": {
+          "n": 24,
+          "correct": 6,
+          "answered": 6,
+          "correct_among_answered": 6,
+          "rule_n": 6,
+          "semantic_n": 0,
+          "semantic_correct": 0,
+          "conflict_n": 8,
+          "conflict_not_identified_ids": [
+            "U03",
+            "U04",
+            "U08",
+            "U11",
+            "B03",
+            "B04",
+            "B10",
+            "B12"
+          ],
+          "route_matches": 14,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U07",
+            "U08",
+            "U09",
+            "U10",
+            "U11",
+            "U12",
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B09",
+            "B10",
+            "B11",
+            "B12"
+          ],
+          "confusion": {
+            "一致 -> 未作语义判断": 4,
+            "存在明确矛盾 -> 未作语义判断": 4,
+            "信息不足 -> 信息不足": 2,
+            "信息不足 -> 未作语义判断": 2,
+            "未发现明确矛盾 -> 未作语义判断": 4,
+            "发现明确矛盾 -> 未作语义判断": 4,
+            "无法比较 -> 无法比较": 4
+          }
+        }
+      },
+      "rows": [
+        {
+          "case_id": "U01",
+          "task_id": "USE_MATCH",
+          "family": "U_direct",
+          "expected": "一致",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U02",
+          "task_id": "USE_MATCH",
+          "family": "U_direct",
+          "expected": "一致",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U03",
+          "task_id": "USE_MATCH",
+          "family": "U_exclusive",
+          "expected": "存在明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U04",
+          "task_id": "USE_MATCH",
+          "family": "U_exclusive",
+          "expected": "存在明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U05",
+          "task_id": "USE_MATCH",
+          "family": "U_absent",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "U06",
+          "task_id": "USE_MATCH",
+          "family": "U_absent",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "U07",
+          "task_id": "USE_MATCH",
+          "family": "U_revision",
+          "expected": "一致",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U08",
+          "task_id": "USE_MATCH",
+          "family": "U_revision",
+          "expected": "存在明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U09",
+          "task_id": "USE_MATCH",
+          "family": "U_scope",
+          "expected": "信息不足",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "supplement",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U10",
+          "task_id": "USE_MATCH",
+          "family": "U_scope",
+          "expected": "一致",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U11",
+          "task_id": "USE_MATCH",
+          "family": "U_link",
+          "expected": "存在明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "U12",
+          "task_id": "USE_MATCH",
+          "family": "U_link",
+          "expected": "信息不足",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "supplement",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B01",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_consistent",
+          "expected": "未发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B02",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_consistent",
+          "expected": "未发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B03",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_opposed",
+          "expected": "发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B04",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_opposed",
+          "expected": "发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B05",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_period",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "B06",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_period",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "B07",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_subject",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "B08",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_subject",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "B09",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_scope",
+          "expected": "未发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B10",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_scope",
+          "expected": "发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B11",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_correction",
+          "expected": "未发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "abstain_semantics"
+        },
+        {
+          "case_id": "B12",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_correction",
+          "expected": "发现明确矛盾",
+          "predicted": null,
+          "correct": false,
+          "expected_action": "human",
+          "action": "human",
+          "source": "abstain_semantics"
+        }
+      ]
+    },
+    "tfidf_logistic_same_route": {
+      "summary": {
+        "USE_MATCH": {
+          "n": 12,
+          "correct": 4,
+          "answered": 12,
+          "correct_among_answered": 4,
+          "rule_n": 2,
+          "semantic_n": 10,
+          "semantic_correct": 2,
+          "conflict_n": 4,
+          "conflict_not_identified_ids": [
+            "U03",
+            "U04",
+            "U08"
+          ],
+          "route_matches": 4,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U12",
+            "U08",
+            "U09",
+            "U10"
+          ],
+          "confusion": {
+            "信息不足 -> 信息不足": 2,
+            "一致 -> 存在明确矛盾": 3,
+            "存在明确矛盾 -> 信息不足": 1,
+            "存在明确矛盾 -> 一致": 2,
+            "存在明确矛盾 -> 存在明确矛盾": 1,
+            "信息不足 -> 一致": 1,
+            "一致 -> 一致": 1,
+            "信息不足 -> 存在明确矛盾": 1
+          }
+        },
+        "BIZ_CONFLICT": {
+          "n": 12,
+          "correct": 4,
+          "answered": 12,
+          "correct_among_answered": 4,
+          "rule_n": 4,
+          "semantic_n": 8,
+          "semantic_correct": 0,
+          "conflict_n": 4,
+          "conflict_not_identified_ids": [
+            "B12",
+            "B03",
+            "B04",
+            "B10"
+          ],
+          "route_matches": 4,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "B01",
+            "B02",
+            "B11",
+            "B12",
+            "B03",
+            "B04",
+            "B09",
+            "B10"
+          ],
+          "confusion": {
+            "未发现明确矛盾 -> 无法比较": 4,
+            "发现明确矛盾 -> 无法比较": 4,
+            "无法比较 -> 无法比较": 4
+          }
+        },
+        "all": {
+          "n": 24,
+          "correct": 8,
+          "answered": 24,
+          "correct_among_answered": 8,
+          "rule_n": 6,
+          "semantic_n": 18,
+          "semantic_correct": 2,
+          "conflict_n": 8,
+          "conflict_not_identified_ids": [
+            "U03",
+            "U04",
+            "U08",
+            "B12",
+            "B03",
+            "B04",
+            "B10"
+          ],
+          "route_matches": 8,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "U01",
+            "U02",
+            "U03",
+            "U04",
+            "U12",
+            "U08",
+            "U09",
+            "U10",
+            "B01",
+            "B02",
+            "B11",
+            "B12",
+            "B03",
+            "B04",
+            "B09",
+            "B10"
+          ],
+          "confusion": {
+            "信息不足 -> 信息不足": 2,
+            "一致 -> 存在明确矛盾": 3,
+            "存在明确矛盾 -> 信息不足": 1,
+            "存在明确矛盾 -> 一致": 2,
+            "存在明确矛盾 -> 存在明确矛盾": 1,
+            "信息不足 -> 一致": 1,
+            "一致 -> 一致": 1,
+            "信息不足 -> 存在明确矛盾": 1,
+            "未发现明确矛盾 -> 无法比较": 4,
+            "发现明确矛盾 -> 无法比较": 4,
+            "无法比较 -> 无法比较": 4
+          }
+        }
+      },
+      "rows": [
+        {
+          "case_id": "U05",
+          "task_id": "USE_MATCH",
+          "family": "U_absent",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 0.006
+        },
+        {
+          "case_id": "U06",
+          "task_id": "USE_MATCH",
+          "family": "U_absent",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 0.004
+        },
+        {
+          "case_id": "U01",
+          "task_id": "USE_MATCH",
+          "family": "U_direct",
+          "expected": "一致",
+          "predicted": "存在明确矛盾",
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.3166000038293784,
+            "信息不足": 0.3290039437780312,
+            "存在明确矛盾": 0.3543960523925904
+          },
+          "wall_ms": 1.273
+        },
+        {
+          "case_id": "U02",
+          "task_id": "USE_MATCH",
+          "family": "U_direct",
+          "expected": "一致",
+          "predicted": "存在明确矛盾",
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.27612464599207237,
+            "信息不足": 0.34594786739646105,
+            "存在明确矛盾": 0.3779274866114665
+          },
+          "wall_ms": 3.508
+        },
+        {
+          "case_id": "U03",
+          "task_id": "USE_MATCH",
+          "family": "U_exclusive",
+          "expected": "存在明确矛盾",
+          "predicted": "信息不足",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.350751035153668,
+            "信息不足": 0.35202540021068973,
+            "存在明确矛盾": 0.29722356463564237
+          },
+          "wall_ms": 1.152
+        },
+        {
+          "case_id": "U04",
+          "task_id": "USE_MATCH",
+          "family": "U_exclusive",
+          "expected": "存在明确矛盾",
+          "predicted": "一致",
+          "correct": false,
+          "expected_action": "human",
+          "action": "review",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.36952040329383384,
+            "信息不足": 0.3210153338054123,
+            "存在明确矛盾": 0.3094642629007538
+          },
+          "wall_ms": 0.927
+        },
+        {
+          "case_id": "U11",
+          "task_id": "USE_MATCH",
+          "family": "U_link",
+          "expected": "存在明确矛盾",
+          "predicted": "存在明确矛盾",
+          "correct": true,
+          "expected_action": "human",
+          "action": "human",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.33389229453795033,
+            "信息不足": 0.31356701243260554,
+            "存在明确矛盾": 0.35254069302944413
+          },
+          "wall_ms": 1.123
+        },
+        {
+          "case_id": "U12",
+          "task_id": "USE_MATCH",
+          "family": "U_link",
+          "expected": "信息不足",
+          "predicted": "一致",
+          "correct": false,
+          "expected_action": "supplement",
+          "action": "review",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.3474203015038674,
+            "信息不足": 0.3183975880681057,
+            "存在明确矛盾": 0.33418211042802687
+          },
+          "wall_ms": 1.012
+        },
+        {
+          "case_id": "U07",
+          "task_id": "USE_MATCH",
+          "family": "U_revision",
+          "expected": "一致",
+          "predicted": "一致",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.34434869482883557,
+            "信息不足": 0.331145186167603,
+            "存在明确矛盾": 0.3245061190035614
+          },
+          "wall_ms": 1.831
+        },
+        {
+          "case_id": "U08",
+          "task_id": "USE_MATCH",
+          "family": "U_revision",
+          "expected": "存在明确矛盾",
+          "predicted": "一致",
+          "correct": false,
+          "expected_action": "human",
+          "action": "review",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.34876717158943005,
+            "信息不足": 0.3211586410157102,
+            "存在明确矛盾": 0.3300741873948599
+          },
+          "wall_ms": 1.275
+        },
+        {
+          "case_id": "U09",
+          "task_id": "USE_MATCH",
+          "family": "U_scope",
+          "expected": "信息不足",
+          "predicted": "存在明确矛盾",
+          "correct": false,
+          "expected_action": "supplement",
+          "action": "human",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.3218732702638289,
+            "信息不足": 0.33891515374951525,
+            "存在明确矛盾": 0.3392115759866558
+          },
+          "wall_ms": 1.4
+        },
+        {
+          "case_id": "U10",
+          "task_id": "USE_MATCH",
+          "family": "U_scope",
+          "expected": "一致",
+          "predicted": "存在明确矛盾",
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "一致": 0.3402372112195898,
+            "信息不足": 0.3106632339169556,
+            "存在明确矛盾": 0.34909955486345456
+          },
+          "wall_ms": 1.057
+        },
+        {
+          "case_id": "B01",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_consistent",
+          "expected": "未发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "review",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.33612248443721376,
+            "无法比较": 0.35902473141640356,
+            "未发现明确矛盾": 0.30485278414638267
+          },
+          "wall_ms": 1.187
+        },
+        {
+          "case_id": "B02",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_consistent",
+          "expected": "未发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "review",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.34637107703457354,
+            "无法比较": 0.37345486938876216,
+            "未发现明确矛盾": 0.28017405357666425
+          },
+          "wall_ms": 1.071
+        },
+        {
+          "case_id": "B11",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_correction",
+          "expected": "未发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "review",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.30044208337292394,
+            "无法比较": 0.35100944994726024,
+            "未发现明确矛盾": 0.3485484666798158
+          },
+          "wall_ms": 1.19
+        },
+        {
+          "case_id": "B12",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_correction",
+          "expected": "发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.300729725690108,
+            "无法比较": 0.3621460909493775,
+            "未发现明确矛盾": 0.33712418336051453
+          },
+          "wall_ms": 0.971
+        },
+        {
+          "case_id": "B03",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_opposed",
+          "expected": "发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.2869465757869585,
+            "无法比较": 0.3826107780507793,
+            "未发现明确矛盾": 0.3304426461622621
+          },
+          "wall_ms": 2.143
+        },
+        {
+          "case_id": "B04",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_opposed",
+          "expected": "发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.3168052544939957,
+            "无法比较": 0.34264816578882135,
+            "未发现明确矛盾": 0.34054657971718294
+          },
+          "wall_ms": 1.089
+        },
+        {
+          "case_id": "B05",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_period",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 0.009
+        },
+        {
+          "case_id": "B06",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_period",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 0.003
+        },
+        {
+          "case_id": "B09",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_scope",
+          "expected": "未发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "review",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.29466479008925545,
+            "无法比较": 0.3625178793037115,
+            "未发现明确矛盾": 0.34281733060703296
+          },
+          "wall_ms": 1.255
+        },
+        {
+          "case_id": "B10",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_scope",
+          "expected": "发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "tfidf_logistic_group_oof",
+          "distribution": {
+            "发现明确矛盾": 0.31499756846896515,
+            "无法比较": 0.3493565658136835,
+            "未发现明确矛盾": 0.3356458657173514
+          },
+          "wall_ms": 1.118
+        },
+        {
+          "case_id": "B07",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_subject",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 0.008
+        },
+        {
+          "case_id": "B08",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_subject",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 0.002
+        }
+      ]
+    },
+    "agentjev_public_same_route": {
+      "summary": {
+        "USE_MATCH": {
+          "n": 12,
+          "correct": 7,
+          "answered": 12,
+          "correct_among_answered": 7,
+          "rule_n": 2,
+          "semantic_n": 10,
+          "semantic_correct": 5,
+          "conflict_n": 4,
+          "conflict_not_identified_ids": [
+            "U03",
+            "U04",
+            "U08",
+            "U11"
+          ],
+          "route_matches": 7,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "U02",
+            "U03",
+            "U04",
+            "U08",
+            "U11"
+          ],
+          "confusion": {
+            "一致 -> 一致": 3,
+            "一致 -> 信息不足": 1,
+            "存在明确矛盾 -> 信息不足": 4,
+            "信息不足 -> 信息不足": 4
+          }
+        },
+        "BIZ_CONFLICT": {
+          "n": 12,
+          "correct": 10,
+          "answered": 12,
+          "correct_among_answered": 10,
+          "rule_n": 4,
+          "semantic_n": 8,
+          "semantic_correct": 6,
+          "conflict_n": 4,
+          "conflict_not_identified_ids": [
+            "B03"
+          ],
+          "route_matches": 10,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "B02",
+            "B03"
+          ],
+          "confusion": {
+            "未发现明确矛盾 -> 未发现明确矛盾": 3,
+            "未发现明确矛盾 -> 发现明确矛盾": 1,
+            "发现明确矛盾 -> 无法比较": 1,
+            "发现明确矛盾 -> 发现明确矛盾": 3,
+            "无法比较 -> 无法比较": 4
+          }
+        },
+        "all": {
+          "n": 24,
+          "correct": 17,
+          "answered": 24,
+          "correct_among_answered": 17,
+          "rule_n": 6,
+          "semantic_n": 18,
+          "semantic_correct": 11,
+          "conflict_n": 8,
+          "conflict_not_identified_ids": [
+            "U03",
+            "U04",
+            "U08",
+            "U11",
+            "B03"
+          ],
+          "route_matches": 17,
+          "auto_completed": 0,
+          "mistake_ids": [
+            "U02",
+            "U03",
+            "U04",
+            "U08",
+            "U11",
+            "B02",
+            "B03"
+          ],
+          "confusion": {
+            "一致 -> 一致": 3,
+            "一致 -> 信息不足": 1,
+            "存在明确矛盾 -> 信息不足": 4,
+            "信息不足 -> 信息不足": 4,
+            "未发现明确矛盾 -> 未发现明确矛盾": 3,
+            "未发现明确矛盾 -> 发现明确矛盾": 1,
+            "发现明确矛盾 -> 无法比较": 1,
+            "发现明确矛盾 -> 发现明确矛盾": 3,
+            "无法比较 -> 无法比较": 4
+          }
+        }
+      },
+      "rows": [
+        {
+          "case_id": "U01",
+          "task_id": "USE_MATCH",
+          "family": "U_direct",
+          "expected": "一致",
+          "predicted": "一致",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.8325762748718262,
+            "存在明确矛盾": 0.04648839682340622,
+            "信息不足": 0.12093537300825119
+          },
+          "wall_ms": 6893.189,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 415,
+            "generated_tokens": 0,
+            "workflow_ms": 6889.08
+          }
+        },
+        {
+          "case_id": "U02",
+          "task_id": "USE_MATCH",
+          "family": "U_direct",
+          "expected": "一致",
+          "predicted": "信息不足",
+          "correct": false,
+          "expected_action": "review",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.43337687849998474,
+            "存在明确矛盾": 0.10554447770118713,
+            "信息不足": 0.46107861399650574
+          },
+          "wall_ms": 2017.914,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 400,
+            "generated_tokens": 0,
+            "workflow_ms": 1995.51
+          }
+        },
+        {
+          "case_id": "U03",
+          "task_id": "USE_MATCH",
+          "family": "U_exclusive",
+          "expected": "存在明确矛盾",
+          "predicted": "信息不足",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.12157522141933441,
+            "存在明确矛盾": 0.35809260606765747,
+            "信息不足": 0.5203321576118469
+          },
+          "wall_ms": 2343.024,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 406,
+            "generated_tokens": 0,
+            "workflow_ms": 2320.28
+          }
+        },
+        {
+          "case_id": "U04",
+          "task_id": "USE_MATCH",
+          "family": "U_exclusive",
+          "expected": "存在明确矛盾",
+          "predicted": "信息不足",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.0871148407459259,
+            "存在明确矛盾": 0.4547681212425232,
+            "信息不足": 0.4581170976161957
+          },
+          "wall_ms": 3787.585,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 403,
+            "generated_tokens": 0,
+            "workflow_ms": 3784.49
+          }
+        },
+        {
+          "case_id": "U05",
+          "task_id": "USE_MATCH",
+          "family": "U_absent",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 3.147,
+          "usage": {
+            "actual_model_requests": 0,
+            "successful_model_requests": 0,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 0,
+            "input_path_tokens": 0,
+            "generated_tokens": 0,
+            "workflow_ms": 0.02
+          }
+        },
+        {
+          "case_id": "U06",
+          "task_id": "USE_MATCH",
+          "family": "U_absent",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 3.092,
+          "usage": {
+            "actual_model_requests": 0,
+            "successful_model_requests": 0,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 0,
+            "input_path_tokens": 0,
+            "generated_tokens": 0,
+            "workflow_ms": 0.02
+          }
+        },
+        {
+          "case_id": "U07",
+          "task_id": "USE_MATCH",
+          "family": "U_revision",
+          "expected": "一致",
+          "predicted": "一致",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.6588714122772217,
+            "存在明确矛盾": 0.14049360156059265,
+            "信息不足": 0.20063495635986328
+          },
+          "wall_ms": 4530.286,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 535,
+            "generated_tokens": 0,
+            "workflow_ms": 4511.16
+          }
+        },
+        {
+          "case_id": "U08",
+          "task_id": "USE_MATCH",
+          "family": "U_revision",
+          "expected": "存在明确矛盾",
+          "predicted": "信息不足",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.10870593786239624,
+            "存在明确矛盾": 0.3364585041999817,
+            "信息不足": 0.5548355579376221
+          },
+          "wall_ms": 2165.406,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 508,
+            "generated_tokens": 0,
+            "workflow_ms": 2144.05
+          }
+        },
+        {
+          "case_id": "U09",
+          "task_id": "USE_MATCH",
+          "family": "U_scope",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.09395983815193176,
+            "存在明确矛盾": 0.323281466960907,
+            "信息不足": 0.5827587246894836
+          },
+          "wall_ms": 1572.919,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 415,
+            "generated_tokens": 0,
+            "workflow_ms": 1554.92
+          }
+        },
+        {
+          "case_id": "U10",
+          "task_id": "USE_MATCH",
+          "family": "U_scope",
+          "expected": "一致",
+          "predicted": "一致",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.7952203154563904,
+            "存在明确矛盾": 0.038272928446531296,
+            "信息不足": 0.16650672256946564
+          },
+          "wall_ms": 1921.823,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 430,
+            "generated_tokens": 0,
+            "workflow_ms": 1895.98
+          }
+        },
+        {
+          "case_id": "U11",
+          "task_id": "USE_MATCH",
+          "family": "U_link",
+          "expected": "存在明确矛盾",
+          "predicted": "信息不足",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.0931825116276741,
+            "存在明确矛盾": 0.38623741269111633,
+            "信息不足": 0.5205801129341125
+          },
+          "wall_ms": 2080.84,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 430,
+            "generated_tokens": 0,
+            "workflow_ms": 2065.14
+          }
+        },
+        {
+          "case_id": "U12",
+          "task_id": "USE_MATCH",
+          "family": "U_link",
+          "expected": "信息不足",
+          "predicted": "信息不足",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "一致": 0.1319928765296936,
+            "存在明确矛盾": 0.2803793251514435,
+            "信息不足": 0.5876278281211853
+          },
+          "wall_ms": 1750.992,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 415,
+            "generated_tokens": 0,
+            "workflow_ms": 1727.0
+          }
+        },
+        {
+          "case_id": "B01",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_consistent",
+          "expected": "未发现明确矛盾",
+          "predicted": "未发现明确矛盾",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.030264873057603836,
+            "未发现明确矛盾": 0.6854562163352966,
+            "无法比较": 0.284278929233551
+          },
+          "wall_ms": 1600.602,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 396,
+            "generated_tokens": 0,
+            "workflow_ms": 1581.78
+          }
+        },
+        {
+          "case_id": "B02",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_consistent",
+          "expected": "未发现明确矛盾",
+          "predicted": "发现明确矛盾",
+          "correct": false,
+          "expected_action": "review",
+          "action": "human",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.47774946689605713,
+            "未发现明确矛盾": 0.25114330649375916,
+            "无法比较": 0.2711072862148285
+          },
+          "wall_ms": 1586.71,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 405,
+            "generated_tokens": 0,
+            "workflow_ms": 1565.72
+          }
+        },
+        {
+          "case_id": "B03",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_opposed",
+          "expected": "发现明确矛盾",
+          "predicted": "无法比较",
+          "correct": false,
+          "expected_action": "human",
+          "action": "supplement",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.3415987491607666,
+            "未发现明确矛盾": 0.21826981008052826,
+            "无法比较": 0.44013139605522156
+          },
+          "wall_ms": 1536.733,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 408,
+            "generated_tokens": 0,
+            "workflow_ms": 1522.11
+          }
+        },
+        {
+          "case_id": "B04",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_opposed",
+          "expected": "发现明确矛盾",
+          "predicted": "发现明确矛盾",
+          "correct": true,
+          "expected_action": "human",
+          "action": "human",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.4573366045951843,
+            "未发现明确矛盾": 0.1634410321712494,
+            "无法比较": 0.3792223632335663
+          },
+          "wall_ms": 1475.677,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 411,
+            "generated_tokens": 0,
+            "workflow_ms": 1473.33
+          }
+        },
+        {
+          "case_id": "B05",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_period",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 2.624,
+          "usage": {
+            "actual_model_requests": 0,
+            "successful_model_requests": 0,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 0,
+            "input_path_tokens": 0,
+            "generated_tokens": 0,
+            "workflow_ms": 0.02
+          }
+        },
+        {
+          "case_id": "B06",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_period",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 3.026,
+          "usage": {
+            "actual_model_requests": 0,
+            "successful_model_requests": 0,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 0,
+            "input_path_tokens": 0,
+            "generated_tokens": 0,
+            "workflow_ms": 0.02
+          }
+        },
+        {
+          "case_id": "B07",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_subject",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 2.89,
+          "usage": {
+            "actual_model_requests": 0,
+            "successful_model_requests": 0,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 0,
+            "input_path_tokens": 0,
+            "generated_tokens": 0,
+            "workflow_ms": 0.02
+          }
+        },
+        {
+          "case_id": "B08",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_subject",
+          "expected": "无法比较",
+          "predicted": "无法比较",
+          "correct": true,
+          "expected_action": "supplement",
+          "action": "supplement",
+          "source": "input_rule",
+          "distribution": null,
+          "wall_ms": 2.694,
+          "usage": {
+            "actual_model_requests": 0,
+            "successful_model_requests": 0,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 0,
+            "input_path_tokens": 0,
+            "generated_tokens": 0,
+            "workflow_ms": 0.02
+          }
+        },
+        {
+          "case_id": "B09",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_scope",
+          "expected": "未发现明确矛盾",
+          "predicted": "未发现明确矛盾",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.09812376648187637,
+            "未发现明确矛盾": 0.5239977240562439,
+            "无法比较": 0.37787848711013794
+          },
+          "wall_ms": 1722.739,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 414,
+            "generated_tokens": 0,
+            "workflow_ms": 1719.93
+          }
+        },
+        {
+          "case_id": "B10",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_scope",
+          "expected": "发现明确矛盾",
+          "predicted": "发现明确矛盾",
+          "correct": true,
+          "expected_action": "human",
+          "action": "human",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.4378220736980438,
+            "未发现明确矛盾": 0.20624980330467224,
+            "无法比较": 0.3559281527996063
+          },
+          "wall_ms": 1447.03,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 408,
+            "generated_tokens": 0,
+            "workflow_ms": 1431.97
+          }
+        },
+        {
+          "case_id": "B11",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_correction",
+          "expected": "未发现明确矛盾",
+          "predicted": "未发现明确矛盾",
+          "correct": true,
+          "expected_action": "review",
+          "action": "review",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.14718548953533173,
+            "未发现明确矛盾": 0.45780450105667114,
+            "无法比较": 0.3950100243091583
+          },
+          "wall_ms": 4509.849,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 447,
+            "generated_tokens": 0,
+            "workflow_ms": 4489.83
+          }
+        },
+        {
+          "case_id": "B12",
+          "task_id": "BIZ_CONFLICT",
+          "family": "B_correction",
+          "expected": "发现明确矛盾",
+          "predicted": "发现明确矛盾",
+          "correct": true,
+          "expected_action": "human",
+          "action": "human",
+          "source": "agentjev_public_shadow",
+          "distribution": {
+            "发现明确矛盾": 0.49245139956474304,
+            "未发现明确矛盾": 0.1743508130311966,
+            "无法比较": 0.33319777250289917
+          },
+          "wall_ms": 4977.468,
+          "usage": {
+            "actual_model_requests": 1,
+            "successful_model_requests": 1,
+            "failed_model_requests": 0,
+            "simulated_analysis_requests": 0,
+            "actual_complex_model_requests": 0,
+            "candidate_paths": 3,
+            "input_path_tokens": 435,
+            "generated_tokens": 0,
+            "workflow_ms": 4973.09
+          }
+        }
+      ]
+    }
+  },
+  "real_raw": [
+    {
+      "case_id": "U01",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": 0.8325762748718262,
+            "distribution": {
+              "一致": 0.8325762748718262,
+              "存在明确矛盾": 0.04648839682340622,
+              "信息不足": 0.12093537300825119
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待复核",
+            "action": "review",
+            "reason": "真实公开模型返回候选分布；尚未信贷微调或验证接受条件，保留为影子建议。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请A的全部借款拟用于购买生产用铝材。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "申请A对应采购订单：购买用于生产的铝型材；本订单覆盖申请的全部采购需求。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 6884.84,
+              "candidate_paths": 3,
+              "input_path_tokens": 415,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 415,
+          "generated_tokens": 0,
+          "workflow_ms": 6889.08
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U02",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.46107861399650574,
+            "distribution": {
+              "一致": 0.43337687849998474,
+              "存在明确矛盾": 0.10554447770118713,
+              "信息不足": 0.46107861399650574
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本次申请资金只用于购置仓库搬运叉车。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "对应本次申请的设备合同约定购入一台仓储叉车，无其他采购项目。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1995.24,
+              "candidate_paths": 3,
+              "input_path_tokens": 400,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 400,
+          "generated_tokens": 0,
+          "workflow_ms": 1995.51
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U03",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.5203321576118469,
+            "distribution": {
+              "一致": 0.12157522141933441,
+              "存在明确矛盾": 0.35809260606765747,
+              "信息不足": 0.5203321576118469
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本次申请的资金全部且仅用于购进面粉原料。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "本次申请对应的唯一采购合同标的是办公电脑，不包含面粉，且没有补充协议。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 2320.16,
+              "candidate_paths": 3,
+              "input_path_tokens": 406,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 406,
+          "generated_tokens": 0,
+          "workflow_ms": 2320.28
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U04",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.4581170976161957,
+            "distribution": {
+              "一致": 0.0871148407459259,
+              "存在明确矛盾": 0.4547681212425232,
+              "信息不足": 0.4581170976161957
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请资金只用于购买配送车辆，不用于其他支出。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "对应本申请的支出证明记载：全部资金用于门店装修，未购置车辆。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 3784.33,
+              "candidate_paths": 3,
+              "input_path_tokens": 403,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 403,
+          "generated_tokens": 0,
+          "workflow_ms": 3784.49
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U05",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "当前任务少于两份材料，先补充可供交叉比较的原文；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本次申请拟购买冷藏设备，尚未提交合同或订单。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.02
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U06",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "当前任务少于两份材料，先补充可供交叉比较的原文；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本次借款拟支付生产原料采购款，证明文件后补。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.02
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U07",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": 0.6588714122772217,
+            "distribution": {
+              "一致": 0.6588714122772217,
+              "存在明确矛盾": 0.14049360156059265,
+              "信息不足": 0.20063495635986328
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待复核",
+            "action": "review",
+            "reason": "真实公开模型返回候选分布；尚未信贷微调或验证接受条件，保留为影子建议。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请A当前资金用途为购买生产用铜材。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "申请A原订单标的为切割设备；双方允许以生效协议更改标的。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m3",
+                "paragraph_id": "p1",
+                "quote": "双方已签署并生效的更正协议：原订单全部标的改为生产用铜材，原设备条款废止。",
+                "title": "材料3",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 4511.03,
+              "candidate_paths": 3,
+              "input_path_tokens": 535,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 535,
+          "generated_tokens": 0,
+          "workflow_ms": 4511.16
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U08",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.5548355579376221,
+            "distribution": {
+              "一致": 0.10870593786239624,
+              "存在明确矛盾": 0.3364585041999817,
+              "信息不足": 0.5548355579376221
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请A的资金只用于生产用铜材采购。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "申请A唯一有效订单：购买切割设备，不含铜材。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m3",
+                "paragraph_id": "p1",
+                "quote": "改购铜材的补充协议只是未签署草案，当前不生效；原订单继续有效。",
+                "title": "材料3",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 2143.9,
+              "candidate_paths": 3,
+              "input_path_tokens": 508,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 508,
+          "generated_tokens": 0,
+          "workflow_ms": 2144.05
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U09",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.5827587246894836,
+            "distribution": {
+              "一致": 0.09395983815193176,
+              "存在明确矛盾": 0.323281466960907,
+              "信息不足": 0.5827587246894836
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本申请购买两类货物：面粉和食用油，需核验完整用途。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "对应订单仅记载面粉采购，明确不覆盖食用油，其他证明尚未提交。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1554.84,
+              "candidate_paths": 3,
+              "input_path_tokens": 415,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 415,
+          "generated_tokens": 0,
+          "workflow_ms": 1554.92
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U10",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": 0.7952203154563904,
+            "distribution": {
+              "一致": 0.7952203154563904,
+              "存在明确矛盾": 0.038272928446531296,
+              "信息不足": 0.16650672256946564
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待复核",
+            "action": "review",
+            "reason": "真实公开模型返回候选分布；尚未信贷微调或验证接受条件，保留为影子建议。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本申请资金仅用于购买面粉和食用油。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "本申请的第一份订单覆盖全部面粉采购，第二份订单覆盖全部食用油采购；两份订单合计覆盖本申请全部用途。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1895.86,
+              "candidate_paths": 3,
+              "input_path_tokens": 430,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 430,
+          "generated_tokens": 0,
+          "workflow_ms": 1895.98
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U11",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.5205801129341125,
+            "distribution": {
+              "一致": 0.0931825116276741,
+              "存在明确矛盾": 0.38623741269111633,
+              "信息不足": 0.5205801129341125
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请A仅用于服装面料采购。另有独立申请B用于装修。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "本文件明确对应申请A：资金全部支付店面装修，未购买服装面料；申请B未使用本文件。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 2065.0,
+              "candidate_paths": 3,
+              "input_path_tokens": 430,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 430,
+          "generated_tokens": 0,
+          "workflow_ms": 2065.14
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "U12",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": 0.5876278281211853,
+            "distribution": {
+              "一致": 0.1319928765296936,
+              "存在明确矛盾": 0.2803793251514435,
+              "信息不足": 0.5876278281211853
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请A拟购买服装面料。另有独立申请B购买服装面料。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "本订单仅对应申请B，不对应申请A；申请A尚无对应采购证明。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1726.9,
+              "candidate_paths": 3,
+              "input_path_tokens": 415,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 415,
+          "generated_tokens": 0,
+          "workflow_ms": 1727.0
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B01",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "未发现明确矛盾",
+            "score": 0.6854562163352966,
+            "distribution": {
+              "发现明确矛盾": 0.030264873057603836,
+              "未发现明确矛盾": 0.6854562163352966,
+              "无法比较": 0.284278929233551
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待复核",
+            "action": "review",
+            "reason": "真实公开模型返回候选分布；尚未信贷微调或验证接受条件，保留为影子建议。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月全月正常营业，没有停业。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月持续经营，全月未暂停营业。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1581.58,
+              "candidate_paths": 3,
+              "input_path_tokens": 396,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 396,
+          "generated_tokens": 0,
+          "workflow_ms": 1581.78
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B02",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.47774946689605713,
+            "distribution": {
+              "发现明确矛盾": 0.47774946689605713,
+              "未发现明确矛盾": 0.25114330649375916,
+              "无法比较": 0.2711072862148285
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月因检修整月停业，没有开展经营活动。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "2026年8月仿真主体甲整月未营业，未开展任何经营活动。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1565.62,
+              "candidate_paths": 3,
+              "input_path_tokens": 405,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 405,
+          "generated_tokens": 0,
+          "workflow_ms": 1565.72
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B03",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": 0.44013139605522156,
+            "distribution": {
+              "发现明确矛盾": 0.3415987491607666,
+              "未发现明确矛盾": 0.21826981008052826,
+              "无法比较": 0.44013139605522156
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "模型认为当前材料不足以完成判断；未经领域验证，请人员确认缺项。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲在2026年8月全月正常营业，期间未停业。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲在2026年8月整月停业，期间未开展经营。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1522.02,
+              "candidate_paths": 3,
+              "input_path_tokens": 408,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 408,
+          "generated_tokens": 0,
+          "workflow_ms": 1522.11
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B04",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.4573366045951843,
+            "distribution": {
+              "发现明确矛盾": 0.4573366045951843,
+              "未发现明确矛盾": 0.1634410321712494,
+              "无法比较": 0.3792223632335663
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲在2026年8月每一天均对外营业，没有闭店日。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲在2026年8月一天也未营业，整个自然月闭店。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1473.2,
+              "candidate_paths": 3,
+              "input_path_tokens": 411,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 411,
+          "generated_tokens": 0,
+          "workflow_ms": 1473.33
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B05",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料登记的期间不一致，需补充同期间记录；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年7月整月停业。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-07"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月全月正常营业。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.02
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B06",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料登记的期间不一致，需补充同期间记录；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2025年度未开展经营。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2025"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年度持续经营。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.02
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B07",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料登记的主体不一致，需确认归属及关系；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月全月营业。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体乙2026年8月整月停业。",
+                "title": "材料2",
+                "subject": "仿真主体乙",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.02
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B08",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料登记的主体不一致，需确认归属及关系；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体丙2026年8月没有任何经营活动。",
+                "title": "材料1",
+                "subject": "仿真主体丙",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体丁2026年8月每天均开展经营。",
+                "title": "材料2",
+                "subject": "仿真主体丁",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.02
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B09",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "未发现明确矛盾",
+            "score": 0.5239977240562439,
+            "distribution": {
+              "发现明确矛盾": 0.09812376648187637,
+              "未发现明确矛盾": 0.5239977240562439,
+              "无法比较": 0.37787848711013794
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待复核",
+            "action": "review",
+            "reason": "真实公开模型返回候选分布；尚未信贷微调或验证接受条件，保留为影子建议。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月生产线整月停工，但零售门店全月营业。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月零售门店没有停业；本记录不描述生产线。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1719.82,
+              "candidate_paths": 3,
+              "input_path_tokens": 414,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 414,
+          "generated_tokens": 0,
+          "workflow_ms": 1719.93
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B10",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.4378220736980438,
+            "distribution": {
+              "发现明确矛盾": 0.4378220736980438,
+              "未发现明确矛盾": 0.20624980330467224,
+              "无法比较": 0.3559281527996063
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月唯一零售门店整月关闭，没有一天营业。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月同一零售门店每天营业，没有任何闭店日。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1431.88,
+              "candidate_paths": 3,
+              "input_path_tokens": 408,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 408,
+          "generated_tokens": 0,
+          "workflow_ms": 1431.97
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B11",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "未发现明确矛盾",
+            "score": 0.45780450105667114,
+            "distribution": {
+              "发现明确矛盾": 0.14718548953533173,
+              "未发现明确矛盾": 0.45780450105667114,
+              "无法比较": 0.3950100243091583
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待复核",
+            "action": "review",
+            "reason": "真实公开模型返回候选分布；尚未信贷微调或验证接受条件，保留为影子建议。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月原说明写整月停业；现经有效更正为全月营业，原停业陈述作废。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月全月持续经营，无停业日。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 4489.7,
+              "candidate_paths": 3,
+              "input_path_tokens": 447,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 447,
+          "generated_tokens": 0,
+          "workflow_ms": 4489.83
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    },
+    {
+      "case_id": "B12",
+      "result": {
+        "case_id": "transient",
+        "revision": 1,
+        "mode": "真实模型影子",
+        "adapter": "agentjev_public_shadow",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 63.72,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model"
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.49245139956474304,
+            "distribution": {
+              "发现明确矛盾": 0.49245139956474304,
+              "未发现明确矛盾": 0.1743508130311966,
+              "无法比较": 0.33319777250289917
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月全月持续经营。更正申请未经确认，当前说明仍有效。",
+                "title": "材料1",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仿真主体甲2026年8月整月停业，未开展经营；无生效更正文件。",
+                "title": "材料2",
+                "subject": "仿真主体甲",
+                "period": "2026-08"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 4972.94,
+              "candidate_paths": 3,
+              "input_path_tokens": 435,
+              "generated_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 435,
+          "generated_tokens": 0,
+          "workflow_ms": 4973.09
+        },
+        "scope": "影子建议，无自动完成阈值；复杂分析模型尚未接入。"
+      }
+    }
+  ]
+}

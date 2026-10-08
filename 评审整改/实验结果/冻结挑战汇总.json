@@ -1,0 +1,1114 @@
+{
+  "scope": "28份项目自编冻结仿真挑战；标签尚未独立业务复核，不代表银行泛化或生产效果",
+  "systems": {
+    "encoder": {
+      "metrics": {
+        "n": 28,
+        "correct": 14,
+        "semantic_n": 24,
+        "semantic_correct": 10,
+        "reference_conflicts": 8,
+        "conflict_misses": 6,
+        "conflict_false_positives": 4,
+        "invalid_or_no_answer": 0,
+        "conflict_sent_to_supplement": 0,
+        "auto_completed": 0,
+        "requires_personnel": 28,
+        "observed_wall_seconds": 9.05
+      },
+      "rows": [
+        {
+          "case_id": "H01",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H02",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "信息不足",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H03",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H04",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H05",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H06",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H07",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H08",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H09",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H10",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H11",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "信息不足",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H12",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H13",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H14",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H15",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H16",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H17",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H18",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H19",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H20",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H21",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H22",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H23",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "无法比较",
+          "correct": false,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H24",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "human",
+          "source": "bert_frozen_logistic"
+        },
+        {
+          "case_id": "H25",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H26",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H27",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H28",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        }
+      ]
+    },
+    "fast": {
+      "metrics": {
+        "n": 28,
+        "correct": 17,
+        "semantic_n": 24,
+        "semantic_correct": 13,
+        "reference_conflicts": 8,
+        "conflict_misses": 1,
+        "conflict_false_positives": 10,
+        "invalid_or_no_answer": 0,
+        "conflict_sent_to_supplement": 0,
+        "auto_completed": 0,
+        "requires_personnel": 28
+      },
+      "rows": [
+        {
+          "case_id": "H01",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H02",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H03",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H04",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H05",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H06",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H07",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H08",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H09",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H10",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H11",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H12",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H13",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H14",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H15",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H16",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H17",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H18",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H19",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H20",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H21",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H22",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H23",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H24",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H25",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H26",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H27",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H28",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        }
+      ]
+    },
+    "dual": {
+      "metrics": {
+        "n": 28,
+        "correct": 15,
+        "semantic_n": 24,
+        "semantic_correct": 11,
+        "reference_conflicts": 8,
+        "conflict_misses": 1,
+        "conflict_false_positives": 10,
+        "invalid_or_no_answer": 0,
+        "conflict_sent_to_supplement": 0,
+        "auto_completed": 0,
+        "requires_personnel": 28,
+        "actual_slow_requests": 7,
+        "failed_slow_requests": 0,
+        "prompt_tokens": 2726,
+        "completion_tokens": 210,
+        "observed_wall_seconds": 82.85
+      },
+      "rows": [
+        {
+          "case_id": "H01",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H02",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H03",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H04",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H05",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H06",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H07",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H08",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H09",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H10",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H11",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "存在明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H12",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "存在明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H13",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H14",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H15",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H16",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H17",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H18",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H19",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H20",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H21",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H22",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H23",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H24",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "agentjev_public_shadow"
+        },
+        {
+          "case_id": "H25",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H26",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H27",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H28",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        }
+      ]
+    },
+    "slow": {
+      "metrics": {
+        "n": 28,
+        "correct": 12,
+        "semantic_n": 24,
+        "semantic_correct": 8,
+        "reference_conflicts": 8,
+        "conflict_misses": 4,
+        "conflict_false_positives": 8,
+        "invalid_or_no_answer": 0,
+        "conflict_sent_to_supplement": 0,
+        "auto_completed": 0,
+        "requires_personnel": 28,
+        "actual_slow_requests": 24,
+        "failed_slow_requests": 0,
+        "prompt_tokens": 9059,
+        "completion_tokens": 754,
+        "observed_wall_seconds": 74.46
+      },
+      "rows": [
+        {
+          "case_id": "H01",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H02",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H03",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H04",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H05",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H06",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H07",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H08",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H09",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H10",
+          "task_id": "USE_MATCH",
+          "expected": "一致",
+          "answer": "一致",
+          "correct": true,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H11",
+          "task_id": "USE_MATCH",
+          "expected": "存在明确矛盾",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H12",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "一致",
+          "correct": false,
+          "action": "review",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H13",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H14",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H15",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H16",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H17",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H18",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H19",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H20",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H21",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H22",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "未发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H23",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "发现明确矛盾",
+          "answer": "发现明确矛盾",
+          "correct": true,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H24",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "发现明确矛盾",
+          "correct": false,
+          "action": "human",
+          "source": "real_slow_analysis"
+        },
+        {
+          "case_id": "H25",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H26",
+          "task_id": "USE_MATCH",
+          "expected": "信息不足",
+          "answer": "信息不足",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H27",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        },
+        {
+          "case_id": "H28",
+          "task_id": "BIZ_CONFLICT",
+          "expected": "无法比较",
+          "answer": "无法比较",
+          "correct": true,
+          "action": "supplement",
+          "source": "input_rule"
+        }
+      ]
+    }
+  },
+  "label_sha256": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3",
+  "prediction_file_hashes": {
+    "encoder": "6a5b4ac8e0498a9176bf60b99ccac28ec9703e28765b395b3d5aad40d68d1aac",
+    "dual": "9fb007a436ea14a0b66a27c8e5bd8d6e084ec74aa20dec1c50fc7f2bafc56eb8",
+    "slow": "9e920a55b5da182e545956461bca7de2aa0ec8d9aaa8a6c01bd7b34db5a54e7b"
+  },
+  "same_quality_screen_passed": true,
+  "resource_comparison": {
+    "slow_calls_baseline": 24,
+    "slow_calls_dual": 7,
+    "call_reduction_fraction": 0.7083333333333333,
+    "verified_cost_savings": null,
+    "bank_approval_speedup": null
+  },
+  "limitations": [
+    "项目自编标签，不具独立业务复核证据",
+    "没有信贷领域微调和校准",
+    "0.80为工程阈值",
+    "CPU运行存在严重启动/调度停顿，时延仅记录，不作为容量或审批时效证据",
+    "fast列来自真实双系统运行内的原始快判断，不是另外运行的完整服务",
+    "全部任务保留人员处理，不能证明人工复核减少"
+  ]
+}

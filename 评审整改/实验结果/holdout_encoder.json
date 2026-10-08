@@ -1,0 +1,565 @@
+{
+  "system": "encoder",
+  "suite": "holdout",
+  "input_sha256": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb",
+  "scope": "project-authored synthetic evaluation; no independent expert review",
+  "python": "3.13.2",
+  "protocol": "评审整改/G3_对照协议_v1.md",
+  "status": "completed",
+  "rows": [
+    {
+      "case_id": "H01",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "存在明确矛盾",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.099869745723707,
+          "信息不足": 0.06917408790165544,
+          "存在明确矛盾": 0.8309561663746375
+        },
+        "usage": {
+          "wall_ms": 344.4612000021152
+        }
+      },
+      "wall_ms": 344.4612000021152
+    },
+    {
+      "case_id": "H02",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.23887456132533644,
+          "信息不足": 0.5439935040537186,
+          "存在明确矛盾": 0.2171319346209449
+        },
+        "usage": {
+          "wall_ms": 344.42790001048706
+        }
+      },
+      "wall_ms": 344.42790001048706
+    },
+    {
+      "case_id": "H03",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "存在明确矛盾",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.009242171289778986,
+          "信息不足": 0.028480583857276726,
+          "存在明确矛盾": 0.9622772448529442
+        },
+        "usage": {
+          "wall_ms": 321.2868999980856
+        }
+      },
+      "wall_ms": 321.2868999980856
+    },
+    {
+      "case_id": "H04",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "存在明确矛盾",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.1596753209888468,
+          "信息不足": 0.14925037216390008,
+          "存在明确矛盾": 0.6910743068472531
+        },
+        "usage": {
+          "wall_ms": 359.5831000129692
+        }
+      },
+      "wall_ms": 359.5831000129692
+    },
+    {
+      "case_id": "H05",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "存在明确矛盾",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.06873090078963408,
+          "信息不足": 0.08006065891532918,
+          "存在明确矛盾": 0.8512084402950368
+        },
+        "usage": {
+          "wall_ms": 332.69389998167753
+        }
+      },
+      "wall_ms": 332.69389998167753
+    },
+    {
+      "case_id": "H06",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.014858278323106603,
+          "信息不足": 0.6165372192477117,
+          "存在明确矛盾": 0.36860450242918186
+        },
+        "usage": {
+          "wall_ms": 253.34429999929853
+        }
+      },
+      "wall_ms": 253.34429999929853
+    },
+    {
+      "case_id": "H07",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "存在明确矛盾",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.1783796657156579,
+          "信息不足": 0.3938566459096716,
+          "存在明确矛盾": 0.42776368837467055
+        },
+        "usage": {
+          "wall_ms": 330.8672000130173
+        }
+      },
+      "wall_ms": 330.8672000130173
+    },
+    {
+      "case_id": "H08",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "存在明确矛盾",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.023818244005125472,
+          "信息不足": 0.15212617515355695,
+          "存在明确矛盾": 0.8240555808413177
+        },
+        "usage": {
+          "wall_ms": 363.9421999978367
+        }
+      },
+      "wall_ms": 363.9421999978367
+    },
+    {
+      "case_id": "H09",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.19467272543504552,
+          "信息不足": 0.7523068268110711,
+          "存在明确矛盾": 0.053020447753883516
+        },
+        "usage": {
+          "wall_ms": 369.1181000031065
+        }
+      },
+      "wall_ms": 369.1181000031065
+    },
+    {
+      "case_id": "H10",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "一致",
+        "action": "review",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.5932486976097492,
+          "信息不足": 0.05350842234962577,
+          "存在明确矛盾": 0.353242880040625
+        },
+        "usage": {
+          "wall_ms": 358.9841999928467
+        }
+      },
+      "wall_ms": 358.9841999928467
+    },
+    {
+      "case_id": "H11",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.033215413473934134,
+          "信息不足": 0.5252549225040137,
+          "存在明确矛盾": 0.441529664022052
+        },
+        "usage": {
+          "wall_ms": 352.4381000024732
+        }
+      },
+      "wall_ms": 352.4381000024732
+    },
+    {
+      "case_id": "H12",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "一致": 0.009316528660605485,
+          "信息不足": 0.5375920091355854,
+          "存在明确矛盾": 0.4530914622038091
+        },
+        "usage": {
+          "wall_ms": 364.2136999987997
+        }
+      },
+      "wall_ms": 364.2136999987997
+    },
+    {
+      "case_id": "H13",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.1782838085627565,
+          "无法比较": 0.716699316947246,
+          "未发现明确矛盾": 0.10501687448999757
+        },
+        "usage": {
+          "wall_ms": 353.41979999793693
+        }
+      },
+      "wall_ms": 353.41979999793693
+    },
+    {
+      "case_id": "H14",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.2123203427223818,
+          "无法比较": 0.7739350231118246,
+          "未发现明确矛盾": 0.013744634165793683
+        },
+        "usage": {
+          "wall_ms": 316.97330001043156
+        }
+      },
+      "wall_ms": 316.97330001043156
+    },
+    {
+      "case_id": "H15",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.0029088038615734404,
+          "无法比较": 0.9943311243710931,
+          "未发现明确矛盾": 0.0027600717673335923
+        },
+        "usage": {
+          "wall_ms": 290.00800001085736
+        }
+      },
+      "wall_ms": 290.00800001085736
+    },
+    {
+      "case_id": "H16",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.024807397184043484,
+          "无法比较": 0.9744605514869656,
+          "未发现明确矛盾": 0.000732051328991016
+        },
+        "usage": {
+          "wall_ms": 307.7610000036657
+        }
+      },
+      "wall_ms": 307.7610000036657
+    },
+    {
+      "case_id": "H17",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.05809530568622939,
+          "无法比较": 0.9315375367724811,
+          "未发现明确矛盾": 0.010367157541289624
+        },
+        "usage": {
+          "wall_ms": 306.1615999904461
+        }
+      },
+      "wall_ms": 306.1615999904461
+    },
+    {
+      "case_id": "H18",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.0007826692519601597,
+          "无法比较": 0.9977354281495987,
+          "未发现明确矛盾": 0.0014819025984411619
+        },
+        "usage": {
+          "wall_ms": 317.2939000069164
+        }
+      },
+      "wall_ms": 317.2939000069164
+    },
+    {
+      "case_id": "H19",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.0005554134712539571,
+          "无法比较": 0.9990498544092147,
+          "未发现明确矛盾": 0.0003947321195312726
+        },
+        "usage": {
+          "wall_ms": 311.35219999123365
+        }
+      },
+      "wall_ms": 311.35219999123365
+    },
+    {
+      "case_id": "H20",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.0004284788406906576,
+          "无法比较": 0.9992865160731326,
+          "未发现明确矛盾": 0.00028500508617669015
+        },
+        "usage": {
+          "wall_ms": 391.867700003786
+        }
+      },
+      "wall_ms": 391.867700003786
+    },
+    {
+      "case_id": "H21",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.00026777650719504904,
+          "无法比较": 0.9996873069583205,
+          "未发现明确矛盾": 4.491653448448413e-05
+        },
+        "usage": {
+          "wall_ms": 280.48149999813177
+        }
+      },
+      "wall_ms": 280.48149999813177
+    },
+    {
+      "case_id": "H22",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.0002778373269311185,
+          "无法比较": 0.9987327908012913,
+          "未发现明确矛盾": 0.000989371871777597
+        },
+        "usage": {
+          "wall_ms": 288.15509998821653
+        }
+      },
+      "wall_ms": 288.15509998821653
+    },
+    {
+      "case_id": "H23",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.00029283146560627973,
+          "无法比较": 0.9039099544363379,
+          "未发现明确矛盾": 0.09579721409805572
+        },
+        "usage": {
+          "wall_ms": 341.5011999895796
+        }
+      },
+      "wall_ms": 341.5011999895796
+    },
+    {
+      "case_id": "H24",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "human",
+        "source": "bert_frozen_logistic",
+        "distribution": {
+          "发现明确矛盾": 0.00041635499392335217,
+          "无法比较": 0.9992020605401752,
+          "未发现明确矛盾": 0.0003815844659014601
+        },
+        "usage": {
+          "wall_ms": 302.47809999855235
+        }
+      },
+      "wall_ms": 302.47809999855235
+    },
+    {
+      "case_id": "H25",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "supplement",
+        "source": "input_rule",
+        "usage": {}
+      },
+      "wall_ms": 277.25610000197776
+    },
+    {
+      "case_id": "H26",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "answer": "信息不足",
+        "action": "supplement",
+        "source": "input_rule",
+        "usage": {}
+      },
+      "wall_ms": 380.94010000349954
+    },
+    {
+      "case_id": "H27",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "supplement",
+        "source": "input_rule",
+        "usage": {}
+      },
+      "wall_ms": 253.02150001516566
+    },
+    {
+      "case_id": "H28",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "answer": "无法比较",
+        "action": "supplement",
+        "source": "input_rule",
+        "usage": {}
+      },
+      "wall_ms": 238.04399999789894
+    }
+  ],
+  "model": {
+    "model": "bert-base-chinese",
+    "revision": "8f23c25b06e129b6c986331a13d8d025a92cf0ea",
+    "method": "frozen Chinese encoder CLS + scaled logistic head",
+    "training_count": 54,
+    "hyperparameters": {
+      "USE_MATCH": {
+        "training_count": 27,
+        "group_count": 6,
+        "cv": [
+          {
+            "C": 0.01,
+            "fold_scores": [
+              0.38888888888888884,
+              0.39999999999999997,
+              0.8333333333333334
+            ],
+            "mean": 0.5407407407407407
+          },
+          {
+            "C": 0.1,
+            "fold_scores": [
+              0.611111111111111,
+              0.4666666666666666,
+              0.8333333333333334
+            ],
+            "mean": 0.637037037037037
+          },
+          {
+            "C": 1.0,
+            "fold_scores": [
+              0.5277777777777778,
+              0.4666666666666666,
+              0.8333333333333334
+            ],
+            "mean": 0.6092592592592593
+          }
+        ],
+        "selected_C": 0.1
+      },
+      "BIZ_CONFLICT": {
+        "training_count": 27,
+        "group_count": 6,
+        "cv": [
+          {
+            "C": 0.01,
+            "fold_scores": [
+              0.5333333333333333,
+              0.4166666666666667,
+              0.3333333333333333
+            ],
+            "mean": 0.42777777777777776
+          },
+          {
+            "C": 0.1,
+            "fold_scores": [
+              0.7000000000000001,
+              0.5,
+              0.3333333333333333
+            ],
+            "mean": 0.5111111111111112
+          },
+          {
+            "C": 1.0,
+            "fold_scores": [
+              0.4222222222222222,
+              0.5,
+              0.3333333333333333
+            ],
+            "mean": 0.4185185185185185
+          }
+        ],
+        "selected_C": 0.1
+      }
+    },
+    "split": "3-fold grouped development CV; no holdout labels read"
+  },
+  "process_wall_seconds": 15512.92
+}

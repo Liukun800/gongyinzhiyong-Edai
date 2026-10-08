@@ -1,0 +1,12 @@
+{
+  "status": "predictions_completed_and_labels_opened",
+  "n": 28,
+  "expert_reviewed": false,
+  "label_hash": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3",
+  "source_prediction_hashes": {
+    "encoder": "6a5b4ac8e0498a9176bf60b99ccac28ec9703e28765b395b3d5aad40d68d1aac",
+    "dual": "9fb007a436ea14a0b66a27c8e5bd8d6e084ec74aa20dec1c50fc7f2bafc56eb8",
+    "slow": "9e920a55b5da182e545956461bca7de2aa0ec8d9aaa8a6c01bd7b34db5a54e7b"
+  },
+  "future_use": "已查看结果；后续用于错误分析时视为已暴露开发资料，不再作为新改动的未见测试集"
+}

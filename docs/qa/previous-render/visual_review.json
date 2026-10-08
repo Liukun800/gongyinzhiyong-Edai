@@ -1,0 +1,718 @@
+{
+  "passed": true,
+  "reviewer": "原生Word导出PDF与Poppler栅格化逐页复核",
+  "inspected_at": "2026-10-08",
+  "pages_inspected": [
+    {
+      "page": 1,
+      "image": "page-01.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 2,
+      "image": "page-02.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 3,
+      "image": "page-03.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 4,
+      "image": "page-04.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 5,
+      "image": "page-05.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 6,
+      "image": "page-06.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 7,
+      "image": "page-07.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 8,
+      "image": "page-08.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 9,
+      "image": "page-09.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 10,
+      "image": "page-10.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 11,
+      "image": "page-11.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 12,
+      "image": "page-12.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 13,
+      "image": "page-13.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 14,
+      "image": "page-14.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 15,
+      "image": "page-15.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 16,
+      "image": "page-16.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 17,
+      "image": "page-17.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 18,
+      "image": "page-18.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 19,
+      "image": "page-19.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 20,
+      "image": "page-20.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 21,
+      "image": "page-21.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 22,
+      "image": "page-22.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 23,
+      "image": "page-23.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 24,
+      "image": "page-24.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 25,
+      "image": "page-25.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 26,
+      "image": "page-26.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 27,
+      "image": "page-27.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 28,
+      "image": "page-28.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 29,
+      "image": "page-29.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 30,
+      "image": "page-30.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 31,
+      "image": "page-31.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 32,
+      "image": "page-32.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 33,
+      "image": "page-33.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 34,
+      "image": "page-34.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 35,
+      "image": "page-35.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 36,
+      "image": "page-36.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 37,
+      "image": "page-37.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 38,
+      "image": "page-38.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 39,
+      "image": "page-39.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 40,
+      "image": "page-40.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 41,
+      "image": "page-41.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 42,
+      "image": "page-42.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 43,
+      "image": "page-43.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 44,
+      "image": "page-44.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 45,
+      "image": "page-45.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 46,
+      "image": "page-46.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 47,
+      "image": "page-47.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 48,
+      "image": "page-48.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 49,
+      "image": "page-49.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 50,
+      "image": "page-50.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 51,
+      "image": "page-51.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 52,
+      "image": "page-52.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 53,
+      "image": "page-53.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    },
+    {
+      "page": 54,
+      "image": "page-54.png",
+      "checks": {
+        "no_overflow": true,
+        "no_overlap": true,
+        "no_cropping": true,
+        "text_readable": true,
+        "figure_caption_pairing": true,
+        "table_header_pairing": true
+      },
+      "conclusion": "通过"
+    }
+  ],
+  "summary": {
+    "pages": 54,
+    "passed_pages": 54,
+    "failed_pages": 0,
+    "figure_caption_same_page": true,
+    "table_header_same_page": true,
+    "blue_vector_assets_rendered": true,
+    "conclusion": "1至54页均完成视觉复核，未发现图片越界、图文重叠、明显裁切或表头孤立。"
+  }
+}

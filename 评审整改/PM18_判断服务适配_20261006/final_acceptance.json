@@ -1,0 +1,45 @@
+{
+  "stage": "PM18",
+  "status": "engineering_integration_passed",
+  "software_tests_passed": 75,
+  "new_adapter_tests": 13,
+  "real_task_inferences": 7,
+  "model_batches": 4,
+  "failed_task_attempts": 2,
+  "browser_passed": true,
+  "temporary_services_stopped": true,
+  "model_word_labels_experiments_preserved": true,
+  "source_sha256": {
+    "demo/judgement.py": "ad55956990736a2e2ca5bb075f460fa288bcf57d0a825118de2365759f5a0bdf",
+    "demo/judgement_http.py": "6e08bbbdd6b4dc62b1ebccf22899fcc24591f05a5b9f7a3c599595a5459c88ea",
+    "demo/judgement_service.py": "a7360bbb22ae02433dcb756c2f80e72d793fa103a88c58c2381149f8f22ef452",
+    "demo/test_judgement.py": "b2ddbda2fe12e56b243736e083e04296fcfe1304f1111681c8cbf75782fac4bd",
+    "demo/app.py": "0d349892447f6c980f4b18c6ec2c8dd8754f37966a527334b7c3820c492933cd",
+    "demo/shadow_engine.py": "c015e07e481cccbf40761992dfa7168c30d92266bc349627917f61b6ddd23a5c",
+    "demo/product_contract.py": "0804f67b4258f4e0fee8bbfa658f04ec957b736e20f2f0a6381b3c17dfd94462",
+    "demo/static/app.js": "230280d7a93b47c06ce13df0dd024e13fe6cec5b102617b194b2049828bcb4d0",
+    "demo/static/showcase.js": "00e871594c0d8a210ed26929b8e26b00f8b95747c19e88fda2c2e7fd7792a785",
+    "demo/JUDGEMENT_SERVICE.md": "1cbc858a8a069d100c47d2a69b5b6993a2f0829b2d3a101f30d4e50e7370dab8",
+    "demo/start_judgement_service.ps1": "83e4ff8c9cb6982bf4433e098f9434c1a0d1ec9f150c6b035b05608bebfe39d9",
+    "demo/start_service_workbench.ps1": "021584d212c1566b8b4fb3a431f08fb16ae54a9f66ba49be30f65d0c8af98629"
+  },
+  "bank_domain_quality_passed": false,
+  "bank_connected": false,
+  "independent_business_reviews": 0,
+  "training": 0,
+  "official_jev_calls": 0,
+  "goal_states_preserved": {
+    "G1": "进行中",
+    "G2": "待复核",
+    "G3": "进行中",
+    "G4": "已完成",
+    "G5": "已完成"
+  },
+  "evidence_sha256": {
+    "live_inference.json": "49d9cc5a1bc67078d645b1d038830ec8e95ba81511afb9a329015b90827a07d9",
+    "browser_acceptance.json": "c9ae517febd3e1570d3d890176090a6479f10e972d613d3238a53d9f92620763",
+    "live_failure.json": "c4c874ddb4fec42d979c8ee9e14b34f2ce780d201c5e96eaf1530ab7690e6a88",
+    "软件回归_最终.txt": "93770815bf526fc12fc5017da5b272dac5ee27708c428baea6920d0913ff0810",
+    "protected_after.json": "be2bb482d59cbde67dcbdc15f68652635db11c0b340f5d38a28eb07e864d9262"
+  }
+}

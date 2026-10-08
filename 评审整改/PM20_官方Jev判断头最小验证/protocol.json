@@ -1,0 +1,12 @@
+{
+  "version": "PM20-choice-1",
+  "source": "https://docs.typesafe.ai/api",
+  "wire": "model + state + questions[type=choice, instructions, criteria]",
+  "responses": "model + answers[choice, probabilities, confidence] + usage",
+  "case_count": 2,
+  "max_calls": 2,
+  "retries": 0,
+  "scope": "self-authored synthetic protocol smoke; no accuracy or bank benefit claim",
+  "default_demo_changed": false,
+  "bank_connected": false
+}

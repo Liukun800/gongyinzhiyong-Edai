@@ -1,0 +1,3144 @@
+{
+  "system": "dual",
+  "suite": "holdout",
+  "input_sha256": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb",
+  "scope": "project-authored synthetic evaluation; no independent expert review",
+  "python": "3.13.2",
+  "protocol": "评审整改/G3_对照协议_v1.md",
+  "status": "completed",
+  "rows": [
+    {
+      "case_id": "H01",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H01",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C的借款六成买纸箱，四成买印刷标签，覆盖全部借款。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "对应申请C的采购清单列明：纸箱占借款60%，印刷标签占40%，无其他支出。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 399,
+                "completion_tokens": 30,
+                "wall_ms": 4343.1,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 6934.28,
+              "candidate_paths": 3,
+              "input_path_tokens": 625,
+              "generated_tokens": 0
+            },
+            "fast_decision": {
+              "answer": "一致",
+              "score": 0.7312666773796082,
+              "distribution": {
+                "一致": 0.7312666773796082,
+                "存在明确矛盾": 0.09654577076435089,
+                "信息不足": 0.17218759655952454
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 6934.28,
+                "candidate_paths": 3,
+                "input_path_tokens": 625,
+                "generated_tokens": 0
+              }
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 625,
+          "generated_tokens": 0,
+          "workflow_ms": 11310.27,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 399,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 4343.1
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 11310.28
+    },
+    {
+      "case_id": "H02",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H02",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "存在明确矛盾",
+            "score": 0.6937592625617981,
+            "distribution": {
+              "一致": 0.033274777233600616,
+              "存在明确矛盾": 0.6937592625617981,
+              "信息不足": 0.2729659378528595
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C的全部借款仅用于纸箱和标签采购。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "对应申请C的实际支出说明：全部借款支付仓库租金，未采购任何纸箱或标签。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 3217.35,
+              "candidate_paths": 3,
+              "input_path_tokens": 589,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 589,
+          "generated_tokens": 0,
+          "workflow_ms": 3217.55,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 3217.56
+    },
+    {
+      "case_id": "H03",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H03",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C的借款六成买纸箱，四成买标签。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仅附申请C中纸箱采购合同，说明剩余四成资金用途暂无资料。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 388,
+                "completion_tokens": 30,
+                "wall_ms": 4178.61,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 3170.96,
+              "candidate_paths": 3,
+              "input_path_tokens": 592,
+              "generated_tokens": 0
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score",
+            "fast_decision": {
+              "answer": "信息不足",
+              "score": 0.5739234089851379,
+              "distribution": {
+                "一致": 0.12180129438638687,
+                "存在明确矛盾": 0.3042753338813782,
+                "信息不足": 0.5739234089851379
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 3170.96,
+                "candidate_paths": 3,
+                "input_path_tokens": 592,
+                "generated_tokens": 0
+              }
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 592,
+          "generated_tokens": 0,
+          "workflow_ms": 7351.65,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 388,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 4178.61
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 7351.66
+    },
+    {
+      "case_id": "H04",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H04",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C借款仅采购木板；设备另以股东自有资金购买。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "资金明细：借款全部付木板供应商；设备价款完全由股东自有资金承担，两项不混用。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 394,
+                "completion_tokens": 30,
+                "wall_ms": 4148.08,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 3473.75,
+              "candidate_paths": 3,
+              "input_path_tokens": 610,
+              "generated_tokens": 0
+            },
+            "fast_decision": {
+              "answer": "一致",
+              "score": 0.6353047490119934,
+              "distribution": {
+                "一致": 0.6353047490119934,
+                "存在明确矛盾": 0.16138793528079987,
+                "信息不足": 0.20330724120140076
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 3473.75,
+                "candidate_paths": 3,
+                "input_path_tokens": 610,
+                "generated_tokens": 0
+              }
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 610,
+          "generated_tokens": 0,
+          "workflow_ms": 7624.69,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 394,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 4148.08
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 7624.7
+    },
+    {
+      "case_id": "H05",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H05",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C借款全部仅采购木板；不用于设备。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "资金明细明确：申请C全部借款付设备尾款，木板由股东自有资金购买。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 387,
+                "completion_tokens": 30,
+                "wall_ms": 4094.72,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 3297.04,
+              "candidate_paths": 3,
+              "input_path_tokens": 589,
+              "generated_tokens": 0
+            },
+            "fast_decision": {
+              "answer": "一致",
+              "score": 0.5060732364654541,
+              "distribution": {
+                "一致": 0.5060732364654541,
+                "存在明确矛盾": 0.22163847088813782,
+                "信息不足": 0.2722882926464081
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 3297.04,
+                "candidate_paths": 3,
+                "input_path_tokens": 589,
+                "generated_tokens": 0
+              }
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 589,
+          "generated_tokens": 0,
+          "workflow_ms": 7393.5,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 387,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 4094.72
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 7393.51
+    },
+    {
+      "case_id": "H06",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H06",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "存在明确矛盾",
+            "score": 0.5508633255958557,
+            "distribution": {
+              "一致": 0.1097123995423317,
+              "存在明确矛盾": 0.5508633255958557,
+              "信息不足": 0.3394242227077484
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C借款仅采购木板。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "企业本期同时购入木板和设备，明细未注明哪项使用本次借款。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 3169.92,
+              "candidate_paths": 3,
+              "input_path_tokens": 568,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 568,
+          "generated_tokens": 0,
+          "workflow_ms": 3170.07,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 3170.07
+    },
+    {
+      "case_id": "H07",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H07",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C仅支付冷柜采购首付款，后续尾款另行筹资。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "同一冷柜合同约定本次借款支付首付款，尾款不占用此次借款。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 387,
+                "completion_tokens": 30,
+                "wall_ms": 3657.1,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 3186.97,
+              "candidate_paths": 3,
+              "input_path_tokens": 589,
+              "generated_tokens": 0
+            },
+            "fast_decision": {
+              "answer": "一致",
+              "score": 0.7634813189506531,
+              "distribution": {
+                "一致": 0.7634813189506531,
+                "存在明确矛盾": 0.07279353588819504,
+                "信息不足": 0.16372522711753845
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 3186.97,
+                "candidate_paths": 3,
+                "input_path_tokens": 589,
+                "generated_tokens": 0
+              }
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 589,
+          "generated_tokens": 0,
+          "workflow_ms": 6845.68,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 387,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 3657.1
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 6845.68
+    },
+    {
+      "case_id": "H08",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H08",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "存在明确矛盾",
+            "score": 0.5064932107925415,
+            "distribution": {
+              "一致": 0.055130939930677414,
+              "存在明确矛盾": 0.5064932107925415,
+              "信息不足": 0.4383758306503296
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C全部借款只付冷柜采购首付款。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "本次借款付款凭证注明全部付广告服务费；冷柜首付款尚未支付。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 2356.74,
+              "candidate_paths": 3,
+              "input_path_tokens": 574,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 574,
+          "generated_tokens": 0,
+          "workflow_ms": 2356.87,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 2356.88
+    },
+    {
+      "case_id": "H09",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H09",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C仅支付冷柜采购首付款。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "附件仅说明冷柜总价，不说明首付款、付款安排及本次借款的对应关系。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 384,
+                "completion_tokens": 30,
+                "wall_ms": 3351.93,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 2227.69,
+              "candidate_paths": 3,
+              "input_path_tokens": 580,
+              "generated_tokens": 0
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score",
+            "fast_decision": {
+              "answer": "信息不足",
+              "score": 0.6419227123260498,
+              "distribution": {
+                "一致": 0.1266031414270401,
+                "存在明确矛盾": 0.2314741462469101,
+                "信息不足": 0.6419227123260498
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 2227.69,
+                "candidate_paths": 3,
+                "input_path_tokens": 580,
+                "generated_tokens": 0
+              }
+            }
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 580,
+          "generated_tokens": 0,
+          "workflow_ms": 5583.2,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 384,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 3351.93
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 5583.21
+    },
+    {
+      "case_id": "H10",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H10",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "一致",
+            "score": null,
+            "distribution": null,
+            "calibration": "生成式复杂分析不提供可用于自动通过的校准概率",
+            "status": "待复核",
+            "action": "review",
+            "reason": "快模型未满足实验分流条件，已调用真实复杂分析并检查引用；结论仍需人员复核。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C只用于采购咖啡豆，委托代理商代采。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "代采协议明确代理商将申请C全部资金用于咖啡豆采购，不另作他用。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "引用位置存在且比较类答案至少涉及两份材料；语义支撑仍需人员复核",
+            "simulated_analysis_requests": 0,
+            "analysis": {
+              "mode": "真实System 2实验分析",
+              "text": "一句中文",
+              "model": {
+                "name": "Qwen/Qwen2.5-0.5B-Instruct",
+                "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+                "device": "cpu",
+                "dtype": "float32",
+                "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+                "bank_connected": false
+              },
+              "raw_output": "{\"answer\": \"一致\", \"reason\": \"一句中文\", \"evidence\": [\"m1:p1\", \"m2:p1\"]}",
+              "usage": {
+                "prompt_tokens": 387,
+                "completion_tokens": 30,
+                "wall_ms": 3187.16,
+                "actual_complex_model_requests": 1
+              }
+            },
+            "review": null,
+            "source": "real_slow_analysis",
+            "model_usage": {
+              "wall_ms": 2388.28,
+              "candidate_paths": 3,
+              "input_path_tokens": 589,
+              "generated_tokens": 0
+            },
+            "fast_decision": {
+              "answer": "一致",
+              "score": 0.7896521091461182,
+              "distribution": {
+                "一致": 0.7896521091461182,
+                "存在明确矛盾": 0.12644334137439728,
+                "信息不足": 0.08390454947948456
+              },
+              "source": "agentjev_public_shadow",
+              "model_usage": {
+                "wall_ms": 2388.28,
+                "candidate_paths": 3,
+                "input_path_tokens": 589,
+                "generated_tokens": 0
+              }
+            },
+            "routing_reason": "semantic_uncertainty_or_low_raw_score"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 1,
+          "candidate_paths": 3,
+          "input_path_tokens": 589,
+          "generated_tokens": 0,
+          "workflow_ms": 5579.24,
+          "successful_complex_model_requests": 1,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 387,
+          "complex_completion_tokens": 30,
+          "complex_wall_ms": 3187.16
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 5579.25
+    },
+    {
+      "case_id": "H11",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H11",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "存在明确矛盾",
+            "score": 0.716057538986206,
+            "distribution": {
+              "一致": 0.048621051013469696,
+              "存在明确矛盾": 0.716057538986206,
+              "信息不足": 0.23532146215438843
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C的资金全部只采购咖啡豆。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "代理商报告明确申请C的全部资金实际购买门店家具，未购咖啡豆。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 2104.14,
+              "candidate_paths": 3,
+              "input_path_tokens": 568,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 568,
+          "generated_tokens": 0,
+          "workflow_ms": 2104.25,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 2104.25
+    },
+    {
+      "case_id": "H12",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H12",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "存在明确矛盾",
+            "score": 0.5264652371406555,
+            "distribution": {
+              "一致": 0.10384123772382736,
+              "存在明确矛盾": 0.5264652371406555,
+              "信息不足": 0.3696935176849365
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C资金只采购咖啡豆。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "仅有向代理商转账回单，没有代采品类或用途的记载。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 2030.69,
+              "candidate_paths": 3,
+              "input_path_tokens": 559,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 559,
+          "generated_tokens": 0,
+          "workflow_ms": 2030.79,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 2030.8
+    },
+    {
+      "case_id": "H13",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H13",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.7022320628166199,
+            "distribution": {
+              "发现明确矛盾": 0.7022320628166199,
+              "未发现明确矛盾": 0.12683473527431488,
+              "无法比较": 0.17093317210674286
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月企业线下门店整月关门，但线上订单正常处理。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月线下门店没有营业，线上渠道持续接单。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1535.59,
+              "candidate_paths": 3,
+              "input_path_tokens": 528,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 528,
+          "generated_tokens": 0,
+          "workflow_ms": 1535.7,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1535.71
+    },
+    {
+      "case_id": "H14",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H14",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.6587645411491394,
+            "distribution": {
+              "发现明确矛盾": 0.6587645411491394,
+              "未发现明确矛盾": 0.18193495273590088,
+              "无法比较": 0.1593005210161209
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月企业所有线上和线下渠道均停止营业，没有任何接单。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月该企业线上渠道每天接单营业，线下门店关闭。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1554.49,
+              "candidate_paths": 3,
+              "input_path_tokens": 537,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 537,
+          "generated_tokens": 0,
+          "workflow_ms": 1554.63,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1554.63
+    },
+    {
+      "case_id": "H15",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H15",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.6082718372344971,
+            "distribution": {
+              "发现明确矛盾": 0.6082718372344971,
+              "未发现明确矛盾": 0.1968635767698288,
+              "无法比较": 0.19486463069915771
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月线下门店停业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月报表写“业务仍在运行”，未注明是线下还是线上或其他业务。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1533.41,
+              "candidate_paths": 3,
+              "input_path_tokens": 519,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 519,
+          "generated_tokens": 0,
+          "workflow_ms": 1533.52,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1533.53
+    },
+    {
+      "case_id": "H16",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H16",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.5329105854034424,
+            "distribution": {
+              "发现明确矛盾": 0.5329105854034424,
+              "未发现明确矛盾": 0.2336312234401703,
+              "无法比较": 0.2334582656621933
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月一日至十日停业，十一日起恢复营业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月前十天未营业，其余二十天持续营业。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1485.97,
+              "candidate_paths": 3,
+              "input_path_tokens": 525,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 525,
+          "generated_tokens": 0,
+          "workflow_ms": 1486.08,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1486.09
+    },
+    {
+      "case_id": "H17",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H17",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.720531165599823,
+            "distribution": {
+              "发现明确矛盾": 0.720531165599823,
+              "未发现明确矛盾": 0.12813960015773773,
+              "无法比较": 0.15132926404476166
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月一日至十日每天正常营业，没有停业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月一日至十日完全停业，没有开展经营。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1482.1,
+              "candidate_paths": 3,
+              "input_path_tokens": 528,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 528,
+          "generated_tokens": 0,
+          "workflow_ms": 1482.21,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1482.21
+    },
+    {
+      "case_id": "H18",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H18",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.500028669834137,
+            "distribution": {
+              "发现明确矛盾": 0.500028669834137,
+              "未发现明确矛盾": 0.2860807180404663,
+              "无法比较": 0.21389061212539673
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月曾停业三天，未记具体日期。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月上旬中有七天正常营业，未记具体日期，其余日期状态不详。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1516.17,
+              "candidate_paths": 3,
+              "input_path_tokens": 543,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 543,
+          "generated_tokens": 0,
+          "workflow_ms": 1516.28,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1516.28
+    },
+    {
+      "case_id": "H19",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H19",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.594952404499054,
+            "distribution": {
+              "发现明确矛盾": 0.594952404499054,
+              "未发现明确矛盾": 0.21004262566566467,
+              "无法比较": 0.1950048804283142
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月新签合同金额为零，但收到五月旧合同回款。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月没有新签合同；当月回款全部来自五月合同。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1627.15,
+              "candidate_paths": 3,
+              "input_path_tokens": 543,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 543,
+          "generated_tokens": 0,
+          "workflow_ms": 1627.31,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1627.31
+    },
+    {
+      "case_id": "H20",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H20",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.4595479369163513,
+            "distribution": {
+              "发现明确矛盾": 0.4595479369163513,
+              "未发现明确矛盾": 0.3927355408668518,
+              "无法比较": 0.14771650731563568
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月新签合同数量为零。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "统计说明明确有三份合同在六月新签，不含续签或历史合同。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1455.88,
+              "candidate_paths": 3,
+              "input_path_tokens": 531,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 531,
+          "generated_tokens": 0,
+          "workflow_ms": 1455.99,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1455.99
+    },
+    {
+      "case_id": "H21",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H21",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.45630261301994324,
+            "distribution": {
+              "发现明确矛盾": 0.45630261301994324,
+              "未发现明确矛盾": 0.31750187277793884,
+              "无法比较": 0.22619551420211792
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月新签合同数量为零。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月业务数量为三，但未定义“业务数量”是否指新签合同。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1503.95,
+              "candidate_paths": 3,
+              "input_path_tokens": 531,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 531,
+          "generated_tokens": 0,
+          "workflow_ms": 1504.08,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1504.08
+    },
+    {
+      "case_id": "H22",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H22",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.6262655854225159,
+            "distribution": {
+              "发现明确矛盾": 0.6262655854225159,
+              "未发现明确矛盾": 0.2062172293663025,
+              "无法比较": 0.16751722991466522
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月东店暂停营业，西店持续营业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月东店未营业；西店每天营业。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1454.11,
+              "candidate_paths": 3,
+              "input_path_tokens": 516,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 516,
+          "generated_tokens": 0,
+          "workflow_ms": 1454.22,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1454.22
+    },
+    {
+      "case_id": "H23",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H23",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.7551486492156982,
+            "distribution": {
+              "发现明确矛盾": 0.7551486492156982,
+              "未发现明确矛盾": 0.10624833405017853,
+              "无法比较": 0.13860304653644562
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月东店全月停业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "另一份记录明确同一东店在六月每天营业，并非西店。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1449.85,
+              "candidate_paths": 3,
+              "input_path_tokens": 522,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 522,
+          "generated_tokens": 0,
+          "workflow_ms": 1450.01,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1450.01
+    },
+    {
+      "case_id": "H24",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H24",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "发现明确矛盾",
+            "score": 0.5854320526123047,
+            "distribution": {
+              "发现明确矛盾": 0.5854320526123047,
+              "未发现明确矛盾": 0.22473204135894775,
+              "无法比较": 0.18983589112758636
+            },
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待人工核实",
+            "action": "human",
+            "reason": "模型提示矛盾，按原型规则转人工核实；请对照原文验证是否为误报。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "六月东店停业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "六月某门店持续营业，但门店名称和归属无法确定。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "agentjev_public_shadow",
+            "model_usage": {
+              "wall_ms": 1684.28,
+              "candidate_paths": 3,
+              "input_path_tokens": 510,
+              "generated_tokens": 0
+            },
+            "routing_reason": "explicit_conflict_to_human"
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 1,
+          "successful_model_requests": 1,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 3,
+          "input_path_tokens": 510,
+          "generated_tokens": 0,
+          "workflow_ms": 1684.39,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 1684.39
+    },
+    {
+      "case_id": "H25",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H25",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "当前任务少于两份材料，先补充可供交叉比较的原文；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C借款仅采购耗材。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.05,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 0.06
+    },
+    {
+      "case_id": "H26",
+      "task_id": "USE_MATCH",
+      "prediction": {
+        "case_id": "H26",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "USE_MATCH",
+            "name": "资金用途一致性核验",
+            "answer": "信息不足",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料登记的主体不一致，需确认归属及关系；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "申请C采购耗材。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "文件记载申请C资金支付房租。",
+                "title": "材料2",
+                "subject": "仿真企业丁",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.04,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 0.04
+    },
+    {
+      "case_id": "H27",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H27",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料登记的期间不一致，需补充同期间记录；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "本月正常营业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-05"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "本月整月停业。",
+                "title": "材料2",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.04,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 0.04
+    },
+    {
+      "case_id": "H28",
+      "task_id": "BIZ_CONFLICT",
+      "prediction": {
+        "case_id": "H28",
+        "revision": 1,
+        "mode": "真实快慢协同实验",
+        "adapter": "jev_dual_experiment",
+        "model": {
+          "name": "AgentJev-0.6B / public coding-completion checkpoint",
+          "repo": "aimeigaoshou/agent-jev",
+          "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+          "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+          "device": "cpu",
+          "dtype": "torch.float32",
+          "encoder": "independent_candidate_paths",
+          "shared_prefix_compute": false,
+          "max_path_tokens": 2048,
+          "load_seconds": 4765.87,
+          "bank_domain_trained": false,
+          "bank_domain_calibrated": false,
+          "temperature": 1.0,
+          "auto_completion_enabled": false,
+          "checkpoint_card_scope": "coding-completion; not a credit model",
+          "dual_system": true,
+          "slow_model": {
+            "name": "Qwen/Qwen2.5-0.5B-Instruct",
+            "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+            "device": "cpu",
+            "dtype": "float32",
+            "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+            "bank_connected": false
+          },
+          "routing_threshold": 0.8,
+          "threshold_status": "engineering_experiment_not_calibrated",
+          "slow_quality_verified": false,
+          "default_use_recommended": false
+        },
+        "tasks": [
+          {
+            "id": "BIZ_CONFLICT",
+            "name": "经营信息矛盾识别",
+            "answer": "无法比较",
+            "score": null,
+            "distribution": null,
+            "calibration": "未经信贷领域校准；不使用上游温度",
+            "status": "待补充",
+            "action": "supplement",
+            "reason": "材料主体字段缺失，先补充归属信息；未调用模型。",
+            "evidence": [
+              {
+                "document_id": "m1",
+                "paragraph_id": "p1",
+                "quote": "企业六月正常营业。",
+                "title": "材料1",
+                "subject": "仿真企业丙",
+                "period": "2026-06"
+              },
+              {
+                "document_id": "m2",
+                "paragraph_id": "p1",
+                "quote": "企业六月整月停业。",
+                "title": "材料2",
+                "subject": "",
+                "period": "2026-06"
+              }
+            ],
+            "evidence_semantics": "本次输入原文，定位已检查；语义支持关系待人员核实",
+            "simulated_analysis_requests": 0,
+            "analysis": null,
+            "review": null,
+            "source": "input_rule",
+            "model_usage": null
+          }
+        ],
+        "usage": {
+          "actual_model_requests": 0,
+          "successful_model_requests": 0,
+          "failed_model_requests": 0,
+          "simulated_analysis_requests": 0,
+          "actual_complex_model_requests": 0,
+          "candidate_paths": 0,
+          "input_path_tokens": 0,
+          "generated_tokens": 0,
+          "workflow_ms": 0.03,
+          "successful_complex_model_requests": 0,
+          "failed_complex_model_requests": 0,
+          "complex_prompt_tokens": 0,
+          "complex_completion_tokens": 0,
+          "complex_wall_ms": 0
+        },
+        "scope": "快模型与通用生成模型真实运行；实验替代System 2；全部为辅助建议，不自动审批。"
+      },
+      "wall_ms": 0.03
+    }
+  ],
+  "model": {
+    "name": "AgentJev-0.6B / public coding-completion checkpoint",
+    "repo": "aimeigaoshou/agent-jev",
+    "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+    "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "encoder": "independent_candidate_paths",
+    "shared_prefix_compute": false,
+    "max_path_tokens": 2048,
+    "load_seconds": 4765.87,
+    "bank_domain_trained": false,
+    "bank_domain_calibrated": false,
+    "temperature": 1.0,
+    "auto_completion_enabled": false,
+    "checkpoint_card_scope": "coding-completion; not a credit model",
+    "dual_system": true,
+    "slow_model": {
+      "name": "Qwen/Qwen2.5-0.5B-Instruct",
+      "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+      "device": "cpu",
+      "dtype": "float32",
+      "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+      "bank_connected": false
+    },
+    "routing_threshold": 0.8,
+    "threshold_status": "engineering_experiment_not_calibrated",
+    "slow_quality_verified": false,
+    "default_use_recommended": false
+  },
+  "process_wall_seconds": 4851.95
+}

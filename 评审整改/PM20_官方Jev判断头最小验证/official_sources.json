@@ -1,0 +1,15 @@
+{
+  "access_date": "2026-10-07",
+  "sources": [
+    {
+      "url": "https://docs.typesafe.ai/api",
+      "file": "official_api.md",
+      "sha256": "6b760275f89341fe15cff80c28aacae94d7d0c0c99afcd987ec0bca680b5713a"
+    },
+    {
+      "url": "https://docs.typesafe.ai/models",
+      "file": "official_models.md",
+      "sha256": "15351adaab85874b5f1a942fc2fdf3c7b3ecadcc936d580793d734855a0038f3"
+    }
+  ]
+}

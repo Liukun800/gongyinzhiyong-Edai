@@ -1,0 +1,362 @@
+{
+  "table_headers": [
+    {
+      "index": 1,
+      "same_page": true,
+      "first_row_page": 9,
+      "header_page": 9
+    },
+    {
+      "index": 2,
+      "same_page": true,
+      "first_row_page": 12,
+      "header_page": 12
+    },
+    {
+      "index": 3,
+      "same_page": true,
+      "first_row_page": 16,
+      "header_page": 16
+    },
+    {
+      "index": 4,
+      "same_page": true,
+      "first_row_page": 19,
+      "header_page": 19
+    },
+    {
+      "index": 5,
+      "same_page": true,
+      "first_row_page": 20,
+      "header_page": 20
+    },
+    {
+      "index": 6,
+      "same_page": true,
+      "first_row_page": 30,
+      "header_page": 30
+    },
+    {
+      "index": 7,
+      "same_page": true,
+      "first_row_page": 35,
+      "header_page": 35
+    },
+    {
+      "index": 8,
+      "same_page": true,
+      "first_row_page": 36,
+      "header_page": 36
+    },
+    {
+      "index": 9,
+      "same_page": true,
+      "first_row_page": 39,
+      "header_page": 39
+    },
+    {
+      "index": 10,
+      "same_page": true,
+      "first_row_page": 39,
+      "header_page": 39
+    },
+    {
+      "index": 11,
+      "same_page": true,
+      "first_row_page": 40,
+      "header_page": 40
+    },
+    {
+      "index": 12,
+      "same_page": true,
+      "first_row_page": 41,
+      "header_page": 41
+    },
+    {
+      "index": 13,
+      "same_page": true,
+      "first_row_page": 45,
+      "header_page": 45
+    },
+    {
+      "index": 14,
+      "same_page": true,
+      "first_row_page": 46,
+      "header_page": 46
+    },
+    {
+      "index": 15,
+      "same_page": true,
+      "first_row_page": 50,
+      "header_page": 50
+    },
+    {
+      "index": 16,
+      "same_page": true,
+      "first_row_page": 52,
+      "header_page": 52
+    }
+  ],
+  "all_headers_paired": true,
+  "figures": [
+    {
+      "figure_page": 3,
+      "same_page": true,
+      "caption": "图0-1 项目全局总览与前置核验位置",
+      "page": 3
+    },
+    {
+      "figure_page": 6,
+      "same_page": true,
+      "caption": "图1-1 政策脉络与贷前核验设计响应",
+      "page": 6
+    },
+    {
+      "figure_page": 7,
+      "same_page": true,
+      "caption": "图1-2 工行信贷生态与前置核验协同",
+      "page": 7
+    },
+    {
+      "figure_page": 10,
+      "same_page": true,
+      "caption": "图1-3 行业要求向材料核验痛点的转化",
+      "page": 10
+    },
+    {
+      "figure_page": 11,
+      "same_page": true,
+      "caption": "图1-4 首期切入与价值验证链条",
+      "page": 11
+    },
+    {
+      "figure_page": 12,
+      "same_page": true,
+      "caption": "图2-1 目标业务与首期服务范围",
+      "page": 12
+    },
+    {
+      "figure_page": 13,
+      "same_page": true,
+      "caption": "图2-2 四类使用关系与核验闭环",
+      "page": 13
+    },
+    {
+      "figure_page": 14,
+      "same_page": true,
+      "caption": "图2-3 审批相关工作的分层与首期介入位置",
+      "page": 14
+    },
+    {
+      "figure_page": 15,
+      "same_page": true,
+      "caption": "图2-4 人员操作与价值观察点",
+      "page": 15
+    },
+    {
+      "figure_page": 16,
+      "same_page": true,
+      "caption": "图3-1 快慢双系统材料核验引擎整体架构",
+      "page": 16
+    },
+    {
+      "figure_page": 17,
+      "same_page": true,
+      "caption": "图3-2 Jev三类判断原语与信贷任务映射",
+      "page": 17
+    },
+    {
+      "figure_page": 18,
+      "same_page": true,
+      "caption": "图3-3 两项首期任务的材料比较关系",
+      "page": 18
+    },
+    {
+      "figure_page": 18,
+      "same_page": true,
+      "caption": "图3-4 首期业务场景与任务分工",
+      "page": 18
+    },
+    {
+      "figure_page": 19,
+      "same_page": true,
+      "caption": "图3-5 材料核验任务分流与异常处理流程",
+      "page": 19
+    },
+    {
+      "figure_page": 21,
+      "same_page": true,
+      "caption": "图3-6 真实快判断记录与成对原文",
+      "page": 21
+    },
+    {
+      "figure_page": 21,
+      "same_page": true,
+      "caption": "图3-7 疑点核实与处理依据入口",
+      "page": 21
+    },
+    {
+      "figure_page": 22,
+      "same_page": true,
+      "caption": "图3-8 缺项提示与补件重跑入口",
+      "page": 22
+    },
+    {
+      "figure_page": 23,
+      "same_page": true,
+      "caption": "图3-9 申请与复核待办",
+      "page": 23
+    },
+    {
+      "figure_page": 23,
+      "same_page": true,
+      "caption": "图3-10 面向工小审的核验事项交接设计",
+      "page": 23
+    },
+    {
+      "figure_page": 24,
+      "same_page": true,
+      "caption": "图3-11 辅助核验摘要",
+      "page": 24
+    },
+    {
+      "figure_page": 24,
+      "same_page": true,
+      "caption": "图3-12 拟议协同输入与输出",
+      "page": 24
+    },
+    {
+      "figure_page": 26,
+      "same_page": true,
+      "caption": "图3-13 原型运行模式与共同业务闭环",
+      "page": 26
+    },
+    {
+      "figure_page": 26,
+      "same_page": true,
+      "caption": "图4-1 材料核验的技术分层与职责",
+      "page": 26
+    },
+    {
+      "figure_page": 28,
+      "same_page": true,
+      "caption": "图4-2 官方Jev判断与贷前核验业务承接",
+      "page": 28
+    },
+    {
+      "figure_page": 31,
+      "same_page": true,
+      "caption": "图4-3 技术继承、场景适配与创新验证",
+      "page": 31
+    },
+    {
+      "figure_page": 32,
+      "same_page": true,
+      "caption": "图4-4 领域适配与独立验证的目标路径",
+      "page": 32
+    },
+    {
+      "figure_page": 34,
+      "same_page": true,
+      "caption": "图4-5 不确定事项的原因与承接方式",
+      "page": 34
+    },
+    {
+      "figure_page": 34,
+      "same_page": true,
+      "caption": "图4-6 本地原型与后续业务适配",
+      "page": 34
+    },
+    {
+      "figure_page": 37,
+      "same_page": true,
+      "caption": "图5-1 六方案同任务领域开发对照",
+      "page": 37
+    },
+    {
+      "figure_page": 38,
+      "same_page": true,
+      "caption": "图5-2 历史双系统升级任务的配对结果",
+      "page": 38
+    },
+    {
+      "figure_page": 42,
+      "same_page": true,
+      "caption": "图5-3 领域迭代与版本验证闭环",
+      "page": 42
+    },
+    {
+      "figure_page": 43,
+      "same_page": true,
+      "caption": "图5-4 模型采用的分层判断依据",
+      "page": 43
+    },
+    {
+      "figure_page": 44,
+      "same_page": true,
+      "caption": "图6-1 分层分工的完整成本比较路径",
+      "page": 44
+    },
+    {
+      "figure_page": 45,
+      "same_page": true,
+      "caption": "图6-2 完整核验路径的工时与时延测量",
+      "page": 45
+    },
+    {
+      "figure_page": 47,
+      "same_page": true,
+      "caption": "图6-3 分层处理的完整成本构成",
+      "page": 47
+    },
+    {
+      "figure_page": 48,
+      "same_page": true,
+      "caption": "图6-4 银行适配交付内容与承接关系",
+      "page": 48
+    },
+    {
+      "figure_page": 49,
+      "same_page": true,
+      "caption": "图7-1 数据处理授权与责任边界",
+      "page": 49
+    },
+    {
+      "figure_page": 50,
+      "same_page": true,
+      "caption": "图7-2 数据与模型双层治理框架",
+      "page": 50
+    },
+    {
+      "figure_page": 51,
+      "same_page": true,
+      "caption": "图7-3 异常停止与业务恢复闭环",
+      "page": 51
+    },
+    {
+      "figure_page": 52,
+      "same_page": true,
+      "caption": "图8-1 分阶段实施标准甘特图",
+      "page": 52
+    },
+    {
+      "figure_page": 53,
+      "same_page": true,
+      "caption": "图8-2 工小审任务与核验事项包适配",
+      "page": 53
+    },
+    {
+      "figure_page": 54,
+      "same_page": true,
+      "caption": "图8-3 银行离线评价与受控协同路径",
+      "page": 54
+    },
+    {
+      "figure_page": 54,
+      "same_page": true,
+      "caption": "图8-4 同类任务扩展与交付验收",
+      "page": 54
+    }
+  ],
+  "all_figures_paired": true
+}

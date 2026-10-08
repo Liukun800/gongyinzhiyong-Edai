@@ -1,0 +1,18 @@
+{
+  "version": "review-holdout-v1",
+  "cases": 28,
+  "family_count": 12,
+  "split": "held_out_from_this_round_training_and_tuning",
+  "expert_reviewed": false,
+  "data_status": "new_project_authored_synthetic_challenge_not_independent_bank_test",
+  "generation": "manually specified material families; no model predictions used to generate labels",
+  "exact_overlap_with_development": 0,
+  "semantic_independence": "not independently certified; task concepts necessarily overlap",
+  "files": {
+    "cases.json": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb",
+    "labels.sealed.json": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3"
+  },
+  "training_source_sha256": "c3a49ed53995a1844cc18cfedacb7b6fa98feb14d07ba01039650a8a2a691912",
+  "evaluation_status": "not_run",
+  "usage_rule": "Do not tune using holdout outputs; independent label review still pending"
+}

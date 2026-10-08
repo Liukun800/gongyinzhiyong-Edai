@@ -1,0 +1,45 @@
+{
+  "D01": {
+    "scenario": "normal",
+    "document_sha256": "db52bf74ca9dee5f3799617250d6070504771ae6f324b55610e0715ad823c028",
+    "use_answer": "一致",
+    "business_answer": "未发现明确矛盾",
+    "label_origin": "按预设仿真事实通过代码构造，用于流程验收；尚未经银行业务人员核验，不是模型预测或生产样本"
+  },
+  "D02": {
+    "scenario": "conflict",
+    "document_sha256": "2eed9ee59bcf82a4c2b758e03f8b38ae043fdda6b6e227abb36fe093b15baf3f",
+    "use_answer": "一致",
+    "business_answer": "发现明确矛盾",
+    "label_origin": "按预设仿真事实通过代码构造，用于流程验收；尚未经银行业务人员核验，不是模型预测或生产样本"
+  },
+  "D03": {
+    "scenario": "missing",
+    "document_sha256": "c997f87339d753add617411c061863110d373db94e8cffb1b1cf4abfdd945b53",
+    "use_answer": "信息不足",
+    "business_answer": "未发现明确矛盾",
+    "label_origin": "按预设仿真事实通过代码构造，用于流程验收；尚未经银行业务人员核验，不是模型预测或生产样本",
+    "supplemented_sha256": "29ffe67637aa3695dbfd5b2be0435543cb4cd9b0f280b38ac598792cbc1f7648"
+  },
+  "D04": {
+    "scenario": "period",
+    "document_sha256": "b52f4fada960214dfd381c8e01b2cfebdaa907a591630002d51c60ba519c31c3",
+    "use_answer": "一致",
+    "business_answer": "无法比较",
+    "label_origin": "按预设仿真事实通过代码构造，用于流程验收；尚未经银行业务人员核验，不是模型预测或生产样本"
+  },
+  "D05": {
+    "scenario": "complex",
+    "document_sha256": "2238d189f1148010b90c41f3679200ae153e7623445e833f10d45da03e9a1b79",
+    "use_answer": "一致",
+    "business_answer": "未发现明确矛盾",
+    "label_origin": "按预设仿真事实通过代码构造，用于流程验收；尚未经银行业务人员核验，不是模型预测或生产样本"
+  },
+  "D06": {
+    "scenario": "failure",
+    "document_sha256": "2238d189f1148010b90c41f3679200ae153e7623445e833f10d45da03e9a1b79",
+    "use_answer": "一致",
+    "business_answer": "未发现明确矛盾",
+    "label_origin": "按预设仿真事实通过代码构造，用于流程验收；尚未经银行业务人员核验，不是模型预测或生产样本"
+  }
+}

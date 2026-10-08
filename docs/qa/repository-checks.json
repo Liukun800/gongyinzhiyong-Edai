@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-08",
+  "passed": true,
+  "demo_tests": {"count": 85, "passed": true, "seconds": 15.893},
+  "official_protocol_offline_tests": {"count": 15, "passed": true},
+  "frozen_comparison_offline_tests": {"count": 3, "passed": true},
+  "release_integrity": "release-integrity.json",
+  "model_network_calls": 0,
+  "new_model_inferences": 0,
+  "bank_connected": false,
+  "latest_word_changed_from_previous_render": true,
+  "latest_word_modified": false,
+  "original_local_demo": {"url": "http://127.0.0.1:8765/", "mode": "simulation", "page_status": 200},
+  "deployment": "local computer; no cloud application hosting",
+  "notes": ["A ResourceWarning occurred during tests; all 85 tests passed.", "Previous Word visual QA is retained as historical evidence only."]
+}

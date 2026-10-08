@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "audit_plan.py": "073fa89752431edd510044fc2112974f25f91c354ce709d2c02cac214c691175",
+    "close_stage.py": "b549f1d38372333c580d2ffb153bdcc40920b1ccba84607cd03a0603a8f351bf",
+    "final_footnote_fix.py": "7dd209738f4b205eec6c8cefb58ae8002a11a36d81c2bca5fdf2193f9d0af2e5",
+    "fix_cover.py": "e1622dcba8a9493a9849677cf6645e8cc585b1650767ed323e90050313d0e0a5",
+    "fix_footnotes.py": "7ad21ffcbc395ad3a77fc990e59d550a1247cf003d784f145cbeb2eb596933b3",
+    "fix_layout.py": "978d3105ec0d782f87de76897885fb1512253a5ce636bb9c8dda81957b4ff378",
+    "official_client.py": "b5545d84210fa4d3948c37ea6ad9ebba4cf2256b5a731e76f4db384d231d32b8",
+    "record_report_progress.py": "f407960f16891e7eddbc391b347750bed39d6a3eca114b480685512ebe184aa2",
+    "revise_plan.py": "80fe46b73cb9c99242263e70e5f5475a7a1a8df753e505129a6a0755183229e8",
+    "run_minimum.py": "ea50308af3f85705a14a3e0c2a905b6a32ae880adc506247c43f6281f38afda3",
+    "summarize_minimum.py": "e77d23079679c25c0898caa396b8f4b84c8c06246ba08edbbf96fe27a30af82d",
+    "test_minimum_report.py": "f67fffcc6c903e41a4ee665f4e506b0ead5701510069c2acd2aa2ac3bd9ed51d",
+    "test_official_client.py": "e91cac0a00543461fcb96a4d236c529c74a29805dc8fc6aaf2ecb2d5cbe3dd04"
+  },
+  "cases_sha256": "b613302e5d73a14ef10d1ed8032d67ae604fa453ef2ffbf72cbf0277e744a410",
+  "started_at": "2026-10-07T06:03:27.181090+00:00"
+}

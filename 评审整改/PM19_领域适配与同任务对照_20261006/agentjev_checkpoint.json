@@ -1,0 +1,17 @@
+{
+  "name": "AgentJev-0.6B / public coding-completion checkpoint",
+  "repo": "aimeigaoshou/agent-jev",
+  "revision": "0e2593e6e6c0eade0700712ac13c4389aa7654cc",
+  "weight_sha256": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "encoder": "independent_candidate_paths",
+  "shared_prefix_compute": false,
+  "max_path_tokens": 2048,
+  "load_seconds": 7.86,
+  "bank_domain_trained": false,
+  "bank_domain_calibrated": false,
+  "temperature": 1.0,
+  "auto_completion_enabled": false,
+  "checkpoint_card_scope": "coding-completion; not a credit model"
+}

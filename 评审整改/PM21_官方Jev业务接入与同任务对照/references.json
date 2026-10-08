@@ -1,0 +1,218 @@
+{
+  "U01": {
+    "answer": "一致",
+    "lineage_group": "U_direct"
+  },
+  "U02": {
+    "answer": "一致",
+    "lineage_group": "U_direct"
+  },
+  "U03": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_exclusive"
+  },
+  "U04": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_exclusive"
+  },
+  "U05": {
+    "answer": "信息不足",
+    "lineage_group": "U_absent"
+  },
+  "U06": {
+    "answer": "信息不足",
+    "lineage_group": "U_absent"
+  },
+  "U07": {
+    "answer": "一致",
+    "lineage_group": "U_revision"
+  },
+  "U08": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_revision"
+  },
+  "U09": {
+    "answer": "信息不足",
+    "lineage_group": "U_scope"
+  },
+  "U10": {
+    "answer": "一致",
+    "lineage_group": "U_scope"
+  },
+  "U11": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_link"
+  },
+  "U12": {
+    "answer": "信息不足",
+    "lineage_group": "U_link"
+  },
+  "B01": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_consistent"
+  },
+  "B02": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_consistent"
+  },
+  "B03": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_opposed"
+  },
+  "B04": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_opposed"
+  },
+  "B05": {
+    "answer": "无法比较",
+    "lineage_group": "B_period"
+  },
+  "B06": {
+    "answer": "无法比较",
+    "lineage_group": "B_period"
+  },
+  "B07": {
+    "answer": "无法比较",
+    "lineage_group": "B_subject"
+  },
+  "B08": {
+    "answer": "无法比较",
+    "lineage_group": "B_subject"
+  },
+  "B09": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_scope"
+  },
+  "B10": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_scope"
+  },
+  "B11": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_correction"
+  },
+  "B12": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_correction"
+  },
+  "CU1-1": {
+    "answer": "一致",
+    "lineage_group": "U_exclusive"
+  },
+  "CU1-2": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_exclusive"
+  },
+  "CU1-3": {
+    "answer": "信息不足",
+    "lineage_group": "U_exclusive"
+  },
+  "CU2-1": {
+    "answer": "一致",
+    "lineage_group": "U_direct"
+  },
+  "CU2-2": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_direct"
+  },
+  "CU2-3": {
+    "answer": "信息不足",
+    "lineage_group": "U_direct"
+  },
+  "CU3-1": {
+    "answer": "一致",
+    "lineage_group": "U_revision"
+  },
+  "CU3-2": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_revision"
+  },
+  "CU3-3": {
+    "answer": "信息不足",
+    "lineage_group": "U_revision"
+  },
+  "CU4-1": {
+    "answer": "一致",
+    "lineage_group": "U_link"
+  },
+  "CU4-2": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_link"
+  },
+  "CU4-3": {
+    "answer": "信息不足",
+    "lineage_group": "U_link"
+  },
+  "CU5-1": {
+    "answer": "一致",
+    "lineage_group": "U_scope"
+  },
+  "CU5-2": {
+    "answer": "存在明确矛盾",
+    "lineage_group": "U_scope"
+  },
+  "CU5-3": {
+    "answer": "信息不足",
+    "lineage_group": "U_scope"
+  },
+  "CB1-1": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_consistent"
+  },
+  "CB1-2": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_consistent"
+  },
+  "CB1-3": {
+    "answer": "无法比较",
+    "lineage_group": "B_consistent"
+  },
+  "CB2-1": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_opposed"
+  },
+  "CB2-2": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_opposed"
+  },
+  "CB2-3": {
+    "answer": "无法比较",
+    "lineage_group": "B_opposed"
+  },
+  "CB3-1": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_scope"
+  },
+  "CB3-2": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_scope"
+  },
+  "CB3-3": {
+    "answer": "无法比较",
+    "lineage_group": "B_scope"
+  },
+  "CB4-1": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_correction"
+  },
+  "CB4-2": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_correction"
+  },
+  "CB4-3": {
+    "answer": "无法比较",
+    "lineage_group": "B_correction"
+  },
+  "CB5-1": {
+    "answer": "未发现明确矛盾",
+    "lineage_group": "B_period"
+  },
+  "CB5-2": {
+    "answer": "发现明确矛盾",
+    "lineage_group": "B_period"
+  },
+  "CB5-3": {
+    "answer": "无法比较",
+    "lineage_group": "B_period"
+  }
+}

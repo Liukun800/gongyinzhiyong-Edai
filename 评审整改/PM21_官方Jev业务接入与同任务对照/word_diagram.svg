@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="610" viewBox="0 0 1050 610">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#2874b8"/></marker></defs>
+<rect width="1050" height="610" fill="white"/>
+<g font-family="Microsoft YaHei,sans-serif" text-anchor="middle" fill="#153f6e">
+<text x="525" y="36" font-size="28" font-weight="bold">材料归集后 · 综合审查前</text>
+<g stroke="#2874b8" stroke-width="2" fill="#edf5ff">
+<rect x="30" y="70" width="280" height="140" rx="6"/>
+<rect x="385" y="70" width="280" height="140" rx="6"/>
+<rect x="740" y="70" width="280" height="140" rx="6" fill="#1764a8"/>
+<rect x="30" y="300" width="280" height="130" rx="6" fill="#f3f6fa"/>
+<rect x="385" y="300" width="280" height="130" rx="6"/>
+<rect x="740" y="300" width="280" height="130" rx="6" fill="#dcecff"/>
+</g>
+<g font-size="28" font-weight="bold"><text x="170" y="111">材料与任务</text><text x="525" y="111">规则条件检查</text><text x="880" y="111" fill="white">官方 Jev · System 1</text><text x="170" y="341">补件与新版本</text><text x="525" y="341">核验事项包</text><text x="880" y="341">人员复核与交接</text></g>
+<g font-size="24"><text x="170" y="153">申请用途 · 经营陈述</text><text x="170" y="186">订单 · 记录 · 有效版本</text>
+<text x="525" y="153">材料完整性</text><text x="525" y="186">主体 / 期间 / 范围可比</text>
+<text x="880" y="151" fill="white">用途一致性 · 经营矛盾</text><text x="880" y="181" fill="white">限定答案 · 分布与置信度</text>
+<text x="170" y="380">缺项清单 → 补充材料</text><text x="170" y="411">新版本重跑，历史保留</text>
+<text x="525" y="380">判断 + 原文 + 疑点</text><text x="525" y="411">来源 + 版本 + 处理记录</text>
+<text x="880" y="380">确认 / 纠正 / 核实</text><text x="880" y="411">拟议工小审事项承接</text></g>
+<g stroke="#2874b8" stroke-width="3" fill="none" marker-end="url(#a)"><path d="M310 143H379"/><path d="M665 143H734"/>
+<path d="M410 210V252H170V294"/><path d="M950 210V274H525V294"/><path d="M665 365H734"/>
+<path d="M90 300V251H19V143H27"/></g>
+<text x="348" y="236" font-size="22">客观缺项</text><text x="724" y="236" font-size="22">官方判断返回</text>
+<rect x="30" y="475" width="990" height="105" rx="6" fill="#f2f7ff" stroke="#8ab1d5" stroke-dasharray="7 5"/>
+<text x="525" y="511" font-size="24">明确矛盾 / 信息不足 / 调用异常 → 人员接管</text>
+<text x="525" y="544" font-size="24">复杂关系按需协同工银智涌，按后续适配路径验证</text>
+<text x="525" y="571" font-size="21">判断由模型返回；原文依据由材料索引组织；授信责任保留在原审查流程</text>
+</g></svg>

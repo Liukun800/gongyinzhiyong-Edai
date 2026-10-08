@@ -1,0 +1,6 @@
+# Optional community/local-model experiments. Select the torch CPU/CUDA wheel for your platform.
+-r requirements-test.txt
+torch==2.10.0
+transformers==5.6.2
+safetensors==0.7.0
+huggingface-hub==1.12.0

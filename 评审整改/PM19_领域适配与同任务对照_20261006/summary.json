@@ -1,0 +1,2602 @@
+{
+  "created_at": "2026-10-07T05:20:02.169739+00:00",
+  "scope": "54 self-authored synthetic development cases; no independent bank labels",
+  "systems": {
+    "rule": {
+      "n": 54,
+      "answered": 7,
+      "correct": 7,
+      "semantic_n": 47,
+      "semantic_correct": 0,
+      "conflict_n": 18,
+      "conflict_nonidentification": [
+        "U03",
+        "U04",
+        "U08",
+        "U11",
+        "B03",
+        "B04",
+        "B10",
+        "B12",
+        "CU1-2",
+        "CU2-2",
+        "CU3-2",
+        "CU4-2",
+        "CU5-2",
+        "CB1-2",
+        "CB2-2",
+        "CB3-2",
+        "CB4-2",
+        "CB5-2"
+      ],
+      "conflict_abstained": [
+        "U03",
+        "U04",
+        "U08",
+        "U11",
+        "B03",
+        "B04",
+        "B10",
+        "B12",
+        "CU1-2",
+        "CU2-2",
+        "CU3-2",
+        "CU4-2",
+        "CU5-2",
+        "CB1-2",
+        "CB2-2",
+        "CB3-2",
+        "CB4-2",
+        "CB5-2"
+      ],
+      "conflict_clear_answer": [],
+      "conflict_insufficient_answer": [],
+      "false_conflicts": [],
+      "wrong_ids": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "CU1-1",
+        "CU1-2",
+        "CU1-3",
+        "CU2-1",
+        "CU2-2",
+        "CU2-3",
+        "CU3-1",
+        "CU3-2",
+        "CU3-3",
+        "CU4-1",
+        "CU4-2",
+        "CU4-3",
+        "CU5-1",
+        "CU5-2",
+        "CU5-3",
+        "CB1-1",
+        "CB1-2",
+        "CB1-3",
+        "CB2-1",
+        "CB2-2",
+        "CB2-3",
+        "CB3-1",
+        "CB3-2",
+        "CB3-3",
+        "CB4-1",
+        "CB4-2",
+        "CB4-3",
+        "CB5-1",
+        "CB5-2"
+      ]
+    },
+    "jev_frozen": {
+      "n": 54,
+      "answered": 54,
+      "correct": 40,
+      "semantic_n": 47,
+      "semantic_correct": 33,
+      "conflict_n": 18,
+      "conflict_nonidentification": [
+        "CU4-2"
+      ],
+      "conflict_abstained": [],
+      "conflict_clear_answer": [
+        "CU4-2"
+      ],
+      "conflict_insufficient_answer": [],
+      "false_conflicts": [
+        "U09",
+        "B02",
+        "B09",
+        "B11",
+        "CU3-1",
+        "CB1-1",
+        "CB1-3",
+        "CB2-3",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-3",
+        "CB5-1"
+      ],
+      "wrong_ids": [
+        "U09",
+        "B02",
+        "B09",
+        "B11",
+        "CU3-1",
+        "CU4-2",
+        "CB1-1",
+        "CB1-3",
+        "CB2-3",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-3",
+        "CB5-1"
+      ]
+    },
+    "jev_head_adapted": {
+      "n": 54,
+      "answered": 54,
+      "correct": 40,
+      "semantic_n": 47,
+      "semantic_correct": 33,
+      "conflict_n": 18,
+      "conflict_nonidentification": [
+        "CU3-2",
+        "CU4-2"
+      ],
+      "conflict_abstained": [],
+      "conflict_clear_answer": [
+        "CU4-2"
+      ],
+      "conflict_insufficient_answer": [
+        "CU3-2"
+      ],
+      "false_conflicts": [
+        "U07",
+        "U09",
+        "B02",
+        "CU2-3",
+        "CU3-1",
+        "CB1-1",
+        "CB1-3",
+        "CB2-3",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-3"
+      ],
+      "wrong_ids": [
+        "U07",
+        "U09",
+        "B02",
+        "CU2-3",
+        "CU3-1",
+        "CU3-2",
+        "CU4-2",
+        "CB1-1",
+        "CB1-3",
+        "CB2-3",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-3"
+      ]
+    },
+    "bert_frozen_linear": {
+      "n": 54,
+      "answered": 54,
+      "correct": 33,
+      "semantic_n": 47,
+      "semantic_correct": 26,
+      "conflict_n": 18,
+      "conflict_nonidentification": [
+        "U03",
+        "U04",
+        "B03",
+        "B12",
+        "CU1-2",
+        "CB2-2",
+        "CB4-2",
+        "CB5-2"
+      ],
+      "conflict_abstained": [],
+      "conflict_clear_answer": [
+        "U03",
+        "U04",
+        "B03",
+        "B12",
+        "CB2-2",
+        "CB5-2"
+      ],
+      "conflict_insufficient_answer": [
+        "CU1-2",
+        "CB4-2"
+      ],
+      "false_conflicts": [
+        "U07",
+        "B02",
+        "CU2-3",
+        "CU3-1",
+        "CU3-3",
+        "CU4-3",
+        "CB1-1",
+        "CB3-1",
+        "CB3-3"
+      ],
+      "wrong_ids": [
+        "U03",
+        "U04",
+        "U07",
+        "U12",
+        "B02",
+        "B03",
+        "B11",
+        "B12",
+        "CU1-2",
+        "CU2-3",
+        "CU3-1",
+        "CU3-3",
+        "CU4-3",
+        "CU5-1",
+        "CB1-1",
+        "CB2-2",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-2",
+        "CB5-2"
+      ]
+    },
+    "tfidf": {
+      "n": 54,
+      "answered": 54,
+      "correct": 28,
+      "semantic_n": 47,
+      "semantic_correct": 21,
+      "conflict_n": 18,
+      "conflict_nonidentification": [
+        "U03",
+        "U04",
+        "B03",
+        "B12",
+        "CB2-2",
+        "CB3-2",
+        "CB4-2",
+        "CB5-2"
+      ],
+      "conflict_abstained": [],
+      "conflict_clear_answer": [
+        "U03",
+        "U04",
+        "B03",
+        "B12",
+        "CB2-2",
+        "CB3-2",
+        "CB4-2",
+        "CB5-2"
+      ],
+      "conflict_insufficient_answer": [],
+      "false_conflicts": [
+        "U01",
+        "U02",
+        "B01",
+        "B02",
+        "CU2-3",
+        "CU3-1",
+        "CU3-3",
+        "CB1-1",
+        "CB1-3",
+        "CB5-1"
+      ],
+      "wrong_ids": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U09",
+        "U12",
+        "B01",
+        "B02",
+        "B03",
+        "B12",
+        "CU1-3",
+        "CU2-3",
+        "CU3-1",
+        "CU3-3",
+        "CU4-3",
+        "CU5-3",
+        "CB1-1",
+        "CB1-3",
+        "CB2-2",
+        "CB2-3",
+        "CB3-2",
+        "CB3-3",
+        "CB4-2",
+        "CB4-3",
+        "CB5-1",
+        "CB5-2"
+      ]
+    },
+    "qwen": {
+      "n": 54,
+      "answered": 54,
+      "correct": 25,
+      "semantic_n": 47,
+      "semantic_correct": 18,
+      "conflict_n": 18,
+      "conflict_nonidentification": [
+        "U03",
+        "U04",
+        "U08",
+        "U11",
+        "CU1-2",
+        "CU2-2",
+        "CU3-2",
+        "CU4-2",
+        "CU5-2"
+      ],
+      "conflict_abstained": [],
+      "conflict_clear_answer": [
+        "U03",
+        "U04",
+        "U08",
+        "U11",
+        "CU1-2",
+        "CU2-2",
+        "CU3-2",
+        "CU4-2",
+        "CU5-2"
+      ],
+      "conflict_insufficient_answer": [],
+      "false_conflicts": [
+        "B01",
+        "B02",
+        "B09",
+        "B11",
+        "CB1-1",
+        "CB1-3",
+        "CB2-1",
+        "CB2-3",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-3",
+        "CB5-1"
+      ],
+      "wrong_ids": [
+        "U03",
+        "U04",
+        "U08",
+        "U09",
+        "U11",
+        "U12",
+        "B01",
+        "B02",
+        "B09",
+        "B11",
+        "CU1-2",
+        "CU1-3",
+        "CU2-2",
+        "CU2-3",
+        "CU3-2",
+        "CU3-3",
+        "CU4-2",
+        "CU4-3",
+        "CU5-2",
+        "CU5-3",
+        "CB1-1",
+        "CB1-3",
+        "CB2-1",
+        "CB2-3",
+        "CB3-1",
+        "CB3-3",
+        "CB4-1",
+        "CB4-3",
+        "CB5-1"
+      ]
+    }
+  },
+  "tasks": {
+    "USE_MATCH": {
+      "rule": {
+        "n": 27,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 25,
+        "semantic_correct": 0,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_abstained": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U07",
+          "U08",
+          "U09",
+          "U10",
+          "U11",
+          "U12",
+          "CU1-1",
+          "CU1-2",
+          "CU1-3",
+          "CU2-1",
+          "CU2-2",
+          "CU2-3",
+          "CU3-1",
+          "CU3-2",
+          "CU3-3",
+          "CU4-1",
+          "CU4-2",
+          "CU4-3",
+          "CU5-1",
+          "CU5-2",
+          "CU5-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 24,
+        "semantic_n": 25,
+        "semantic_correct": 22,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U09",
+          "CU3-1"
+        ],
+        "wrong_ids": [
+          "U09",
+          "CU3-1",
+          "CU4-2"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 27,
+        "answered": 27,
+        "correct": 21,
+        "semantic_n": 25,
+        "semantic_correct": 19,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "CU3-2",
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [
+          "CU3-2"
+        ],
+        "false_conflicts": [
+          "U07",
+          "U09",
+          "CU2-3",
+          "CU3-1"
+        ],
+        "wrong_ids": [
+          "U07",
+          "U09",
+          "CU2-3",
+          "CU3-1",
+          "CU3-2",
+          "CU4-2"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 27,
+        "answered": 27,
+        "correct": 17,
+        "semantic_n": 25,
+        "semantic_correct": 15,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04"
+        ],
+        "conflict_insufficient_answer": [
+          "CU1-2"
+        ],
+        "false_conflicts": [
+          "U07",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3",
+          "CU4-3"
+        ],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "U07",
+          "U12",
+          "CU1-2",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3",
+          "CU4-3",
+          "CU5-1"
+        ]
+      },
+      "tfidf": {
+        "n": 27,
+        "answered": 27,
+        "correct": 15,
+        "semantic_n": 25,
+        "semantic_correct": 13,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U01",
+          "U02",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3"
+        ],
+        "wrong_ids": [
+          "U01",
+          "U02",
+          "U03",
+          "U04",
+          "U09",
+          "U12",
+          "CU1-3",
+          "CU2-3",
+          "CU3-1",
+          "CU3-3",
+          "CU4-3",
+          "CU5-3"
+        ]
+      },
+      "qwen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 11,
+        "semantic_n": 25,
+        "semantic_correct": 9,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04",
+          "U08",
+          "U11",
+          "CU1-2",
+          "CU2-2",
+          "CU3-2",
+          "CU4-2",
+          "CU5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "U08",
+          "U09",
+          "U11",
+          "U12",
+          "CU1-2",
+          "CU1-3",
+          "CU2-2",
+          "CU2-3",
+          "CU3-2",
+          "CU3-3",
+          "CU4-2",
+          "CU4-3",
+          "CU5-2",
+          "CU5-3"
+        ]
+      }
+    },
+    "BIZ_CONFLICT": {
+      "rule": {
+        "n": 27,
+        "answered": 5,
+        "correct": 5,
+        "semantic_n": 22,
+        "semantic_correct": 0,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "B03",
+          "B04",
+          "B10",
+          "B12",
+          "CB1-2",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_abstained": [
+          "B03",
+          "B04",
+          "B10",
+          "B12",
+          "CB1-2",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B09",
+          "B10",
+          "B11",
+          "B12",
+          "CB1-1",
+          "CB1-2",
+          "CB1-3",
+          "CB2-1",
+          "CB2-2",
+          "CB2-3",
+          "CB3-1",
+          "CB3-2",
+          "CB3-3",
+          "CB4-1",
+          "CB4-2",
+          "CB4-3",
+          "CB5-1",
+          "CB5-2"
+        ]
+      },
+      "jev_frozen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 16,
+        "semantic_n": 22,
+        "semantic_correct": 11,
+        "conflict_n": 9,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 27,
+        "answered": 27,
+        "correct": 19,
+        "semantic_n": 22,
+        "semantic_correct": 14,
+        "conflict_n": 9,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3"
+        ],
+        "wrong_ids": [
+          "B02",
+          "CB1-1",
+          "CB1-3",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 27,
+        "answered": 27,
+        "correct": 16,
+        "semantic_n": 22,
+        "semantic_correct": 11,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB5-2"
+        ],
+        "conflict_insufficient_answer": [
+          "CB4-2"
+        ],
+        "false_conflicts": [
+          "B02",
+          "CB1-1",
+          "CB3-1",
+          "CB3-3"
+        ],
+        "wrong_ids": [
+          "B02",
+          "B03",
+          "B11",
+          "B12",
+          "CB1-1",
+          "CB2-2",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-2",
+          "CB5-2"
+        ]
+      },
+      "tfidf": {
+        "n": 27,
+        "answered": 27,
+        "correct": 13,
+        "semantic_n": 22,
+        "semantic_correct": 8,
+        "conflict_n": 9,
+        "conflict_nonidentification": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B03",
+          "B12",
+          "CB2-2",
+          "CB3-2",
+          "CB4-2",
+          "CB5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-3",
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "B03",
+          "B12",
+          "CB1-1",
+          "CB1-3",
+          "CB2-2",
+          "CB2-3",
+          "CB3-2",
+          "CB3-3",
+          "CB4-2",
+          "CB4-3",
+          "CB5-1",
+          "CB5-2"
+        ]
+      },
+      "qwen": {
+        "n": 27,
+        "answered": 27,
+        "correct": 14,
+        "semantic_n": 22,
+        "semantic_correct": 9,
+        "conflict_n": 9,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B01",
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-1",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "B09",
+          "B11",
+          "CB1-1",
+          "CB1-3",
+          "CB2-1",
+          "CB2-3",
+          "CB3-1",
+          "CB3-3",
+          "CB4-1",
+          "CB4-3",
+          "CB5-1"
+        ]
+      }
+    }
+  },
+  "lineage": {
+    "B_consistent": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CB1-2"
+        ],
+        "conflict_abstained": [
+          "CB1-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-2",
+          "CB1-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ],
+        "wrong_ids": [
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ],
+        "wrong_ids": [
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B02",
+          "CB1-1"
+        ],
+        "wrong_ids": [
+          "B02",
+          "CB1-1"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 1,
+        "semantic_n": 5,
+        "semantic_correct": 1,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 1,
+        "semantic_n": 5,
+        "semantic_correct": 1,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ],
+        "wrong_ids": [
+          "B01",
+          "B02",
+          "CB1-1",
+          "CB1-3"
+        ]
+      }
+    },
+    "B_correction": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "B12",
+          "CB4-2"
+        ],
+        "conflict_abstained": [
+          "B12",
+          "CB4-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B11",
+          "B12",
+          "CB4-1",
+          "CB4-2",
+          "CB4-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B11",
+          "CB4-1",
+          "CB4-3"
+        ],
+        "wrong_ids": [
+          "B11",
+          "CB4-1",
+          "CB4-3"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB4-1",
+          "CB4-3"
+        ],
+        "wrong_ids": [
+          "CB4-1",
+          "CB4-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 1,
+        "semantic_n": 5,
+        "semantic_correct": 1,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "B12",
+          "CB4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B12"
+        ],
+        "conflict_insufficient_answer": [
+          "CB4-2"
+        ],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B11",
+          "B12",
+          "CB4-1",
+          "CB4-2"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "B12",
+          "CB4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B12",
+          "CB4-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B12",
+          "CB4-2",
+          "CB4-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B11",
+          "CB4-1",
+          "CB4-3"
+        ],
+        "wrong_ids": [
+          "B11",
+          "CB4-1",
+          "CB4-3"
+        ]
+      }
+    },
+    "B_opposed": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "B03",
+          "B04",
+          "CB2-2"
+        ],
+        "conflict_abstained": [
+          "B03",
+          "B04",
+          "CB2-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B03",
+          "B04",
+          "CB2-1",
+          "CB2-2",
+          "CB2-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 3,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB2-3"
+        ],
+        "wrong_ids": [
+          "CB2-3"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 3,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB2-3"
+        ],
+        "wrong_ids": [
+          "CB2-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "B03",
+          "CB2-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B03",
+          "CB2-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B03",
+          "CB2-2"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "B03",
+          "CB2-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "B03",
+          "CB2-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B03",
+          "CB2-2",
+          "CB2-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 3,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB2-1",
+          "CB2-3"
+        ],
+        "wrong_ids": [
+          "CB2-1",
+          "CB2-3"
+        ]
+      }
+    },
+    "B_period": {
+      "rule": {
+        "n": 5,
+        "answered": 3,
+        "correct": 3,
+        "semantic_n": 2,
+        "semantic_correct": 0,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CB5-2"
+        ],
+        "conflict_abstained": [
+          "CB5-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CB5-1",
+          "CB5-2"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 2,
+        "semantic_correct": 1,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "CB5-1"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 5,
+        "semantic_n": 2,
+        "semantic_correct": 2,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 2,
+        "semantic_correct": 1,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CB5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CB5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CB5-2"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 2,
+        "semantic_correct": 0,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CB5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CB5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "CB5-1",
+          "CB5-2"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 2,
+        "semantic_correct": 1,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB5-1"
+        ],
+        "wrong_ids": [
+          "CB5-1"
+        ]
+      }
+    },
+    "B_scope": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "B10",
+          "CB3-2"
+        ],
+        "conflict_abstained": [
+          "B10",
+          "CB3-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "B09",
+          "B10",
+          "CB3-1",
+          "CB3-2",
+          "CB3-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B09",
+          "CB3-1",
+          "CB3-3"
+        ],
+        "wrong_ids": [
+          "B09",
+          "CB3-1",
+          "CB3-3"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB3-1",
+          "CB3-3"
+        ],
+        "wrong_ids": [
+          "CB3-1",
+          "CB3-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CB3-1",
+          "CB3-3"
+        ],
+        "wrong_ids": [
+          "CB3-1",
+          "CB3-3"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "CB3-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CB3-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CB3-2",
+          "CB3-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "B09",
+          "CB3-1",
+          "CB3-3"
+        ],
+        "wrong_ids": [
+          "B09",
+          "CB3-1",
+          "CB3-3"
+        ]
+      }
+    },
+    "B_subject": {
+      "rule": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "jev_frozen": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "jev_head_adapted": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "bert_frozen_linear": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "tfidf": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "qwen": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      }
+    },
+    "U_absent": {
+      "rule": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "jev_frozen": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "jev_head_adapted": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "bert_frozen_linear": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "tfidf": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "qwen": {
+        "n": 2,
+        "answered": 2,
+        "correct": 2,
+        "semantic_n": 0,
+        "semantic_correct": 0,
+        "conflict_n": 0,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      }
+    },
+    "U_direct": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CU2-2"
+        ],
+        "conflict_abstained": [
+          "CU2-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U01",
+          "U02",
+          "CU2-1",
+          "CU2-2",
+          "CU2-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 5,
+        "semantic_n": 5,
+        "semantic_correct": 5,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CU2-3"
+        ],
+        "wrong_ids": [
+          "CU2-3"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CU2-3"
+        ],
+        "wrong_ids": [
+          "CU2-3"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U01",
+          "U02",
+          "CU2-3"
+        ],
+        "wrong_ids": [
+          "U01",
+          "U02",
+          "CU2-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CU2-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU2-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CU2-2",
+          "CU2-3"
+        ]
+      }
+    },
+    "U_exclusive": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_abstained": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "CU1-1",
+          "CU1-2",
+          "CU1-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 5,
+        "semantic_n": 5,
+        "semantic_correct": 5,
+        "conflict_n": 3,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 5,
+        "semantic_n": 5,
+        "semantic_correct": 5,
+        "conflict_n": 3,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": []
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04"
+        ],
+        "conflict_insufficient_answer": [
+          "CU1-2"
+        ],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "U03",
+          "U04"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "CU1-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 1,
+        "semantic_n": 5,
+        "semantic_correct": 1,
+        "conflict_n": 3,
+        "conflict_nonidentification": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U03",
+          "U04",
+          "CU1-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U03",
+          "U04",
+          "CU1-2",
+          "CU1-3"
+        ]
+      }
+    },
+    "U_link": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "U11",
+          "CU4-2"
+        ],
+        "conflict_abstained": [
+          "U11",
+          "CU4-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U11",
+          "U12",
+          "CU4-1",
+          "CU4-2",
+          "CU4-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CU4-2"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CU4-2"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CU4-3"
+        ],
+        "wrong_ids": [
+          "U12",
+          "CU4-3"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U12",
+          "CU4-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 1,
+        "semantic_n": 5,
+        "semantic_correct": 1,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "U11",
+          "CU4-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U11",
+          "CU4-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U11",
+          "U12",
+          "CU4-2",
+          "CU4-3"
+        ]
+      }
+    },
+    "U_revision": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "U08",
+          "CU3-2"
+        ],
+        "conflict_abstained": [
+          "U08",
+          "CU3-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U07",
+          "U08",
+          "CU3-1",
+          "CU3-2",
+          "CU3-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CU3-1"
+        ],
+        "wrong_ids": [
+          "CU3-1"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "CU3-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [
+          "CU3-2"
+        ],
+        "false_conflicts": [
+          "U07",
+          "CU3-1"
+        ],
+        "wrong_ids": [
+          "U07",
+          "CU3-1",
+          "CU3-2"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U07",
+          "CU3-1",
+          "CU3-3"
+        ],
+        "wrong_ids": [
+          "U07",
+          "CU3-1",
+          "CU3-3"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 2,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "CU3-1",
+          "CU3-3"
+        ],
+        "wrong_ids": [
+          "CU3-1",
+          "CU3-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 2,
+        "conflict_nonidentification": [
+          "U08",
+          "CU3-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "U08",
+          "CU3-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U08",
+          "CU3-2",
+          "CU3-3"
+        ]
+      }
+    },
+    "U_scope": {
+      "rule": {
+        "n": 5,
+        "answered": 0,
+        "correct": 0,
+        "semantic_n": 5,
+        "semantic_correct": 0,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CU5-2"
+        ],
+        "conflict_abstained": [
+          "CU5-2"
+        ],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U09",
+          "U10",
+          "CU5-1",
+          "CU5-2",
+          "CU5-3"
+        ]
+      },
+      "jev_frozen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U09"
+        ],
+        "wrong_ids": [
+          "U09"
+        ]
+      },
+      "jev_head_adapted": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [
+          "U09"
+        ],
+        "wrong_ids": [
+          "U09"
+        ]
+      },
+      "bert_frozen_linear": {
+        "n": 5,
+        "answered": 5,
+        "correct": 4,
+        "semantic_n": 5,
+        "semantic_correct": 4,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "CU5-1"
+        ]
+      },
+      "tfidf": {
+        "n": 5,
+        "answered": 5,
+        "correct": 3,
+        "semantic_n": 5,
+        "semantic_correct": 3,
+        "conflict_n": 1,
+        "conflict_nonidentification": [],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U09",
+          "CU5-3"
+        ]
+      },
+      "qwen": {
+        "n": 5,
+        "answered": 5,
+        "correct": 2,
+        "semantic_n": 5,
+        "semantic_correct": 2,
+        "conflict_n": 1,
+        "conflict_nonidentification": [
+          "CU5-2"
+        ],
+        "conflict_abstained": [],
+        "conflict_clear_answer": [
+          "CU5-2"
+        ],
+        "conflict_insufficient_answer": [],
+        "false_conflicts": [],
+        "wrong_ids": [
+          "U09",
+          "CU5-2",
+          "CU5-3"
+        ]
+      }
+    }
+  },
+  "timing": {
+    "jev_features": {
+      "n": 47,
+      "min": 3083.37,
+      "median": 3415.39,
+      "max": 8684.55,
+      "sum": 169311.85
+    },
+    "bert_features": {
+      "n": 47,
+      "min": 201.54,
+      "median": 264.88,
+      "max": 978.47,
+      "sum": 13076.93
+    },
+    "qwen_all_actual_calls": {
+      "n": 47,
+      "min": 3996.15,
+      "median": 4211.94,
+      "max": 4859.26,
+      "sum": 199781.91
+    },
+    "qwen_valid_calls": {
+      "n": 47,
+      "min": 3996.15,
+      "median": 4211.94,
+      "max": 4859.26,
+      "sum": 199781.91
+    },
+    "qwen_failed_calls": null,
+    "qwen_input_tokens_all_calls": {
+      "n": 47,
+      "min": 379,
+      "median": 392,
+      "max": 454,
+      "sum": 18574
+    },
+    "qwen_output_tokens_all_calls": {
+      "n": 47,
+      "min": 30,
+      "median": 33,
+      "max": 36,
+      "sum": 1488
+    },
+    "jev_path_tokens": {
+      "n": 47,
+      "min": 558,
+      "median": 597,
+      "max": 712,
+      "sum": 28528
+    },
+    "head_training_ms": {
+      "n": 10,
+      "min": 629.67,
+      "median": 644.4100000000001,
+      "max": 896.64,
+      "sum": 6696.89
+    }
+  },
+  "adaptation_changes": {
+    "improved": [
+      "B09",
+      "B11",
+      "CB5-1"
+    ],
+    "regressed": [
+      "U07",
+      "CU2-3",
+      "CU3-2"
+    ],
+    "changed_still_wrong": []
+  },
+  "qwen_actual_calls": 47,
+  "qwen_valid_calls": 47,
+  "qwen_failed_calls": 0,
+  "raw_output_coverage": 47,
+  "default_changed": false,
+  "adapted_head_adopted": false,
+  "decision": "当前适配头不采用：一致数未增加，参考矛盾未识别增加。其他路线仍需独立数据与强模型对照。",
+  "bank_connected": false,
+  "independent_business_reviews": 0,
+  "calibration_performed": false,
+  "protected_hashes": {
+    "demo/app.py": {
+      "expected": "0d349892447f6c980f4b18c6ec2c8dd8754f37966a527334b7c3820c492933cd",
+      "actual": "0d349892447f6c980f4b18c6ec2c8dd8754f37966a527334b7c3820c492933cd"
+    },
+    "demo/shadow_engine.py": {
+      "expected": "c015e07e481cccbf40761992dfa7168c30d92266bc349627917f61b6ddd23a5c",
+      "actual": "c015e07e481cccbf40761992dfa7168c30d92266bc349627917f61b6ddd23a5c"
+    },
+    "demo/upstream_model.py": {
+      "expected": "4d5b1087a23a07e3b791521e2aa7c0ec2f19a2b5eb86c1e6dd8f3a7ff6227376",
+      "actual": "4d5b1087a23a07e3b791521e2aa7c0ec2f19a2b5eb86c1e6dd8f3a7ff6227376"
+    },
+    "demo/real_model.py": {
+      "expected": "8dcbd1564a8772098ef2a016f5936342c9b1da7f41e927289b08cb3995d91fcd",
+      "actual": "8dcbd1564a8772098ef2a016f5936342c9b1da7f41e927289b08cb3995d91fcd"
+    },
+    "demo/dual_engine.py": {
+      "expected": "fce4bdcc1fcf85c60c2cf48e25e5f3e2cccd9cc2665dda5f82c55daa8f8596c1",
+      "actual": "fce4bdcc1fcf85c60c2cf48e25e5f3e2cccd9cc2665dda5f82c55daa8f8596c1"
+    },
+    "demo/engine.py": {
+      "expected": "bea74f9daf9e8df7026222a2ca65db57308f65231a2d6d4a4c7868711621889d",
+      "actual": "bea74f9daf9e8df7026222a2ca65db57308f65231a2d6d4a4c7868711621889d"
+    },
+    "demo/data/cases.json": {
+      "expected": "6390e0a7a7b96ed7446f9916ae62b3d1184e1f54f2314cc184a6973767cc1e4b",
+      "actual": "6390e0a7a7b96ed7446f9916ae62b3d1184e1f54f2314cc184a6973767cc1e4b"
+    },
+    "demo/data/annotations.json": {
+      "expected": "9acd0739f4cc6eaf9016654c844ed4783c107fcb9a321e2cb2964d7a1e052cca",
+      "actual": "9acd0739f4cc6eaf9016654c844ed4783c107fcb9a321e2cb2964d7a1e052cca"
+    },
+    "评审整改交付版/专业报告精读_20261006/工银智涌e贷_最终计划书_专业报告精读版.docx": {
+      "expected": "9c3f2efea0247fe130190b8d8f2ac26da32028c860c59d368b35dc790882434b",
+      "actual": "9c3f2efea0247fe130190b8d8f2ac26da32028c860c59d368b35dc790882434b"
+    },
+    "demo\\experiments\\dataset_manifest.json": {
+      "expected": "94e22cbabb1cba88d10191594446162960f6bfe19bf63491c7a4b2b77cb13cc0",
+      "actual": "94e22cbabb1cba88d10191594446162960f6bfe19bf63491c7a4b2b77cb13cc0"
+    },
+    "demo\\experiments\\development_cases.json": {
+      "expected": "8814ab39756fa2812d3e2ed05bf7752f3adba3aa80e37c636cead61c4737d497",
+      "actual": "8814ab39756fa2812d3e2ed05bf7752f3adba3aa80e37c636cead61c4737d497"
+    },
+    "demo\\experiments\\development_labels.json": {
+      "expected": "6c0894fc3fbe5776a9d97e93e2f02ca137860b089cc9e424c4af7ef0f56345f2",
+      "actual": "6c0894fc3fbe5776a9d97e93e2f02ca137860b089cc9e424c4af7ef0f56345f2"
+    },
+    "demo\\experiments\\domain_dev_v2\\combined_cases.json": {
+      "expected": "c3a49ed53995a1844cc18cfedacb7b6fa98feb14d07ba01039650a8a2a691912",
+      "actual": "c3a49ed53995a1844cc18cfedacb7b6fa98feb14d07ba01039650a8a2a691912"
+    },
+    "demo\\experiments\\domain_dev_v2\\combined_labels.json": {
+      "expected": "712437f28647e09b2f0bdb9994a79f597dfbf60b4f7803430c2b9975d0187553",
+      "actual": "712437f28647e09b2f0bdb9994a79f597dfbf60b4f7803430c2b9975d0187553"
+    },
+    "demo\\experiments\\domain_dev_v2\\contrast_cases.json": {
+      "expected": "8a27509a4400882ae89d8703f0e3897829ea50340dc483d25d4a12e79d15f15f",
+      "actual": "8a27509a4400882ae89d8703f0e3897829ea50340dc483d25d4a12e79d15f15f"
+    },
+    "demo\\experiments\\domain_dev_v2\\contrast_labels.json": {
+      "expected": "664d1d5f6228929001a69fd629d3a2c966b7362effd9ca38004f68cb49bedf0f",
+      "actual": "664d1d5f6228929001a69fd629d3a2c966b7362effd9ca38004f68cb49bedf0f"
+    },
+    "demo\\experiments\\domain_dev_v2\\development_folds.json": {
+      "expected": "03abc56361bc06acbc09fc07208fcf692c4f65368fd136773c592b467f2b1d85",
+      "actual": "03abc56361bc06acbc09fc07208fcf692c4f65368fd136773c592b467f2b1d85"
+    },
+    "demo\\experiments\\domain_dev_v2\\eligibility.json": {
+      "expected": "ae94ce5465b1a7ee3cdfd4c18f14d45b87a50581f1596e4c25813cb2e71c0e56",
+      "actual": "ae94ce5465b1a7ee3cdfd4c18f14d45b87a50581f1596e4c25813cb2e71c0e56"
+    },
+    "demo\\experiments\\domain_dev_v2\\manifest.json": {
+      "expected": "fd7e8be6756d4fb41ce136ae63e32cb4dec902b99d82f38ed582e6bd7718e245",
+      "actual": "fd7e8be6756d4fb41ce136ae63e32cb4dec902b99d82f38ed582e6bd7718e245"
+    },
+    "demo\\experiments\\results\\agentjev_progress.json": {
+      "expected": "8505ce07d1a43b48ebe4d06d9252e132ecffc3694f5ace992f50a0f843af155a",
+      "actual": "8505ce07d1a43b48ebe4d06d9252e132ecffc3694f5ace992f50a0f843af155a"
+    },
+    "demo\\experiments\\results\\development_comparison.json": {
+      "expected": "1ce0d87fe50ab9f431a31fab8f1efd5315abbf24ca0f8531bd878439a10b258d",
+      "actual": "1ce0d87fe50ab9f431a31fab8f1efd5315abbf24ca0f8531bd878439a10b258d"
+    },
+    "demo\\experiments\\review_holdout_v1\\cases.json": {
+      "expected": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb",
+      "actual": "97c93c665025638a8d53dc6a2e7f0817e2e3a63cb688a6df22941159c667e2bb"
+    },
+    "demo\\experiments\\review_holdout_v1\\evaluation_record.json": {
+      "expected": "ab93bb66a56874ccd0e4150b229b7710e938eb42c2137ad4d47b5d34863875ca",
+      "actual": "ab93bb66a56874ccd0e4150b229b7710e938eb42c2137ad4d47b5d34863875ca"
+    },
+    "demo\\experiments\\review_holdout_v1\\labels.sealed.json": {
+      "expected": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3",
+      "actual": "c2303a6da144725773543d6293964ad86bc802cca6fd2e0726ee8ecd421a6fc3"
+    },
+    "demo\\experiments\\review_holdout_v1\\manifest.json": {
+      "expected": "f6f10ee1147805c23544ce547892c8480b279a762d866d6fe054c3a3538e88bc",
+      "actual": "f6f10ee1147805c23544ce547892c8480b279a762d866d6fe054c3a3538e88bc"
+    },
+    "demo/models/agentjev-public/model.safetensors": {
+      "expected": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b",
+      "actual": "a3c3503b71a04da0e30cbd17362f5733ba0a5ccae6d3eb5db7a84a2398a4953b"
+    },
+    "demo/static/app.js": {
+      "expected": "230280d7a93b47c06ce13df0dd024e13fe6cec5b102617b194b2049828bcb4d0",
+      "actual": "230280d7a93b47c06ce13df0dd024e13fe6cec5b102617b194b2049828bcb4d0"
+    },
+    "demo/static/showcase.js": {
+      "expected": "00e871594c0d8a210ed26929b8e26b00f8b95747c19e88fda2c2e7fd7792a785",
+      "actual": "00e871594c0d8a210ed26929b8e26b00f8b95747c19e88fda2c2e7fd7792a785"
+    }
+  },
+  "protected_passed": true
+}

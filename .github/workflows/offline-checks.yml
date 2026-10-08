@@ -1,0 +1,22 @@
+name: Offline project checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install offline test dependencies
+        run: python -m pip install -r requirements-test.txt
+      - name: Verify publication and frozen inputs
+        run: python -X utf8 scripts/check-release.py
+      - name: Demo software regression
+        run: python -X utf8 -m unittest discover -s demo -p 'test_*.py' -v
+      - name: Official protocol offline tests
+        run: python -X utf8 -m unittest discover -s '评审整改/PM20_官方Jev判断头最小验证' -p 'test_*.py' -v
+      - name: Frozen comparison offline tests
+        run: python -X utf8 -m unittest discover -s '评审整改/PM21_官方Jev业务接入与同任务对照' -p 'test_*.py' -v

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "服务后端身份正确，保留社区模型身份与人工责任",
+    "真实HTTP结果两任务展示、版本规范与原文证据可查看",
+    "人工转交保留原建议，结果交接含任务规范与未解决事项，授信字段为空",
+    "1440/390宽度三视图无页面溢出"
+  ],
+  "screens": [
+    "01_判断服务与业务嵌入.png",
+    "02_真实任务与材料证据.png",
+    "03_结果交接与责任.png"
+  ],
+  "errors": [],
+  "additional_real_inferences": 0,
+  "independent_business_reviews": 0,
+  "manual_actions": "仿真材料上的工程演示转交操作"
+}

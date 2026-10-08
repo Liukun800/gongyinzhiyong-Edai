@@ -1,0 +1,6 @@
+# Frozen experiment protocols hash original bytes. Disable newline normalization.
+* -text
+*.docx binary
+*.png binary
+*.jpg binary
+*.pdf binary

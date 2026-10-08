@@ -1,0 +1,847 @@
+{
+  "completed": 54,
+  "total": 54,
+  "rows": [
+    {
+      "case_id": "U01",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4177.81,
+      "prompt_tokens": 388,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U02",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4089.75,
+      "prompt_tokens": 383,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U03",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4061.2,
+      "prompt_tokens": 385,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U04",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4044.77,
+      "prompt_tokens": 384,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U05",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "信息不足",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    },
+    {
+      "case_id": "U06",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "信息不足",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    },
+    {
+      "case_id": "U07",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4816.38,
+      "prompt_tokens": 454,
+      "completion_tokens": 36,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1",
+        "m3:p1"
+      ]
+    },
+    {
+      "case_id": "U08",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4859.26,
+      "prompt_tokens": 445,
+      "completion_tokens": 36,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1",
+        "m3:p1"
+      ]
+    },
+    {
+      "case_id": "U09",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4319.9,
+      "prompt_tokens": 388,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U10",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4082.9,
+      "prompt_tokens": 393,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U11",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4102.28,
+      "prompt_tokens": 393,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "U12",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 3996.15,
+      "prompt_tokens": 388,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B01",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4234.45,
+      "prompt_tokens": 379,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B02",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4284.39,
+      "prompt_tokens": 382,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B03",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4242.36,
+      "prompt_tokens": 383,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B04",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4277.05,
+      "prompt_tokens": 384,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B05",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "无法比较",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    },
+    {
+      "case_id": "B06",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "无法比较",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    },
+    {
+      "case_id": "B07",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "无法比较",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    },
+    {
+      "case_id": "B08",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "无法比较",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    },
+    {
+      "case_id": "B09",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4327.44,
+      "prompt_tokens": 385,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B10",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4278.84,
+      "prompt_tokens": 383,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B11",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4211.94,
+      "prompt_tokens": 396,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "B12",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4245.67,
+      "prompt_tokens": 392,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU1-1",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4271.79,
+      "prompt_tokens": 406,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU1-2",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4160.76,
+      "prompt_tokens": 408,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU1-3",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4147.78,
+      "prompt_tokens": 405,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU2-1",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4104.3,
+      "prompt_tokens": 388,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU2-2",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4196.45,
+      "prompt_tokens": 392,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU2-3",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4017.7,
+      "prompt_tokens": 394,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU3-1",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4168.08,
+      "prompt_tokens": 407,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU3-2",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4079.57,
+      "prompt_tokens": 408,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU3-3",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4267.92,
+      "prompt_tokens": 413,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU4-1",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4124.28,
+      "prompt_tokens": 399,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU4-2",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4073.67,
+      "prompt_tokens": 402,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU4-3",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4203.2,
+      "prompt_tokens": 405,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU5-1",
+      "task_id": "USE_MATCH",
+      "expected": "一致",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4100.77,
+      "prompt_tokens": 392,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU5-2",
+      "task_id": "USE_MATCH",
+      "expected": "存在明确矛盾",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4102.79,
+      "prompt_tokens": 399,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CU5-3",
+      "task_id": "USE_MATCH",
+      "expected": "信息不足",
+      "answer": "一致",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4104.31,
+      "prompt_tokens": 398,
+      "completion_tokens": 30,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB1-1",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4381.46,
+      "prompt_tokens": 381,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB1-2",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4424.72,
+      "prompt_tokens": 384,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB1-3",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4287.11,
+      "prompt_tokens": 391,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB2-1",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4173.36,
+      "prompt_tokens": 379,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB2-2",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4186.58,
+      "prompt_tokens": 381,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB2-3",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4139.84,
+      "prompt_tokens": 385,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB3-1",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4243.41,
+      "prompt_tokens": 391,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB3-2",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4239.86,
+      "prompt_tokens": 396,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB3-3",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4792.79,
+      "prompt_tokens": 392,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB4-1",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4569.68,
+      "prompt_tokens": 413,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB4-2",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4434.4,
+      "prompt_tokens": 409,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB4-3",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4407.99,
+      "prompt_tokens": 400,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB5-1",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "未发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4324.88,
+      "prompt_tokens": 386,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB5-2",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "发现明确矛盾",
+      "answer": "发现明确矛盾",
+      "source": "qwen_local_valid_json",
+      "latency_ms": 4399.92,
+      "prompt_tokens": 385,
+      "completion_tokens": 33,
+      "error": null,
+      "reason": "一句中文",
+      "evidence_refs": [
+        "m1:p1",
+        "m2:p1"
+      ]
+    },
+    {
+      "case_id": "CB5-3",
+      "task_id": "BIZ_CONFLICT",
+      "expected": "无法比较",
+      "answer": "无法比较",
+      "source": "input_rule",
+      "latency_ms": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "error": null
+    }
+  ],
+  "frozen_protocol_sha256": "56c9cea4280bbbe2caf2532d4e407d2359b5f0d22fa7c646d4978907d2347151",
+  "model": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "device": "cpu",
+    "dtype": "float32",
+    "scope": "真实本地实验替代模型；不是工银智涌；未信贷微调",
+    "bank_connected": false
+  },
+  "scope": "local substitute; synthetic development only"
+}
