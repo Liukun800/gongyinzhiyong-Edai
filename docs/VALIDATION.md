@@ -40,6 +40,6 @@
 
 ## 文档版本与验收范围
 
-`docs/plan/`保存用户2026-10-08指定的最新Word原样副本及阅读用Markdown。上传前核对源文件和副本的SHA256，源Word不改动。
+计划书文件不随公开代码仓库分发；本仓库仅保留与验证相关的代码、记录和口径说明。
 
 这份Word与前一轮验收哈希不同。`docs/qa/previous-render/`保留的54页、43图、16表记录只适用于其登记的旧哈希；不自动作为最新稿验收。阅读用Markdown是便于检索的提取稿，不替代Word版式。新GitHub整理与迁移检查见`docs/qa/repository-checks.json`。

@@ -12,7 +12,7 @@
 | --- | --- |
 | [方法论](docs/METHODOLOGY.md) | 业务任务定义、为什么采用Jev式判断、快慢分工与增量验证 |
 | [产品设计](docs/PRODUCT_DESIGN.md) | 使用者、介入位置、补件复核闭环与工小审拟议交接 |
-| [最新计划书](docs/plan/) | 用户指定的2026-10-08 Word及阅读用Markdown |
+| [计划书材料说明](docs/plan/) | 计划书不随公开代码仓库分发 |
 | [蓝色科研图表](docs/FIGURES.md) | 可编辑SVG、300DPI PNG和Word内嵌媒体 |
 | [验证记录](docs/VALIDATION.md) | 当前真实结果、负结果与待验证条件 |
 | [运行与部署](docs/DEPLOYMENT.md) | 本地流程、云端演示、官方Jev、社区模型及检查命令 |
@@ -43,7 +43,7 @@ python -X utf8 demo/app.py --mode simulation --port 8765
 ## 仓库内容
 
 ```text
-docs/               方法论、产品设计、最新Word、图表与补证材料
+docs/               方法论、产品设计、图表与补证材料
 demo/               工作台、任务规范、判断后端、证据与留痕
 评审整改/           保留原路径的领域实验、官方协议与白名单记录
 scripts/            跨机器启动和发布包完整性检查
@@ -53,3 +53,4 @@ release-manifest.json 文件清单、来源hash与实验状态
 模型权重、运行数据库、凭据和历史聊天记忆不进入仓库。实验原始输入、参考标签及冻结代码按原路径保留，避免改变协议中的来源hash。第三方代码许可见[技术来源与许可](THIRD_PARTY_NOTICES.md)。
 
 这是独立竞赛研究原型，工行生态关系为拟议适配，不代表工商银行官方系统或生产接入。
+

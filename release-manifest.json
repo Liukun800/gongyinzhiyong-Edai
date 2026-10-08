@@ -1,9 +1,6 @@
 {
   "date": "2026-10-08",
   "repository": "https://github.com/Liukun800/gongyinzhiyong-Edai",
-  "source_word": "评审整改交付版/图文增强与痛点完善_20261008/工银智涌 e贷——基于Jev式判断与快慢协同的贷前材料核验引擎.docx",
-  "source_word_sha256": "756c125eac8113d4a40626f37bf0c8066c824a248d066332c37fbe3e34b07093",
-  "source_word_unchanged": true,
   "latest_word_matches_previous_render": false,
   "previous_render_sha256": "ac1607629d0fe2bfdb44a4741e22a8eb0ea117447e69bc9c0c5b9aeefd6dfcc6",
   "new_official_calls": 0,
@@ -11,11 +8,6 @@
   "official_domain_batch_measured": false,
   "bank_connected": false,
   "copied_sources": [
-    {
-      "path": "docs/plan/工银智涌 e贷——基于Jev式判断与快慢协同的贷前材料核验引擎.docx",
-      "source": "评审整改交付版/图文增强与痛点完善_20261008/工银智涌 e贷——基于Jev式判断与快慢协同的贷前材料核验引擎.docx",
-      "sha256": "756c125eac8113d4a40626f37bf0c8066c824a248d066332c37fbe3e34b07093"
-    },
     {
       "path": "demo/app.py",
       "source": "demo/app.py",
@@ -1169,6 +1161,7 @@
     "third-party full repositories",
     "chat and continuation memory",
     "old plan versions",
-    "raw third-party articles"
+    "raw third-party articles",
+    "complete plan document"
   ]
 }
