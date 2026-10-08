@@ -59,6 +59,61 @@ renderShowcase = function () {
   }
 };
 window.addEventListener('health-ready', () => queueMicrotask(updateDeployment));
+
+// Shortcuts keep the official demonstration focused on business paths.
+function addDemoShortcuts() {
+  if (document.querySelector('.official-demo-shortcuts')) return;
+  const toolbar = document.querySelector('.toolbar');
+  if (!toolbar) return;
+  const wrap = document.createElement('div');
+  wrap.className = 'official-demo-shortcuts';
+  wrap.innerHTML = '<span class="shortcut-label">一键填充演示路径</span>' +
+    '<button type="button" data-demo-case="D01">材料一致</button>' +
+    '<button type="button" data-demo-case="D02">明确矛盾</button>' +
+    '<button type="button" data-demo-case="D03">缺件补充</button>' +
+    '<span class="shortcut-tip">均为脱敏仿真材料；运行后仍需人工复核</span>';
+  toolbar.parentNode.insertBefore(wrap, toolbar.nextSibling);
+  wrap.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-demo-case]');
+    if (!button || button.disabled) return;
+    const select = document.querySelector('#case-select');
+    if (!select) return;
+    select.value = button.dataset.demoCase;
+    select.dispatchEvent(new Event('change', {bubbles: true}));
+    const guide = document.querySelector('#scenario-guide');
+    if (guide) guide.textContent = button.dataset.demoCase === 'D03'
+      ? '已填充缺件路径：先运行查看补件提示，再点击“补入演示采购订单”，重新运行观察版本变化。'
+      : '已填充完整材料：点击“运行官方 Jev 核验”，查看候选判断、原文证据和人工复核入口。';
+  });
+}
+window.addEventListener('health-ready', () => queueMicrotask(addDemoShortcuts));
+
+function addIntakePresets() {
+  if (document.querySelector('.official-intake-presets')) return;
+  const form = document.querySelector('#intake-form');
+  if (!form) return;
+  const anchor = form.querySelector('.intake-materials');
+  if (!anchor) return;
+  const bar = document.createElement('div');
+  bar.className = 'official-intake-presets';
+  bar.innerHTML = '<strong>不想逐项填写？</strong><button type="button" data-intake-preset="consistent">填充一致案例</button><button type="button" data-intake-preset="conflict">填充矛盾案例</button><button type="button" data-intake-preset="missing">填充缺件案例</button><span>仅生成脱敏仿真文字</span>';
+  anchor.parentNode.insertBefore(bar, anchor);
+  const values = {
+    consistent: ['材料一致演示申请','用途与经营材料可比且相互支持','仿真主体A','2026-08','采购生产用钢材','订单关联申请，采购标的为生产用钢材','2026年8月全月正常营业','2026年8月全月持续营业'],
+    conflict: ['经营矛盾演示申请','同主体同期间陈述存在互斥信息','仿真主体A','2026-08','采购生产用钢材','订单关联申请，采购标的为生产用钢材','2026年8月全月正常营业','2026年8月整月停业'],
+    missing: ['缺件补充演示申请','用途说明已有但缺少采购证明材料','仿真主体A','2026-08','采购生产用钢材','','','']
+  };
+  bar.addEventListener('click', event => {
+    const key = event.target.closest('[data-intake-preset]')?.dataset.intakePreset;
+    if (!key) return;
+    const v = values[key];
+    ['title','description','subject','period','purpose','support','statement','record'].forEach((name,i) => { form.elements[name].value = v[i]; });
+    form.elements.synthetic.checked = true;
+    const error = document.querySelector('#intake-error');
+    if (error) error.textContent = '已填充演示材料，可直接创建申请。';
+  });
+}
+window.addEventListener('health-ready', () => queueMicrotask(addIntakePresets));
 new MutationObserver(() => {
   if (runtimeHealth?.model?.offline_test_mode && !$('#run').disabled) $('#run').disabled = true;
 }).observe($('#run'), { attributes: true, attributeFilter: ['disabled'] });

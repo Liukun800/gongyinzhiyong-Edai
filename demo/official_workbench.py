@@ -16,14 +16,18 @@ class OfficialHandler(Handler):
 
     def do_GET(self):
         path = urlparse(self.path).path
-        if path not in ('/', '/official-ui.js'):
+        if path not in ('/', '/official-ui.js', '/official.css'):
             return super().do_GET()
         try:
             self.check_host()
             if path == '/official-ui.js':
                 return self.respond((ROOT / 'static/official-ui.js').read_bytes(),
                                     content_type='text/javascript; charset=utf-8')
+            if path == '/official.css':
+                return self.respond((ROOT / 'static/official.css').read_bytes(),
+                                    content_type='text/css; charset=utf-8')
             html = (ROOT / 'static/index.html').read_text(encoding='utf-8')
+            html = html.replace('</head>', '<link rel="stylesheet" href="/official.css"></head>')
             html = html.replace('</body>', '<script src="/official-ui.js" defer></script></body>')
             self.respond(html.encode('utf-8'), content_type='text/html; charset=utf-8')
         except Exception:

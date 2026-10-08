@@ -1,0 +1,8 @@
+.official-demo-shortcuts { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:10px 0 14px; padding:10px 12px; border:1px solid #b9d5ee; border-radius:8px; background:#f2f8fd; }
+.official-demo-shortcuts button { border:1px solid #236bb0; color:#174b78; background:#fff; border-radius:5px; padding:6px 12px; cursor:pointer; }
+.official-demo-shortcuts button:hover { background:#e6f2fc; }
+.shortcut-label { color:#174b78; font-weight:700; }
+.shortcut-tip { color:#59758a; font-size:12px; }
+.official-intake-presets { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:4px 0 12px; padding:9px 10px; border-left:3px solid #236bb0; background:#f6fbff; color:#59758a; font-size:12px; }
+.official-intake-presets strong { color:#174b78; }
+.official-intake-presets button { border:1px solid #6c9bc5; color:#174b78; background:#fff; border-radius:4px; padding:4px 8px; cursor:pointer; }
