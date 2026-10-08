@@ -15,7 +15,7 @@
 | [最新计划书](docs/plan/) | 用户指定的2026-10-08 Word及阅读用Markdown |
 | [蓝色科研图表](docs/FIGURES.md) | 可编辑SVG、300DPI PNG和Word内嵌媒体 |
 | [验证记录](docs/VALIDATION.md) | 当前真实结果、负结果与待验证条件 |
-| [运行与部署](docs/DEPLOYMENT.md) | 本地流程、官方Jev、社区模型及检查命令 |
+| [运行与部署](docs/DEPLOYMENT.md) | 本地流程、云端演示、官方Jev、社区模型及检查命令 |
 | [参考来源](docs/REFERENCES.md) | 官方文档、社区参考及银行公开来源 |
 
 ## 核心设计
@@ -38,7 +38,7 @@ Python 3.10及以上可运行不依赖模型的流程演示：
 python -X utf8 demo/app.py --mode simulation --port 8765
 ```
 
-打开 http://127.0.0.1:8765/ 。官方Jev工作台和社区实验见[运行与部署](docs/DEPLOYMENT.md)。当前服务监听本机，GitHub仓库不承担应用部署。
+本地打开 http://127.0.0.1:8765/ 。当前已部署云端演示入口：普通流程为 http://123.207.241.109/ ，官方Jev工作台为 http://123.207.241.109:8772/ 。云端仅用于竞赛演示与受控仿真，不是工商银行生产系统。
 
 ## 仓库内容
 
