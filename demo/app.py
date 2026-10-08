@@ -270,7 +270,11 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(data)
 
     def check_host(self):
-        if self.headers.get("Host") not in (f"127.0.0.1:{self.server.server_port}", f"localhost:{self.server.server_port}"):
+        # The public demo is fronted by a same-origin proxy. Keep host validation,
+        # while accepting the proxy's forwarded public host for the demo port.
+        host = self.headers.get("Host", "").split(":", 1)[0].lower()
+        allowed = {"127.0.0.1", "localhost", "123.207.241.109"}
+        if host not in allowed:
             raise ApiError("仅允许本地访问", 403)
 
     def do_GET(self):
@@ -323,7 +327,14 @@ class Handler(BaseHTTPRequestHandler):
             if self.headers.get("X-Demo-Token") != self.server.token:
                 raise ApiError("页面会话失效，请刷新", 403)
             origin = self.headers.get("Origin")
-            if origin and origin not in (f"http://127.0.0.1:{self.server.server_port}", f"http://localhost:{self.server.server_port}"):
+            allowed_origins = {
+                f"http://127.0.0.1:{self.server.server_port}",
+                f"http://localhost:{self.server.server_port}",
+                f"http://123.207.241.109:{self.server.server_port}",
+                "http://123.207.241.109:80",
+                "http://123.207.241.109:8772",
+            }
+            if origin and origin not in allowed_origins:
                 raise ApiError("不接受其他站点的写入请求", 403)
             try:
                 length = int(self.headers.get("Content-Length", "0"))
