@@ -12,6 +12,7 @@
 | --- | --- |
 | [方法论](docs/METHODOLOGY.md) | 业务任务定义、为什么采用Jev式判断、快慢分工与增量验证 |
 | [产品设计](docs/PRODUCT_DESIGN.md) | 使用者、介入位置、补件复核闭环与工小审拟议交接 |
+| [贷前材料核验 Skill](skills/edai-preloan-review/SKILL.md) | 可复用的两项候选判断、原文证据与业务交接规范 |
 | [计划书材料说明](docs/plan/) | 计划书不随公开代码仓库分发 |
 | [蓝色科研图表](docs/FIGURES.md) | 可编辑SVG、300DPI PNG和Word内嵌媒体 |
 | [验证记录](docs/VALIDATION.md) | 当前真实结果、负结果与待验证条件 |
